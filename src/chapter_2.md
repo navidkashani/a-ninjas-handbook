@@ -1,158 +1,159 @@
-# Chapter 2
+# فصل ۲
 
-Imagine you're playing Minecraft, and you have respawned somewhere random on the map. You don’t have the geolocation of the house you built. It will be really annoying and time-consuming, or even sometimes impossible (you might give up due to frustration), to find your home in the game if you don’t know where and in which direction to go. You run out of food and energy, and there will be nights with all the mobs, zombies trying to attack you, skeletons shooting arrows at you, and creepers blowing themselves up right beside you. But if you had the X, Y, Z coordinates of your house and the direction you needed to go, you could have gotten there before nightfall and avoided all that hard time fighting mobs and getting nowhere.
+تصور کنید در حال بازی ماینکرفت هستید و به صورت تصادفی در نقطه‌ای از نقشه بازمی‌گردید. شما مختصات خانه‌ای که ساخته‌اید را ندارید. پیدا کردن خانه‌تان در بازی بدون دانستن محل و جهت، ممکن است بسیار وقت‌گیر و آزاردهنده باشد و حتی گاهی غیرممکن (شاید به‌خاطر ناامیدی تسلیم شوید). شما از غذا و انرژی خالی می‌شوید، و شب‌ها با حمله‌ ورودی زامبی‌ها و اسکلت‌هایی که تیراندازی می‌کنند و کریپرهایی که در کنارتان منفجر می‌شوند، مواجه می‌شوید. اما اگر مختصات X, Y, Z خانه‌تان و جهتی که باید به آن بروید را داشتید، می‌توانستید قبل از شب به آنجا برسید و از تمام این مشکلات نجات پیدا کنید.
 
-In this book, I’ve planned to explain more advanced topics as it progresses. So the first chapter debunked some common myths about privacy and security, and in this chapter, things get a little more actionable. This chapter is all about threat modeling, as I believe it is the most important step to take when you start your privacy journey. Otherwise, you’ll spend a lot of time, stress, and hard work, and all the effort will be of no benefit for your personal needs.
+در این کتاب برنامه‌ریزی کرده‌ام که به مرور زمان به موضوعات پیشرفته‌تری بپردازم. فصل اول به افشای برخی از افسانه‌های رایج در مورد حریم خصوصی و امنیت اختصاص داشت و در این فصل، چیزها کمی عملی‌تر می‌شوند. این فصل کاملاً درباره مدل‌سازی تهدید است، چرا که من باور دارم این مهم‌ترین قدم است که باید هنگام شروع سفر حریم خصوصی خود بردارید. در غیر این صورت، زمان زیادی را صرف تلاش‌های بی‌فایده خواهید کرد و تمام تلاش‌ها برای نیازهای شخصی شما هیچ منفعتی نخواهد داشت.
 
-Having a threat model can be the equivalent of having the location of your house in Minecraft written down on paper. Whenever you go far away from your home, you know where to go to get back. In the case of privacy and security, you will know what threats you personally face, what you want to protect, and take actions based on that, rather than blindly using Tor on Whonix OS for no actual reason and potentially making your life harder and even your privacy worse in the process.
+داشتن یک مدل تهدید می‌تواند معادل داشتن محل خانه‌تان در ماینکرفت باشد که روی کاغذ نوشته شده است. هر وقت از خانه دور شوید، می‌دانید کجا باید بروید تا بازگردید. در مورد حریم خصوصی و امنیت، شما می‌دانید چه تهدیدهایی شخصاً با آن مواجه هستید، چه چیزی می‌خواهید محافظت کنید، و بر اساس آن عمل می‌کنید، نه اینکه به‌طور کورکورانه از تور در Whonix OS استفاده کنید بدون هیچ دلیلی و ممکن است با این کار زندگی خود را سخت‌تر و حتی حریم خصوصی خود را بدتر کنید.
 
-## There's nothing called full security
+## چیزی به نام امنیت کامل وجود ندارد
 
-Nothing can be fully secure, fully private, or fully anonymous. When it comes to threat modeling, you need to make sacrifices. You should see what matters the most and work on those areas rather than wasting time trying to make everything private and secure, which is impossible.
+هیچ چیزی نمی‌تواند کاملاً امن، کاملاً خصوصی یا کاملاً ناشناس باشد. وقتی صحبت از مدل‌سازی تهدید می‌شود، شما باید فداکاری‌هایی انجام دهید. باید ببینید چه چیزهایی برایتان مهم‌تر است و روی آن‌ها کار کنید، به‌جای اینکه وقتتان را صرف تلاش برای امن و خصوصی کردن همه چیز کنید، که این غیرممکن است.
 
-A threat model is a list of what threats are most likely to happen. You can't protect yourself from every threat, but you can work on protecting yourself from those that are most likely to happen.
+یک مدل تهدید لیستی است از تهدیدهایی که احتمالاً رخ می‌دهند. شما نمی‌توانید از خودتان در برابر هر تهدیدی محافظت کنید، اما می‌توانید روی محافظت از خود در برابر آن‌هایی که احتمال وقوع بیشتری دارند، کار کنید.
 
-For example, for a rapper, the most likely threat could be their music getting leaked. When designing your threat model, you should address these questions:
+برای مثال، برای یک خواننده رپ، محتمل‌ترین تهدید می‌تواند لو رفتن موسیقی او باشد. وقتی مدل تهدید خود را طراحی می‌کنید، باید به این پرسش‌ها پاسخ دهید:
 
-- What do I need to protect the most? In the example of the rapper, the unreleased music would be the answer.
-- Who do I need to protect it from? For the rapper, that could be online hackers and those who are physically with him and have access to the songs.
-- What are the chances of it happening? For the rapper, if he's famous enough, it's quite likely.
-- What will happen if I fail? For the rapper, that could cost him financially.
-- What can I do to protect it? For the rapper's example, he could use encrypted hard drives and restrict access to others to prevent human errors.
+- چه چیزی را بیشتر از همه باید محافظت کنم؟ در مثال خواننده رپ، موسیقی منتشر نشده پاسخ خواهد بود.
+- باید از چه کسی محافظت کنم؟ برای خواننده رپ، این می‌تواند هکرهای آنلاین و افرادی که به‌صورت فیزیکی با او هستند و به آهنگ‌ها دسترسی دارند، باشد.
+- احتمال وقوع آن چقدر است؟ اگر خواننده رپ به اندازه کافی معروف باشد، احتمالاً زیاد است.
+- اگر شکست بخورم، چه اتفاقی می‌افتد؟ این می‌تواند برای خواننده رپ هزینه‌های مالی داشته باشد.
+- چه کاری می‌توانم انجام دهم تا از آن محافظت کنم؟ در مثال خواننده رپ، او می‌تواند از هارد درایوهای رمزگذاری‌شده استفاده کند و دسترسی به آن‌ها را محدود کند تا از خطاهای انسانی جلوگیری شود.
 
-### What do I need to protect the most?
 
-To answer this question for yourself, you need to first list what you value the most. It could be your digital assets, like your cryptocurrencies, the information you have, like your emails, your contacts, your messages, or some files that are important to you. Whatever you value, write them down.
+### چه چیزی را بیشتر از همه باید محافظت کنم؟
 
-Make your list like this: what data it is that you're protecting, how and where you're keeping it, who you want to allow to have access to it, and what can be done to prevent unauthorized access to it.
+برای پاسخ به این پرسش، ابتدا باید لیستی از آنچه بیشترین ارزش را برایتان دارد، تهیه کنید. این می‌تواند دارایی‌های دیجیتال شما مانند ارزهای دیجیتال، اطلاعاتی که دارید، مانند ایمیل‌ها، مخاطبین، پیام‌ها یا فایل‌های مهم باشد. هر چیزی که برای شما ارزشمند است، آن‌ها را یادداشت کنید.
 
-When you write your list, prioritize it based on the most valuable to the least valuable data. Then you can take a step forward.
+لیست خود را به این صورت تنظیم کنید: چه داده‌ای را محافظت می‌کنید، چگونه و کجا آن را نگه می‌دارید، چه کسی را می‌خواهید به آن دسترسی داشته باشد و چه کاری می‌توان انجام داد تا از دسترسی غیرمجاز به آن جلوگیری شود.
 
-### Who do I need to protect it from?
+وقتی لیست خود را نوشتید، آن را بر اساس ارزشمندترین داده تا کم‌ارزش‌ترین داده اولویت‌بندی کنید. سپس می‌توانید گام بعدی را بردارید.
 
-It can be anyone and anything; it's up to your personal situation. For an activist, for example, it could be the government. For someone who protests against fascism, it could be neo-Nazi hackers and doxxers. For a business, it can be their competitors.
+### باید از چه کسی محافظت کنم؟
 
-Try making a list of those who might be interested in getting their hands on your assets or data. Your list can include individuals, a federal agency, a corporation, a doxxing group, a cult, anything—you know it better.
+این می‌تواند هر کسی و هر چیزی باشد؛ این بستگی به موقعیت شخصی شما دارد. برای یک فعال سیاسی، مثلاً می‌تواند دولت باشد. برای کسی که علیه فاشیسم اعتراض می‌کند، می‌تواند هکرهای نئونازی و داکسرها باشد. برای یک کسب‌وکار، می‌تواند رقبا باشد.
 
-This list can help you see what and who you're standing against, what they can do, and what costs they might be willing to pay to get their hands on your data. It helps you see more clearly and realistically.
+سعی کنید لیستی از افرادی که ممکن است علاقه‌مند به دسترسی به دارایی‌ها یا داده‌های شما باشند، تهیه کنید. لیست شما می‌تواند شامل افراد، یک سازمان فدرال، یک شرکت، یک گروه داکسینگ، یک فرقه، هر چیزی باشد—شما بهتر می‌دانید.
 
-### What are the chances of it happening?
+این لیست می‌تواند به شما کمک کند تا ببینید با چه کسی و چه چیزی مواجه هستید، آن‌ها چه کاری می‌توانند انجام دهند و چه هزینه‌هایی ممکن است بپردازند تا به داده‌های شما دست یابند. این به شما کمک می‌کند تا وضعیت را با وضوح و واقع‌بینی بیشتری ببینید.
 
-Not everything that might happen will happen. Write down the threats that you think are going to happen, as many as you can think of, and then rate them based on their probability of happening. Is it highly probable to happen? Is it rarely going to happen? Is it even possible to protect your data against it?
+### احتمال وقوع آن چقدر است؟ 
 
-For example, you might get struck by lightning when it's raining and die, but how probable is that? Would you find an insulating shelter until the rain ends? No, because there's a low chance of it happening. Or you might crash your car every time you get behind the wheel to drive, but do you stop driving? No. Or you might get shot if you go to a gang war zone, and you probably won't, because it's quite likely to happen. The same goes for your threat modeling; you need to rate the threats based on their probability of happening.
+همه چیزهایی که ممکن است اتفاق بیفتد، رخ نخواهند داد. تهدیدهایی را که فکر می‌کنید احتمال وقوع دارند یادداشت کنید، به‌قدر امکان بسیاری از آن‌ها را یادداشت کنید، سپس آن‌ها را بر اساس احتمال وقوع درجه‌بندی کنید. آیا احتمال وقوع آن زیاد است؟ آیا به‌ندرت رخ خواهد داد؟ آیا حتی امکان دارد که بتوانید از داده‌های خود در برابر آن محافظت کنید؟
 
-### What will happen if I fail?
+به‌عنوان مثال، ممکن است در هنگام بارندگی صاعقه به شما برخورد کند و بمیرید، اما احتمال آن چقدر است؟ آیا تا پایان باران در پناهگاهی عایق می‌مانید؟ نه، چون احتمال وقوع آن کم است. یا ممکن است هر بار که پشت فرمان می‌نشینید ماشین‌تان تصادف کند، اما آیا رانندگی را متوقف می‌کنید؟ نه. یا ممکن است اگر به یک منطقه جنگی باندهای خلافکار بروید به شما شلیک شود، و احتمالاً نمی‌روید، چون احتمال آن زیاد است. همین مسئله برای مدل‌سازی تهدید شما نیز صدق می‌کند؛ شما باید تهدیدها را بر اساس احتمال وقوعشان درجه‌بندی کنید.
 
-Then you need to see what the consequences of failing to protect your data are. For example, for an anti-fascist protester, if doxxers put his home address and all information online, it could pose physical threats to him. Or, if a company fails to protect its data, hackers or competitors might corrupt all the company's data and drive it toward bankruptcy. On the other hand, if I, who sends memes to my friends on Telegram, have my messages read by someone, probably nothing horrible will happen to me.
+### اگر شکست بخورم، چه اتفاقی می‌افتد؟
 
-You need to write down what the attackers might want to do when they get their hands on your data. Will the harm they cause be so little that you wouldn't bother? Or is it so significant that it could be life-threatening? You need to address these questions.
+سپس باید ببینید اگر در محافظت از داده‌های خود شکست بخورید، چه پیامدهایی خواهد داشت. به‌عنوان مثال، برای یک معترض ضد فاشیست، اگر داکسرها آدرس خانه او و تمام اطلاعاتش را آنلاین منتشر کنند، ممکن است تهدیدات فیزیکی برای او به وجود آید. یا اگر یک شرکت در محافظت از داده‌های خود شکست بخورد، هکرها یا رقبا ممکن است تمام داده‌های شرکت را خراب کرده و آن را به سمت ورشکستگی سوق دهند. از سوی دیگر، اگر من که فقط برای دوستانم در تلگرام میم می‌فرستم، پیام‌هایم توسط کسی خوانده شود، احتمالاً اتفاق بدی برای من نخواهد افتاد.
 
-### What can I do to protect it?
+شما باید یادداشت کنید که مهاجمان ممکن است بخواهند با دسترسی به داده‌های شما چه کاری انجام دهند. آیا آسیبی که ایجاد می‌کنند به قدری کم است که شما اهمیت ندهید؟ یا آن‌قدر قابل‌توجه است که ممکن است تهدیدی برای زندگی شما باشد؟ شما باید به این پرسش‌ها پاسخ دهید.
 
-Then you can move on to doing your research, seeing what can be done to protect that data, what costs will come with it, and how much it will make your life harder. Are you willing to take the effort?
+### برای محافظت از آن چکار می‌توانم بکنم
 
-For example, if you have cryptocurrencies, you can see how you might protect your assets. You might need to implement multi-signature wallets or store your assets offline on a safe and dedicated machine with encryption and no additional software on it.
+سپس می‌توانید تحقیق کنید که چه کارهایی می‌توان برای محافظت از آن داده‌ها انجام داد، چه هزینه‌هایی همراه خواهد داشت و چقدر زندگی‌تان سخت‌تر خواهد شد. آیا آماده‌اید که این تلاش را بپذیرید؟
 
-### Then you take action
+برای مثال، اگر ارزهای دیجیتال دارید، می‌توانید ببینید چگونه می‌توان دارایی‌های خود را محافظت کرد. شاید نیاز داشته باشید از کیف‌پول‌های چندامضایی استفاده کنید یا دارایی‌های خود را به‌صورت آفلاین بر روی یک دستگاه امن و اختصاصی با رمزگذاری ذخیره کنید که هیچ نرم‌افزار اضافی روی آن نصب نشده است.
 
-After you design your threat model, you can move on to taking action toward it. In the example of cryptocurrency assets, you can start by backing up your assets on paper, putting it somewhere safe, using an offline and audited wallet, downloading your own blockchain instead of relying on nodes run by others, and even buying a dedicated machine specifically hardened for this need and purpose.
+### سپس اقدام کنید
 
-You might create a checklist at this point to make sure you don't forget anything and implement all the actions you think would keep your data secure.
+پس از طراحی مدل تهدید خود، می‌توانید به مرحله اجرا بروید. در مثال دارایی‌های ارز دیجیتال، می‌توانید با پشتیبان‌گیری از دارایی‌هایتان بر روی کاغذ و قرار دادن آن در مکانی امن شروع کنید، از کیف‌پول‌های آفلاین و مورد بررسی قرار گرفته استفاده کنید، بلاکچین خود را دانلود کنید به‌جای اینکه به نودهای دیگران وابسته باشید، و حتی یک دستگاه اختصاصی خریداری کنید که برای این نیازها و اهداف تقویت شده باشد.
 
-## Common threats when threat modeling
+در این مرحله می‌توانید یک چک‌لیست ایجاد کنید تا مطمئن شوید که هیچ چیزی را فراموش نمی‌کنید و تمام اقداماتی که فکر می‌کنید داده‌های شما را ایمن نگه می‌دارند، اجرا می‌کنید.
 
-Different threats require different actions; there is no action you can take to protect yourself from all of them. And that's fine—you don't need to. That's why you designed a threat model: to take actions on the most probable and most consequential threats based on your own personal situation.
+## تهدیدهای رایج در مدل‌سازی تهدید
 
-Your threats might not be among this list of common threats. They might require unique strategies to protect yourself against. Again, you should act on your threat model. These are some concepts that I will refer to in this book, especially in this chapter:
+تهدیدهای مختلف نیاز به اقدامات متفاوتی دارند؛ هیچ اقدام واحدی وجود ندارد که بتواند شما را از همه تهدیدها محافظت کند. و این مشکلی نیست—شما نیازی ندارید که این کار را انجام دهید. به همین دلیل مدل تهدید طراحی شده است: برای انجام اقدامات در برابر تهدیدهای محتمل‌تر و مهم‌تر بر اساس وضعیت شخصی خودتان.
 
-- **Anonymity:** Separating and protecting your real identity from your online activities, protecting yourself from anyone/anything wanting to take your vigilante mask and see your real face.
-- **Targeted Attacks:** Protecting yourself from hackers, doxxers, government agencies, etc., that are specifically trying to get their hands on your data.
-- **Passive Attacks:** Protecting yourself from attacks that target a large group of people, such as when a company gets hacked and their data breaches to the public, or from malware and scammers targeting thousands of people.
-- **Supply Chain Attacks:** Attacks that happen because of a vulnerability in a dependency of a trusted program, like the Linux distros getting backdoored because of a backdoor in xz utils (CVE-2024-3094) in 2024.
-- **Service Providers:** Protecting your data from service providers, like your ISP, usually through end-to-end encryption of your communications.
-- **Mass Surveillance:** Protecting yourself from surveillance systems that target the mass population, usually done by governments, but also includes websites that track you across the web.
-- **Big Tech Surveillance:** Protecting yourself from big tech companies that profit from tracking you on the internet and selling your data for advertisement, like Google, Facebook, etc.
-- **Public Exposure:** Limiting the data available about you publicly on the internet, for example, your personal data indexed by search engines, etc.
-- **Censorship:** Bypassing digital censorship or avoiding being censored when using the internet or putting something out on the internet.
+تهدیدهای شما ممکن است در این لیست تهدیدهای رایج نباشند. آن‌ها ممکن است به استراتژی‌های منحصربه‌فردی برای محافظت نیاز داشته باشند. باز هم باید طبق مدل تهدید خود عمل کنید. این‌ها برخی از مفاهیمی هستند که در این کتاب، به‌ویژه در این فصل به آن‌ها اشاره خواهم کرد:
 
-### Anonymity vs Privacy
+- **ناشناس بودن**: جدا کردن و محافظت از هویت واقعی شما از فعالیت‌های آنلاین‌تان، محافظت از خودتان در برابر هر کسی یا هر چیزی که می‌خواهد ماسک هوشیارانه شما را بردارد و چهره واقعی شما را ببیند.
+- **حملات هدفمند**: محافظت از خود در برابر هکرها، داکسرها، سازمان‌های دولتی و غیره که به‌طور خاص سعی در دسترسی به داده‌های شما دارند.
+- **حملات غیرمستقیم**: محافظت از خود در برابر حملاتی که گروه بزرگی از افراد را هدف قرار می‌دهند، مانند زمانی که یک شرکت هک می‌شود و داده‌هایش در اختیار عموم قرار می‌گیرد، یا در برابر بدافزارها و کلاهبرداران که هزاران نفر را هدف قرار می‌دهند.
+- **حملات زنجیره تأمین**: حملاتی که به دلیل یک آسیب‌پذیری در یک وابستگی از یک برنامه مورد اعتماد رخ می‌دهند، مانند اتفاقی که برای توزیع‌های لینوکس در سال ۲۰۲۴ با رخنه‌ای در xz utils (CVE-2024-3094) افتاد.
+- **ارائه‌دهندگان خدمات**: محافظت از داده‌های خود در برابر ارائه‌دهندگان خدمات، مانند ISP خودتان، معمولاً از طریق رمزگذاری انتها به انتهای ارتباطات.
+- **نظارت گسترده**: محافظت از خود در برابر سیستم‌های نظارتی که جمعیت گسترده‌ای را هدف قرار می‌دهند، که معمولاً توسط دولت‌ها انجام می‌شود، اما همچنین شامل وبسایت‌هایی است که شما را در سراسر اینترنت ردیابی می‌کنند.
+- **نظارت شرکت‌های بزرگ فناوری**: محافظت از خود در برابر شرکت‌های بزرگ فناوری که از ردیابی شما در اینترنت سود می‌برند و داده‌های شما را برای تبلیغات می‌فروشند، مانند گوگل، فیسبوک و غیره.
+- **افشای عمومی**: محدود کردن داده‌هایی که به‌طور عمومی درباره شما در اینترنت موجود است، مانند داده‌های شخصی شما که توسط موتورهای جستجو ایندکس شده است.
+- **سانسور**: دور زدن سانسور دیجیتال یا جلوگیری از سانسور شدن هنگام استفاده از اینترنت یا قرار دادن محتوایی در اینترنت.
 
-Anonymity is totally different from privacy, but privacy is required to achieve anonymity. Anonymity is when Daredevil goes out at night to fight the Russians working for Wilson Fisk—they don't know that Daredevil is Matt Murdock, but they know what he does. Matt Murdock has untied his personal identity, which is a blind attorney, from his vigilante identity, which is this badass dude in a black and red suit fighting crime in Hell's Kitchen. Matt Murdock is anonymous when he's Daredevil, and Wilson Fisk and every other criminal he has fought are the attackers who would love to unveil his identity and find out who's behind the mask.
+### ناشناس بودن در برابر حریم خصوصی
 
-In this example, Matt Murdock has used privacy to achieve that anonymity. He has separated his identity in a way that nobody would be suspicious of him being Daredevil. He pretended all these years that he can't see anything, can't even walk without his cane, and even if he was injured, he would say that he fell down some stairs. That's the privacy there protecting his anonymity. He decided to let people see this side of Matt Murdock, not the Daredevil side of him.
+ناشناس بودن کاملاً متفاوت از حریم خصوصی است، اما برای دستیابی به ناشناس بودن، حریم خصوصی ضروری است. ناشناس بودن زمانی است که یک فرد مانند Daredevil شب‌ها بیرون می‌رود تا با روس‌هایی که برای ویلسون فیسک کار می‌کنند بجنگد—آن‌ها نمی‌دانند Daredevil همان مت مرداک است، اما می‌دانند او چه می‌کند. مت مرداک هویت شخصی خود را، که یک وکیل نابینا است، از هویت هوشیارانه‌اش که یک قهرمان نقاب‌دار است، جدا کرده است. مت مرداک در زمان تبدیل شدن به Daredevil ناشناس است، و ویلسون فیسک و تمام دیگر جنایتکارانی که با آن‌ها مبارزه کرده‌اند، کسانی هستند که دوست دارند هویت او را فاش کرده و بفهمند چه کسی پشت ماسک است.
 
-The same thing applies in the online world, but here the tools are different. The masks are digital tools using encryption and onion routing, but the concept is the same. If you're some kind of vigilante like Matt Murdock, you probably need to protect and separate your real identity from your vigilante identity.
+در این مثال، مت مرداک از حریم خصوصی برای دستیابی به ناشناس بودن استفاده کرده است. او هویت خود را به‌گونه‌ای جدا کرده است که هیچ‌کس به او به‌عنوان Daredevil مشکوک نمی‌شود. او تمام این سال‌ها تظاهر کرده است که نمی‌تواند چیزی ببیند، حتی نمی‌تواند بدون عصایش راه برود، و اگر زخمی می‌شد، می‌گفت که از پله‌ها افتاده است. این همان حریم خصوصی است که ناشناس بودن او را محافظت می‌کند. او تصمیم گرفته است که مردم فقط این بخش از شخصیت مت مرداک را ببینند، نه بخش Daredevil او.
 
-### Targeted Attacks
+در دنیای آنلاین، همین اصل صدق می‌کند، اما ابزارها متفاوت هستند. ماسک‌ها ابزارهای دیجیتالی با استفاده از رمزگذاری و مسیر‌یابی پیازی هستند، اما مفهوم یکسان است. اگر شما هم مانند مت مرداک یک عدالت‌جو هستید، احتمالاً نیاز دارید هویت واقعی خود را از هویت عدالت‌جویتان جدا کنید و محافظت کنید.
 
-Daredevil was targeted too; all of Hell's Kitchen criminals were after him. So he both needed to protect his identity and anonymity while protecting himself against targeted attacks from one of the most powerful villains of New York, the Kingpin. But who else might be in the situation of Daredevil? The whistleblowers, the activists, and the protesters. But they need different tools than Matt Murdock. They might need the Tor browser rather than a mask; they might need E2EE tools to communicate and store data rather than an indestructible suit made by Melvin Potter.
+### حملات هدفمند
 
-But if you think the NSA, CIA, and other agencies are after you, you can't run from them forever. You might be able to fake your death and live in a submarine, but they will probably find you. This usually categorizes as those threats that you rather not bother about because of how difficult it might make your life. Also, it is quite rare to be that targeted. Usually, those targeted by the NSA have the support of another corrupt government.
+Daredevil نیز مورد هدف قرار گرفت؛ تمام جنایتکاران Hell's Kitchen به دنبال او بودند. بنابراین او هم باید هویت و ناشناس بودن خود را محافظت می‌کرد و هم در برابر حملات هدفمند از یکی از قدرتمندترین جنایتکاران نیویورک، Kingpin محافظت می‌کرد. اما چه کسانی دیگر ممکن است در موقعیت Daredevil باشند؟ افشاگران، فعالان و معترضان. اما آن‌ها به ابزارهای متفاوتی نسبت به مت مرداک نیاز دارند. آن‌ها ممکن است به مرورگر تور نیاز داشته باشند، نه یک ماسک؛ آن‌ها ممکن است به ابزارهای رمزگذاری انتها به انتها برای ارتباطات و ذخیره داده‌ها نیاز داشته باشند، نه یک لباس ضدگلوله ساخته شده توسط Melvin Potter.
 
-### Passive Attacks
+اما اگر فکر می‌کنید NSA، CIA و سایر آژانس‌ها به دنبال شما هستند، نمی‌توانید برای همیشه از آن‌ها فرار کنید. شاید بتوانید مرگ خود را جعل کرده و در یک زیردریایی زندگی کنید، اما آن‌ها احتمالاً شما را پیدا خواهند کرد. این تهدیدها معمولاً از دسته تهدیدهایی هستند که بهتر است به آن‌ها اهمیت ندهید، زیرا ممکن است زندگی شما را بسیار سخت کند. همچنین، خیلی به ندرت پیش می‌آید که آن‌قدر هدف قرار بگیرید. معمولاً آن‌هایی که توسط NSA هدف قرار می‌گیرند، حمایت یک دولت فاسد دیگر را دارند.
 
-This kind of attack affects most people of Hell's Kitchen, from Foggy Nelson to Frank Castle, even the people of Gotham City. It affects the villains and the heroes, from Batman to Harley Quinn. These attacks are usually toward large groups of people, like malware spreading on the internet. When WannaCry spread on the internet, it affected anything that had that vulnerable version of Windows. It didn't choose. 
+### حملات غیرمستقیم
 
-This kind of attack, in my opinion, is most probable for the majority of people. We all have signed up for many websites in our lifetimes. A data breach in one of them would be really likely and can definitely affect us if we haven't taken any precautions.
+این نوع حملات بیشتر مردم Hell's Kitchen، از Foggy Nelson تا Frank Castle، حتی مردم Gotham City را تحت تأثیر قرار می‌دهد. این حملات معمولاً گروه‌های بزرگی از مردم را هدف قرار می‌دهند، مانند بدافزارهایی که در اینترنت منتشر می‌شوند. وقتی WannaCry در اینترنت منتشر شد، هر دستگاهی که نسخه آسیب‌پذیری از ویندوز را داشت، تحت تأثیر قرار گرفت. این بدافزار انتخابی نداشت.
 
-### Supply Chain Attacks
+این نوع حمله، به‌نظر من، محتمل‌ترین نوع حمله برای اکثر مردم است. ما همه در طول زندگی‌مان در بسیاری از وبسایت‌ها ثبت‌نام کرده‌ایم. یک رخنه اطلاعاتی در یکی از این وبسایت‌ها بسیار محتمل است و قطعاً می‌تواند بر ما تأثیر بگذارد اگر هیچ احتیاطی نکرده باشیم.
 
-Supply chain attacks can target even the most trusted programs by attacking other programs that our programs are built on. Supply chain attacks are sometimes targeted at businesses or governments, but they can affect the mass population in the process. These attacks are hard to prevent; they require time and energy to audit and test every dependency on the chain to be sure, but we can't be certain. There are always flaws—nothing can be fully secure.
+### حملات زنجیره تأمین
 
-So, how can these attacks be performed? There are a lot of ways; here are some common ones:
+حملات زنجیره تأمین می‌توانند حتی مورد اعتمادترین برنامه‌ها را با حمله به برنامه‌های دیگر که برنامه‌های ما بر آن‌ها استوار هستند، هدف قرار دهند. گاهی اوقات این حملات به کسب‌وکارها یا دولت‌ها هدف گرفته می‌شوند، اما می‌توانند جمعیت گسترده‌ای را نیز تحت تأثیر قرار دهند. این حملات به سختی قابل پیشگیری هستند؛ آن‌ها نیاز به زمان و انرژی برای بررسی و آزمایش هر وابستگی در زنجیره دارند تا اطمینان حاصل شود، اما ما نمی‌توانیم به‌طور قطعی مطمئن باشیم. همیشه نقص‌هایی وجود دارد—هیچ چیزی نمی‌تواند کاملاً امن باشد.
 
-- Someone with enough power and a high enough position in a company or developer team can have the authority to add malicious code to a software.
-- In the open-source world, someone can contribute malicious code in a way that it gets added to the codebase unnoticed.
-- The author and maintainer of a library or dependency can decide to inject a backdoor in the code.
+چگونه این حملات انجام می‌شوند؟
 
-#### Minimizing the Risk
+راه‌های زیادی برای اجرای این نوع حملات وجود دارد؛ در اینجا برخی از رایج‌ترین آن‌ها آورده شده است:
 
-How can we minimize the risk? Well, it can't be fully eliminated, that's for sure. But there are ways:
+- کسی که قدرت و موقعیت کافی در یک شرکت یا تیم توسعه دارد، ممکن است اختیار اضافه کردن کد مخرب به نرم‌افزار را داشته باشد.
+- در دنیای متن‌باز، کسی می‌تواند به‌گونه‌ای کد مخرب به پروژه کمک کند که بدون توجه به کدبیس اضافه شود.
+- نویسنده و نگهدارنده یک کتابخانه یا وابستگی ممکن است تصمیم بگیرد یک بک‌دور در کد وارد کند.
 
-- Software and services from big companies like Google usually have a good reputation and better security than software developed by a small team or an individual.
-- Checking the commits, changes, and contributors in the case of open-source software.
-- Frequently checking for known security flaws in software.
-- Using independently audited software.
-- Sandboxing and isolating to minimize the impact of possible attacks.
+#### کاهش ریسک
 
-### Service Providers
-Your ISP can see all your traffic, like the Joker putting a GPS on Batman's Batmobile. The Joker knows where Batman is going and can log those movements as well. However, thanks to TLS and HTTPS, the data that ISPs can see has become limited. They can know the IP address and the Server Name Indicator (SNI) of your traffic and the DNS queries, but there are fixes. We can encrypt DNS, encrypt the Client Hello, and SNI, so all your service provider would see is the destination IP and timestamps if TLS is enabled for that website or service.
+چگونه می‌توانیم ریسک را کاهش دهیم؟ خوب، این ریسک را نمی‌توان کاملاً از بین برد، این قطعاً درست است. اما راه‌هایی وجود دارد:
 
-You can also shift the trust from your ISP to a VPN provider that doesn't log your traffic and allows you to sign up anonymously, such as Mullvad or Proton VPN. But remember, this is just shifting the trust, not eliminating it. For that, there are other tools, such as Tor, which ensures that no one in the middle can see where you're going and what you're doing (if you use websites on the Tor network and not the clearnet).
+- نرم‌افزارها و خدمات از شرکت‌های بزرگ مانند گوگل معمولاً اعتبار خوبی دارند و امنیت بهتری نسبت به نرم‌افزارهایی که توسط یک تیم کوچک یا یک فرد توسعه داده می‌شوند، دارند.
+- بررسی تغییرات، کامیت‌ها و مشارکت‌کنندگان در مورد نرم‌افزارهای متن‌باز.
+- بررسی مداوم برای یافتن نقص‌های امنیتی شناخته‌شده در نرم‌افزارها.
+- استفاده از نرم‌افزارهای مستقل و بررسی‌شده.
+- استفاده از محیط‌های ایزوله برای به حداقل رساندن تأثیر احتمالی حملات.
 
-Using encrypted DNS is also shifting the trust; the DNS server still knows who you are and when and where you wanted to go. Luckily, Tor has its own DNS as well.
+### ارائه‌دهندگان خدمات
+ارائه‌دهنده خدمات اینترنتی (ISP) شما می‌تواند تمام ترافیک شما را مشاهده کند، مثل جوکر که یک GPS روی Batmobile بتمن قرار می‌دهد. جوکر می‌داند بتمن به کجا می‌رود و می‌تواند این حرکات را نیز ثبت کند. با این حال، به لطف TLS و HTTPS، داده‌هایی که ISPها می‌توانند ببینند محدود شده است. آن‌ها می‌توانند آدرس IP، شاخص نام سرور (SNI) ترافیک شما و درخواست‌های DNS را ببینند، اما راه‌حل‌هایی وجود دارد. ما می‌توانیم DNS را رمزگذاری کنیم، پیام Client Hello و SNI را رمزگذاری کنیم، تا تمام چیزی که ارائه‌دهنده خدمات شما می‌بیند، آدرس IP مقصد و تایم‌استمپ‌ها باشد، البته اگر TLS برای آن وبسایت یا سرویس فعال باشد.
 
-### Mass Surveillance
+شما همچنین می‌توانید اعتماد خود را از ISP به یک ارائه‌دهنده VPN منتقل کنید که ترافیک شما را لاگ نمی‌کند و اجازه می‌دهد که به صورت ناشناس ثبت‌نام کنید، مانند Mullvad یا Proton VPN. اما به یاد داشته باشید، این فقط تغییر محل اعتماد است، نه از بین بردن آن. برای این کار ابزارهای دیگری وجود دارد، مانند تور (Tor) که اطمینان حاصل می‌کند هیچ‌کس در میان نمی‌تواند بفهمد که شما کجا می‌روید و چه کاری انجام می‌دهید (اگر از وبسایت‌های شبکه تور و نه وبسایت‌های clearnet استفاده کنید).
 
-David Liberman, also known as Micro, was an NSA analyst and hacker who, when he tried to expose the CIA's drug trafficking in Afghanistan, was "killed" by a corrupt Homeland Security agent. However, he survived. He gained access to all CCTV cameras and everything that these government agencies had access to, so he could find Frank Castle, aka the Punisher, to help him kill all those who were a threat to his family so he could get back home. At least, that’s what I remember. The movie is not the point. This kind of act—spying on all people, spying on all internet traffic, logging every packet—is what is called mass surveillance. It affects everyone.
+استفاده از DNS رمزگذاری‌شده نیز به معنای تغییر محل اعتماد است؛ سرور DNS همچنان می‌داند شما چه کسی هستید و چه زمانی و به کجا می‌خواستید بروید. خوشبختانه، تور خود DNS خاص خود را نیز دارد.
 
-Governments usually justify this by saying that they're fighting terrorism, which is not true in reality. It has little to no effect on crime, and some governments use it for social credit systems.
+### نظارت گسترده
 
-### Big Tech Surveillance
+David Liberman، که به نام Micro شناخته می‌شود، تحلیلگر NSA و هکری بود که وقتی سعی داشت قاچاق مواد مخدر CIA در افغانستان را افشا کند، توسط یک مأمور فاسد وزارت امنیت داخلی "کشته" شد. اما او زنده ماند. او به همه دوربین‌های نظارتی و تمام چیزی که این سازمان‌های دولتی به آن‌ها دسترسی داشتند، دسترسی پیدا کرد تا بتواند Frank Castle، معروف به Punisher، را پیدا کند تا به او کمک کند تمام کسانی که تهدیدی برای خانواده‌اش بودند را بکشد تا بتواند به خانه بازگردد. حداقل، این چیزی است که من به یاد دارم. فیلم موضوع اصلی نیست. این نوع عمل—جاسوسی از تمام مردم، جاسوسی از تمام ترافیک اینترنت، ثبت هر بسته داده—همان چیزی است که نظارت گسترده نامیده می‌شود. این نوع نظارت همه را تحت تأثیر قرار می‌دهد.
 
-There is another kind of mass surveillance that is not done by governments or agencies; it is done by big tech companies like Google and Facebook. Being the biggest tech companies with the most internet users, they gather and collect a huge amount of data, sometimes even more than the government would do in some countries.
+### نظارت شرکت‌های بزرگ فناوری
 
-This kind of mass surveillance is different from that done by governments. The companies don’t deny it or claim it’s for stopping terrorism or national security; they simply do it to sell the data they gather.
+نوع دیگری از نظارت گسترده وجود دارد که توسط دولت‌ها یا آژانس‌ها انجام نمی‌شود؛ بلکه توسط شرکت‌های بزرگ فناوری مانند گوگل و فیسبوک انجام می‌شود. این شرکت‌ها که بزرگ‌ترین شرکت‌های فناوری با بیشترین تعداد کاربران اینترنتی هستند، حجم عظیمی از داده‌ها را جمع‌آوری می‌کنند، گاهی حتی بیشتر از چیزی که دولت‌ها در برخی کشورها انجام می‌دهند.
 
-They make tons of money from your data by using it for advertising. They track you across the internet. But there is no guarantee that it won't go beyond just money and advertising. They might work with government agencies in the future as well.
+این نوع نظارت گسترده با آنچه که توسط دولت‌ها انجام می‌شود، متفاوت است. این شرکت‌ها این کار را انکار نمی‌کنند یا ادعا نمی‌کنند که برای مبارزه با تروریسم یا امنیت ملی است؛ آن‌ها به‌سادگی این کار را برای فروش داده‌های جمع‌آوری‌شده انجام می‌دهند.
 
-### Public Exposure
+آن‌ها از داده‌های شما برای تبلیغات استفاده می‌کنند و از این طریق درآمد زیادی کسب می‌کنند. آن‌ها شما را در سراسر اینترنت ردیابی می‌کنند. اما هیچ تضمینی وجود ندارد که این موضوع فراتر از تبلیغات و پول نرود. ممکن است در آینده با سازمان‌های دولتی نیز همکاری کنند.
 
-When I was 8 years old, I created a personal website for myself, which had my name, email, and phone number on it. It took me months, going back and forth with Google and the blogging website, to take it down from the search engine results. This is what public exposure is: the data that is publicly available about you online. It can even be put out there by yourself when you didn't care about privacy. It is quite hard and sometimes impossible to take it down. In fact, it is always impossible to truly delete something you have put out there on the internet. That's why you should set your mindset to assume that if you say something, post something, or share something, it might stay on the internet forever. Even if it's encrypted, you need to assume it will be read one day—maybe not in your lifetime, but eventually.
+### افشای عمومی
 
-Prevention is the best treatment. The best way to keep your data private is to not make it public to start with. Keep in mind that nobody will call the cops on you for not signing up on Instagram with your real identity. It's the internet; you're not signing up for the military or opening an account at a bank. You don’t need to use your real name, phone number, and home address on the internet. Nobody needs to know these things about you. Keep your real phone number for those you know personally, not for every troll, doxxer, or anyone who might use the internet. The same goes for your real name and other personal details.
+وقتی ۸ ساله بودم، یک وبسایت شخصی برای خودم ساختم که نام، ایمیل و شماره تلفنم روی آن بود. ماه‌ها طول کشید تا با گوگل و وبلاگ مربوطه مکاتبه کنم تا آن را از نتایج موتور جستجو حذف کنم. این همان افشای عمومی است: داده‌هایی که به‌طور عمومی درباره شما در اینترنت موجود است. این داده‌ها حتی ممکن است توسط خودتان زمانی که اهمیتی به حریم خصوصی نمی‌دادید، منتشر شده باشد. حذف آن بسیار سخت و گاهی غیرممکن است. در واقع، همیشه غیرممکن است که چیزی را که در اینترنت منتشر کرده‌اید به‌طور کامل حذف کنید. به همین دلیل، باید این طرز فکر را داشته باشید که اگر چیزی می‌گویید، پست می‌کنید یا به اشتراک می‌گذارید، ممکن است برای همیشه در اینترنت باقی بماند. حتی اگر رمزگذاری شده باشد، باید فرض کنید که یک روز خوانده خواهد شد—شاید نه در طول زندگی شما، اما در نهایت.
 
-### Avoiding Censorship
+پیشگیری بهترین درمان است. بهترین راه برای خصوصی نگه داشتن داده‌های شما این است که از ابتدا آن‌ها را عمومی نکنید. به یاد داشته باشید که هیچ‌کس شما را برای ثبت‌نام نکردن در اینستاگرام با هویت واقعی‌تان دستگیر نخواهد کرد. این اینترنت است؛ شما در حال ثبت‌نام برای ارتش یا باز کردن حساب بانکی نیستید. نیازی نیست از نام واقعی، شماره تلفن و آدرس خانه‌تان در اینترنت استفاده کنید. هیچ‌کس نیازی به دانستن این اطلاعات درباره شما ندارد. شماره تلفن واقعی‌تان را برای کسانی که شخصاً می‌شناسید نگه دارید، نه برای هر ترول، داکسر یا کسی که ممکن است از اینترنت استفاده کند. همین موضوع برای نام واقعی و دیگر جزئیات شخصی شما صدق می‌کند.
 
-Sometimes you just need privacy and security to avoid censorship, whether it is applied by a government, a platform like Twitter, or a Matrix server administrator. Most of us, including myself, hate censorship. Censorship holds society back from growth; it's like shutting off innovation, creativity, and new ideas. It is usually imposed by those who need to protect their empires by force because they themselves know how wrong they are.
+### جلوگیری از سانسور
 
-In this scenario, privacy tools like VPNs, proxies, encrypted DNS, and Tor can help you bypass censorship. Privacy-friendly platforms like Mastodon, which allow you to host them yourself, enable you to speak freely without someone like Elon Musk getting mad at you.
+گاهی اوقات شما فقط به حریم خصوصی و امنیت نیاز دارید تا از سانسور جلوگیری کنید، چه این سانسور توسط دولت اعمال شده باشد، چه توسط یک پلتفرم مانند توییتر یا یک مدیر سرور Matrix. اکثر ما، از جمله خودم، از سانسور بیزاریم. سانسور جامعه را از رشد بازمی‌دارد؛ این مانند خاموش کردن نوآوری، خلاقیت و ایده‌های جدید است. معمولاً توسط کسانی اعمال می‌شود که برای حفاظت از امپراتوری‌های خود به زور متوسل می‌شوند، زیرا خودشان می‌دانند چقدر در اشتباه هستند.
 
-## The journey begins...
+در این سناریو، ابزارهای حریم خصوصی مانند VPN ها، پروکسی‌ها، DNS رمزگذاری‌شده و تور می‌توانند به شما کمک کنند تا سانسور را دور بزنید. پلتفرم‌های دوستانه با حریم خصوصی مانند Mastodon که به شما اجازه می‌دهند خودتان آن‌ها را میزبانی کنید، به شما امکان می‌دهند آزادانه صحبت کنید بدون اینکه کسی مانند ایلان ماسک از دست شما عصبانی شود.
 
-These were some of the common threats and ways to design your threat model. It can vary based on your unique situation; you need to address your own personal needs when it comes to threat modeling. But it's not something you should skip; otherwise, you would be lost and waste time and energy on things you don’t need. That was how I started my privacy journey. I didn’t design a threat model; instead, I tried to make myself bulletproof from every possible attack. Not only did I waste a year of my life, but I also gave myself long-lasting anxiety and paranoia for no reason, all because I didn’t plan out who I was protecting my data from.
+## سفر آغاز می‌شود...
+
+این‌ها برخی از تهدیدهای رایج و روش‌هایی برای طراحی مدل تهدید شما بودند. این می‌تواند بر اساس وضعیت منحصربه‌فرد شما متفاوت باشد؛ شما باید نیازهای شخصی خود را هنگام مدل‌سازی تهدید بررسی کنید. اما این کاری نیست که باید از آن صرف‌نظر کنید؛ در غیر این صورت، گم خواهید شد و وقت و انرژی خود را برای چیزهایی که نیازی به آن‌ها ندارید، هدر خواهید داد. این دقیقاً همان چیزی بود که باعث شروع سفر حریم خصوصی من شد. من به جای طراحی یک مدل تهدید، سعی کردم خودم را از هر حمله ممکن محافظت کنم. نه تنها یک سال از زندگی‌ام را هدر دادم، بلکه به خودم اضطراب و پارانویا طولانی‌مدت دادم، آن‌هم بی‌دلیل، فقط به این دلیل که برنامه‌ریزی نکردم که از چه کسانی می‌خواهم داده‌هایم را محافظت کنم.
 
 ---
 
-This concludes this chapter. In the next chapter, I will cover operational security, which, though not technical, is one of the most important aspects of privacy and anonymity online. Operational security, or opsec, involves preventing sensitive data from falling into the wrong hands.
+این فصل با این نتیجه‌گیری به پایان می‌رسد. در فصل بعدی به امنیت عملیاتی (Operational Security) می‌پردازم که با اینکه فنی نیست، یکی از مهم‌ترین جنبه‌های حریم خصوصی و ناشناس بودن آنلاین است. امنیت عملیاتی، یا opsec، شامل جلوگیری از دسترسی اطلاعات حساس به دست افراد نادرست می‌شود.
