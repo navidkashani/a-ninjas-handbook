@@ -1,68 +1,76 @@
-# Chapter 4
+# فصل ۴
 
-Continue imagining that you're playing Minecraft, like in Chapter 2. Now that you know the game, you have the locations written down, and you have some wood and a crafting table at your disposal, you can build tools like wooden axes, shovels, swords, a bed, and a shelter to sleep at night. You can kill mobs, pick rocks, and mine stones.
+همانطور که در فصل دوم تصور کردیم که در حال بازی Minecraft هستید، این‌بار نیز همین روند را ادامه می‌دهیم. حالا که بازی را می‌شناسید، مختصات مکان‌ها را نوشته‌اید و چوب و یک میز کار در اختیار دارید، می‌توانید ابزارهایی مانند تبرهای چوبی، بیل، شمشیر، تخت و سرپناهی برای خواب در شب بسازید. شما می‌توانید موجودات (mobs) را بکشید، سنگ‌ها را جمع‌آوری کرده و معادن را کاوش کنید.
 
-As you get more and more advanced, you'll move on to stone tools, then iron tools, and eventually diamond tools. If you've played the game, you know that reaching the diamond level requires deep adventures down scary caves and a lot of time and passion.
+همانطور که پیشرفت می‌کنید، از ابزارهای سنگی به ابزارهای آهنی و در نهایت به ابزارهای الماسی می‌رسید. اگر این بازی را بازی کرده باشید، می‌دانید که رسیدن به سطح الماس نیازمند ماجراجویی‌های عمیق در غارهای ترسناک و زمان و شور و شوق زیاد است.
 
-But this chapter is all about essentials—the wooden and stone tools of the privacy world. These are the bare minimums and basics that form the building blocks of your digital privacy and security. The essentials in the privacy world are different, though: they include encryption tools, anonymity tools, VPNs, emails, secure messengers, password managers, and multi-factor authentication tools. These things are the bare minimums for privacy and match most people's threat models.
+اما این فصل درباره اصول است—ابزارهای چوبی و سنگی دنیای حریم خصوصی. این‌ها حداقل‌ها و اصول اولیه‌ای هستند که پایه‌های حریم خصوصی و امنیت دیجیتال شما را تشکیل می‌دهند. البته اصول اولیه در دنیای حریم خصوصی متفاوت هستند: آن‌ها شامل ابزارهای رمزگذاری، ابزارهای ناشناس بودن، VPN ها، ایمیل‌های امن، پیام‌رسان‌های امن، ابزارهای مدیریت رمزعبور و ابزارهای احراز هویت چندعاملی هستند. این‌ها حداقل‌های حریم خصوصی هستند و با مدل تهدید اکثر افراد همخوانی دارند.
 
-## Passwords and Password Managers
+## رمزهای عبور و نرم‌افزارهای مدیریت رمز عبور
 
-Passwords are what protect our accounts, devices, and secrets. We need to take all actions to keep them safe, secure, and accessible only to ourselves. Trying to remember a hard password is a bad idea, and I've already explained why. If you use a single password for everything, no matter its complexity, if a data breach containing your account happens, then all your other accounts are accessible using that leaked password. And if you try remembering different passwords for every website, you will likely forget them all. Humans aren't that good at memorizing random passwords, especially if you don't recall them often.
+رمزهای عبور از حساب‌های کاربری، دستگاه‌ها و رازهای ما محافظت می‌کنند. ما باید تمام تلاش خود را برای ایمن نگه داشتن آن‌ها و دسترسی فقط خودمان به آن‌ها انجام دهیم. تلاش برای حفظ یک رمز عبور پیچیده ایده بدی است، و من قبلاً توضیح داده‌ام چرا. اگر از یک رمز عبور برای همه چیز استفاده کنید، بدون توجه به پیچیدگی آن، اگر یک نقض داده شامل حساب کاربری شما رخ دهد، تمام حساب‌های دیگر شما با استفاده از آن رمز عبور فاش شده در دسترس خواهند بود. و اگر سعی کنید برای هر وبسایت رمز عبور متفاوتی به خاطر بسپارید، احتمالاً همه آن‌ها را فراموش خواهید کرد. انسان‌ها در به خاطر سپردن رمزهای عبور تصادفی خیلی خوب نیستند، به‌ویژه اگر آن‌ها را زیاد به یاد نیاورند.
 
-Here, password managers come into play. Password managers are software, either online or offline, designed to store passwords and other notes and secrets safely and securely using encryption. The content inside them is accessible through one password, usually known as the master password. When using a password manager, you memorize a complex password as your master password, which is used to access other passwords inside your password manager's vault. Now you don't need to remember any other passwords or secrets.
+اینجا است که نرم افزارهای مدیریت رمزعبور وارد عمل می‌شوند. ابزارهای مدیریت رمزعبور نرم‌افزارهایی هستند، چه آنلاین یا آفلاین، که برای ذخیره رمزهای عبور و دیگر یادداشت‌ها و رازها به‌طور امن و با استفاده از رمزگذاری طراحی شده‌اند. محتوای داخل آن‌ها با یک رمز عبور قابل دسترسی است که معمولاً به عنوان رمز عبور اصلی شناخته می‌شود. هنگامی که از یک مدیر رمز عبور استفاده می‌کنید، یک رمز عبور پیچیده به عنوان رمز عبور اصلی خود به خاطر می‌سپارید که برای دسترسی به سایر رمزهای عبور داخل خزانه ابزار مدیریت رمز عبور استفاده می‌شود. حالا نیازی نیست هیچ رمز عبور یا راز دیگری را به یاد داشته باشید.
 
-A good password manager should have these characteristics:
+یک ابزار مدیریت رمز عبور خوب باید این ویژگی‌ها را داشته باشد:
 
-1. **Encryption:** It needs to be encrypted. Never use a password manager if you're unsure of its encryption.
-2. **Open Source:** They should be open-source. While open-source software isn't necessarily safer, being open-source allows us to check their code and the implementation of encryption to ensure they are safe.
-3. **Independent Audits:** They must be audited independently. We aren't cryptography analysis experts, so an audit will reveal if there are any flaws in the cryptographic implementation of the software's encryption.
-4. **Offline or Self-Hosted:** They should preferably be offline or self-hosted. There is no problem with a cloud-based password manager if it is implemented correctly. Even if their database gets leaked, the passwords should still be encrypted and secure. However, using a self-hosted or offline password manager, like Bitwarden (which can be self-hosted) or KeePass, minimizes the risk of leakage because it is far less likely that you will be targeted more than a password manager's server with thousands of users.
+1. **رمزگذاری:** باید رمزگذاری شده باشد. هرگز از ابزار مدیریت رمز عبوری که مطمئن از رمزگذاری آن نیستید، استفاده نکنید.
+2. **متن‌باز بودن:** باید متن‌باز باشد. در حالی که نرم‌افزارهای متن‌باز لزوماً ایمن‌تر نیستند، متن‌باز بودن به ما اجازه می‌دهد تا کد آن‌ها و پیاده‌سازی رمزگذاری را بررسی کنیم تا مطمئن شویم ایمن هستند.
+3. **بررسی‌های مستقل:** باید به‌طور مستقل بررسی شده باشند. ما کارشناسان تحلیل رمزنگاری نیستیم، بنابراین یک بررسی مشخص می‌کند که آیا در پیاده‌سازی رمزنگاری نرم‌افزار نقصی وجود دارد یا خیر.
+4. **آفلاین یا خود-میزبانی:** بهتر است آفلاین یا خود-میزبانی باشد. استفاده از یک ابزار مدیریت رمز عبور مبتنی بر کلاد اگر به‌درستی پیاده‌سازی شده باشد مشکلی ندارد. حتی اگر پایگاه داده آن‌ها فاش شود، رمزهای عبور همچنان باید رمزگذاری شده و ایمن باشند. با این حال، استفاده از مدیر رمز عبور خود-میزبانی یا آفلاین، مانند Bitwarden (که می‌توان آن را خود-میزبانی کرد) یا KeePass، ریسک فاش شدن را به حداقل می‌رساند، زیرا احتمال اینکه شما بیشتر از سرور یک ابزار مدیریت رمز عبور با هزاران کاربر هدف قرار بگیرید، بسیار کمتر است.
 
-### Choosing a Secure Master Password
+### انتخاب یک رمز عبور اصلی امن
 
-But how can you generate a secure master password? You need to forget the idea of passwords being random strings of letters, numbers, and punctuation characters. They become really hard for humans to memorize but not as hard for computers to crack through brute-force attacks. On the other hand, passphrases—lists of words separated by a character—are easy for humans to remember but much harder for computers to crack because they are usually longer and have more entropy than a typical password. They are easier to remember because they are words, and words have meanings to us, though not to computers. To computers, they still appear as random strings.
+اما چگونه می‌توانید یک رمز عبور اصلی امن تولید کنید؟ باید ایده رمزهای عبور به‌عنوان رشته‌های تصادفی از حروف، اعداد و علائم نگارشی را فراموش کنید. آن‌ها برای انسان‌ها بسیار سخت به خاطر سپرده می‌شوند، اما برای رایانه‌ها به اندازه‌ای که فکر می‌کنید سخت نیستند تا از طریق حملات brute-force شکسته شوند. از طرف دیگر، عبارت‌های عبور—فهرست‌هایی از کلمات که با یک کاراکتر جدا شده‌اند—برای انسان‌ها به‌راحتی به خاطر سپرده می‌شوند، اما برای رایانه‌ها بسیار سخت‌تر است که آن‌ها را بشکنند، زیرا معمولاً طولانی‌تر هستند و از پیچیدگی بیشتری نسبت به یک رمز عبور معمولی برخوردارند. آن‌ها برای انسان‌ها به دلیل کلمات و معانی‌شان قابل به‌خاطر سپردن هستند، اگرچه برای رایانه‌ها کلمات همچنان به‌صورت رشته‌های تصادفی ظاهر می‌شوند.
 
-These passphrases are called Diceware Passphrases. An example of a Diceware passphrase is: **Batboy Wielder Defective Squire Facial Reptilian Monologue Avatar**
+این عبارت‌های عبور به عنوان **عبارت‌های Diceware** شناخته می‌شوند. یک مثال از عبارت Diceware به این شکل است:  
+**Batboy Wielder Defective Squire Facial Reptilian Monologue Avatar**
 
 ![XKCD's password strength meme](./pictures/xkcd-password-strength.png)
 
-Avoid changing your master passwords too often unless you suspect that it has been compromised, to minimize the risk of forgetting it. Also, a good practice would be to have an encrypted backup of your passwords stored somewhere safe, ideally outside your devices and with a different password (in case you forget the main password), so you can restore your passwords and minimize the risk of losing access to your accounts.
+## حفاظت از رمزهای عبور اصلی
 
-## Email Security
-Email services aren't secure by nature; new technology usually comes before security, and that's true for email as well as for the earliest protocols of the internet. But this lack of security can be overcome to some extent by adding layers of encryption to email services.
+تغییر بیش از حد رمزهای عبور اصلی توصیه نمی‌شود، مگر اینکه مشکوک باشید که رمز عبور شما لو رفته است، زیرا این کار می‌تواند ریسک فراموشی آن را افزایش دهد. همچنین، یک روش خوب این است که یک پشتیبان رمزگذاری‌شده از رمزهای عبور خود را در مکانی امن، ترجیحاً خارج از دستگاه‌های خود و با یک رمز عبور متفاوت (در صورت فراموشی رمز اصلی) ذخیره کنید تا در صورت نیاز به بازیابی رمزهای عبور، خطر از دست دادن دسترسی به حساب‌هایتان به حداقل برسد.
 
-The first layer of encryption needs to be added to the communication channel. By "communication channel," I mean the channel that the data goes through to get to its destination, not the email content itself. This can be done by adding TLS to the transport layer of the email protocol. Nowadays, most email service providers have TLS enabled by default, but if you self-host your email service, you'll need to ensure transport layer encryption is enabled.
+## امنیت ایمیل
+خدمات ایمیل ذاتاً امن نیستند؛ فناوری‌های جدید معمولاً قبل از امنیت ظهور می‌کنند، و این در مورد ایمیل و اولین پروتکل‌های اینترنت نیز صادق است. اما این کمبود امنیت را می‌توان تا حدی با افزودن لایه‌های رمزگذاری به خدمات ایمیل جبران کرد.
 
-The second layer of encryption would be for the email content. This can be achieved using PGP or S/MIME encryption, but you will need to have your recipient's public key to send them encrypted emails. There are encrypted and privacy-focused email providers like ProtonMail and Tutanota that can eliminate this need for having the public key, provided that both sender and recipient use the same email provider. For example, two ProtonMail users can send each other encrypted emails without having to know each other's public keys.
+### لایه‌های رمزگذاری برای امنیت ایمیل
+اولین لایه رمزگذاری به کانال ارتباطی اضافه می‌شود. منظور از "کانال ارتباطی" کانالی است که داده‌ها از طریق آن به مقصد خود می‌رسند، نه محتوای ایمیل. این کار با افزودن TLS به لایه انتقال پروتکل ایمیل انجام می‌شود. امروزه اکثر ارائه‌دهندگان خدمات ایمیل به‌طور پیش‌فرض TLS را فعال کرده‌اند، اما اگر سرویس ایمیل خود را میزبانی می‌کنید، باید اطمینان حاصل کنید که رمزگذاری لایه انتقال فعال است.
 
-Even if you encrypt the content of the email, the metadata would still be unencrypted. This metadata can include:
+دومین لایه رمزگذاری برای محتوای ایمیل است. این کار می‌تواند با استفاده از رمزگذاری PGP یا S/MIME انجام شود، اما برای ارسال ایمیل رمزگذاری‌شده باید کلید عمومی گیرنده را داشته باشید. ارائه‌دهندگان ایمیل رمزگذاری‌شده و متمرکز بر حریم خصوصی مانند ProtonMail و Tutanota می‌توانند این نیاز به داشتن کلید عمومی را از بین ببرند، به‌شرطی که هم فرستنده و هم گیرنده از همان ارائه‌دهنده ایمیل استفاده کنند. به‌عنوان مثال، دو کاربر ProtonMail می‌توانند بدون نیاز به دانستن کلید عمومی یکدیگر، ایمیل‌های رمزگذاری‌شده ارسال کنند.
 
-1. **Sender Email Address:** The email address of the person sending the email.
-2. **Recipient Email Address(es):** The email address(es) of the recipient(s) of the email.
-3. **Timestamps:** The date and time when the email was sent and sometimes when it was received.
-4. **Subject Line:** The subject line of the email, which summarizes its content.
-5. **Message-ID:** A unique identifier for the email message.
-6. **Return-Path:** The email address to which bounced emails are returned.
-7. **Received:** Information about the email servers and networks through which the email passed during transmission.
-8. **X-Mailer:** An optional field indicating the email client or software used to compose the email.
-9. **MIME-Version:** The version of the Multipurpose Internet Mail Extensions (MIME) protocol used in the email.
-10. **Content-Type:** The type and format of the message content, such as text/plain for plain text or text/html for HTML-formatted content.
+حتی اگر محتوای ایمیل را رمزگذاری کنید، متاداده‌های آن همچنان رمزگذاری‌نشده باقی می‌مانند. این متاداده‌ها می‌توانند شامل موارد زیر باشند:
 
-## Messaging Security
+1. **آدرس ایمیل فرستنده:** آدرس ایمیل شخصی که ایمیل را ارسال کرده است.
+2. **آدرس ایمیل گیرنده(ها):** آدرس ایمیل گیرنده(ها) ایمیل.
+3. **زمان‌سنجی‌ها:** تاریخ و زمان ارسال و گاهی اوقات زمان دریافت ایمیل.
+4. **خط موضوع:** خط موضوع ایمیل که خلاصه‌ای از محتوای آن است.
+5. **شناسه پیام:** شناسه منحصربه‌فردی برای پیام ایمیل.
+6. **مسیر بازگشت:** آدرس ایمیل که ایمیل‌های بازگشتی به آن ارسال می‌شوند.
+7. **دریافت‌شده:** اطلاعات مربوط به سرورهای ایمیل و شبکه‌هایی که ایمیل در حین انتقال از آن‌ها عبور کرده است.
+8. **X-Mailer:** یک فیلد اختیاری که نشان می‌دهد ایمیل با چه نرم‌افزاری نوشته شده است.
+9. **نسخه MIME:** نسخه‌ای از پروتکل MIME که در ایمیل استفاده شده است.
+10. **نوع محتوا:** نوع و فرمت محتوای پیام، مانند متن ساده یا HTML.
 
-Most chat messages aren't secure either. For instance, Telegram, a messaging app that claims to be encrypted and secure, doesn’t even have end-to-end encryption (E2EE) enabled by default. Even when it does offer E2EE, it is only available on mobile clients, meaning you cannot use Telegram securely with the desktop client. Worse, Telegram breaks the first and most important rule of cryptography, which states, "Do not roll your own crypto," by using a self-rolled cryptographic scheme for its E2E encrypted chats. Additionally, Telegram's servers are all closed source; nobody knows how the messages and data on Telegram are stored, whether they are encrypted, or who has access to these servers. Telegram is a perfect example of a poor messaging app in my opinion. While there are messaging apps that are worse than Telegram, they do not claim to be private and secure. Therefore, I will use Telegram as a bad example to explain what a messaging app should have.
+## امنیت پیام‌رسانی
 
-- **End-to-End Encryption:** A secure messaging app should offer E2EE with a known and audited cryptographic scheme and implementation. Telegram provides E2EE to some extent, but its cryptography is questionable.
-- **Anonymous Sign-Up:** A private messaging app should allow you to sign up anonymously, typically using an email. Telegram and Signal use phone numbers, which is reasonable for reducing spam, but there are ways around it, such as buying an anonymous VoIP number using Monero or cash.
-- **Transparency:** A secure messaging app should be transparent about how they store data, what data they store, and under what circumstances the data can be handed over to authorities.
-- **Metadata Collection:** Every message and account has some metadata that isn't usually encrypted. Telegram collects a lot of metadata about you, including your name, sign-up date, IP addresses, 2FA email, phone number, contacts, people you frequently talk to, and all your messages (if you do not use E2EE). They can hand this data over to authorities if required. In contrast, Signal collects little to no metadata about you and doesn’t have much to hand over even if a court order compels them to do so.
-- **Popularity:** We can't make everyone use the same app. If everyone I know uses Telegram, I have to use Telegram too. This is a significant factor for a messaging app. I might use Matrix over Signal, despite Signal having better security and collecting less metadata than Matrix, because most people I talk with use Matrix, so I have to make some sacrifices.
+بیشتر پیام‌های چت نیز امن نیستند. به‌عنوان مثال، تلگرام که به‌عنوان یک اپلیکیشن پیام‌رسان رمزگذاری‌شده و امن شناخته می‌شود، به‌طور پیش‌فرض رمزگذاری انتها به انتها (E2EE) ندارد. حتی زمانی که این امکان را ارائه می‌دهد، فقط در کلاینت‌های موبایل فعال است و شما نمی‌توانید از تلگرام به‌صورت ایمن در کلاینت دسکتاپ استفاده کنید. علاوه بر این، تلگرام اولین و مهم‌ترین قانون رمزنگاری را نقض می‌کند: "رمزنگاری خود را نسازید." تلگرام از یک طرح رمزنگاری خودساخته برای چت‌های E2EE خود استفاده می‌کند که باعث می‌شود امنیت آن زیر سؤال برود. همچنین، سرورهای تلگرام متن‌باز نیستند؛ هیچ‌کس نمی‌داند پیام‌ها و داده‌ها روی تلگرام چگونه ذخیره می‌شوند، آیا رمزگذاری شده‌اند یا چه کسی به این سرورها دسترسی دارد. تلگرام در نظر من مثال خوبی از یک پیام‌رسان ضعیف است. در حالی که پیام‌رسان‌هایی بدتر از تلگرام نیز وجود دارند، آن‌ها ادعای حریم خصوصی و امنیت نمی‌کنند. بنابراین، من تلگرام را به‌عنوان یک مثال بد استفاده می‌کنم تا توضیح دهم که یک اپلیکیشن پیام‌رسان امن باید چه ویژگی‌هایی داشته باشد.
 
-Your threat model plays a huge role here. You might not care if your messages with friends are readable by Telegram or any other company. It depends on you and your threat model.
+### ویژگی‌های یک پیام‌رسان امن
+- **رمزگذاری انتها به انتها:** یک پیام‌رسان امن باید E2EE را با یک طرح رمزنگاری شناخته‌شده و بررسی‌شده ارائه دهد. تلگرام تا حدودی این ویژگی را دارد، اما رمزنگاری آن قابل اعتماد نیست.
+- **ثبت‌نام ناشناس:** یک پیام‌رسان خصوصی باید به شما اجازه دهد به‌طور ناشناس ثبت‌نام کنید، معمولاً با استفاده از یک ایمیل. تلگرام و سیگنال از شماره تلفن استفاده می‌کنند که برای کاهش هرزنامه منطقی است، اما روش‌هایی برای دور زدن آن وجود دارد، مانند خرید یک شماره VoIP ناشناس با استفاده از Monero یا پول نقد.
+- **شفافیت:** یک پیام‌رسان امن باید شفاف باشد که داده‌ها چگونه ذخیره می‌شوند، چه داده‌هایی ذخیره می‌شوند و در چه شرایطی ممکن است داده‌ها به مقامات تحویل داده شوند.
+- **جمع‌آوری متاداده:** هر پیام و حسابی دارای متاداده است که معمولاً رمزگذاری نمی‌شود. تلگرام مقدار زیادی متاداده درباره شما جمع‌آوری می‌کند، از جمله نام، تاریخ ثبت‌نام، آدرس‌های IP، ایمیل 2FA، شماره تلفن، مخاطبین، افرادی که با آن‌ها به‌طور مکرر صحبت می‌کنید و تمام پیام‌های شما (اگر از E2EE استفاده نکنید). آن‌ها می‌توانند این داده‌ها را در صورت لزوم به مقامات تحویل دهند. در مقابل، سیگنال اطلاعات کمی درباره شما جمع‌آوری می‌کند و حتی اگر با حکم دادگاه مجبور به تحویل داده‌ها شود، چیزی برای تحویل دادن ندارد.
+- **محبوبیت:** ما نمی‌توانیم همه را مجبور کنیم از یک اپلیکیشن استفاده کنند. اگر همه کسانی که می‌شناسم از تلگرام استفاده می‌کنند، من هم مجبورم از تلگرام استفاده کنم. این یک عامل مهم برای یک پیام‌رسان است. ممکن است من به‌جای سیگنال از Matrix استفاده کنم، علی‌رغم اینکه سیگنال امنیت بهتری دارد و متاداده کمتری جمع‌آوری می‌کند، زیرا اکثر افرادی که با آن‌ها صحبت می‌کنم از Matrix استفاده می‌کنند و مجبور به انجام برخی فداکاری‌ها هستم.
 
-## Choosing a secure VPN
-Normally, when you use the internet, your ISP can technically see all the data passing through the network. However, with most websites and services supporting TLS/SSL encryption today, your ISP cannot see much of the data, but they can still determine the IP address and domain name that you're requesting. Anything that your ISP can see, your VPN provider can see as well. Because of this, VPNs are mostly a shift in trust. For example, my ISP logs a lot of information that I prefer not to be logged and retains this data for a long period of time. However, the VPN provider I use (ProtonVPN and Mullvad) promises not to log anything. They are reputable, privacy-focused VPN providers that allow anonymous payments, especially Mullvad VPN. In this scenario, I prefer using the VPN all the time because I trust it more than my ISP. Sometimes, using a VPN is about bypassing censorship. VPNs are great for this as they encrypt the data passing through the network, making it difficult for censorship systems to detect. But even in this case, it is still a matter of shifting trust, and the VPN should collect little to no data about us and our activities.
+مدل تهدید شما در اینجا نقش بزرگی دارد. ممکن است برای شما مهم نباشد که تلگرام یا هر شرکت دیگری پیام‌های شما را با دوستانتان بخواند. این بستگی به شما و مدل تهدیدتان دارد.
+
+## انتخاب یک VPN امن
+
+به‌طور معمول، هنگامی که از اینترنت استفاده می‌کنید، ISP شما می‌تواند به‌صورت فنی تمام داده‌هایی را که از طریق شبکه عبور می‌کند، ببیند. با این حال، با توجه به اینکه اکثر وبسایت‌ها و سرویس‌ها از رمزگذاری TLS/SSL پشتیبانی می‌کنند، ISP شما نمی‌تواند بیشتر داده‌ها را ببیند، اما همچنان می‌تواند آدرس IP و نام دامنه‌ای که درخواست می‌کنید را تشخیص دهد. هر چیزی که ISP شما می‌تواند ببیند، ارائه‌دهنده VPN شما نیز می‌تواند ببیند. به همین دلیل، استفاده از VPN به‌طور عمده به معنای تغییر محل اعتماد است. به‌عنوان مثال، ISP من اطلاعات زیادی را لاگ می‌کند که ترجیح می‌دهم لاگ نشود و این اطلاعات را برای مدت طولانی نگه می‌دارد. با این حال، ارائه‌دهنده VPN من (ProtonVPN و Mullvad) قول می‌دهد که هیچ چیزی لاگ نکند. آن‌ها VPN های معتبری هستند که بر حریم خصوصی تمرکز دارند و اجازه پرداخت ناشناس می‌دهند، به‌ویژه Mullvad VPN. در این سناریو، من ترجیح می‌دهم همیشه از VPN استفاده کنم، زیرا بیشتر از ISP به آن اعتماد دارم.
+
+گاهی اوقات، استفاده از VPN به‌منظور دور زدن سانسور است. VPN ها برای این منظور عالی هستند، زیرا داده‌های عبوری از شبکه را رمزگذاری می‌کنند و سیستم‌های سانسور را در تشخیص آن‌ها دچار مشکل می‌کنند. اما حتی در این حالت نیز، موضوع تغییر محل اعتماد است و VPN باید داده‌های کمی درباره ما و فعالیت‌های ما جمع‌آوری کند.
 
 ```mermaid
 graph TD;
@@ -78,56 +86,54 @@ graph TD;
     ISP -.->|Encrypted Data| Destination
 ```
 
-For me, a VPN provider should have the following characteristics:
+برای من، یک ارائه‌دهنده VPN باید ویژگی‌های زیر را داشته باشد:
 
-- **Strong Encryption:** It should use secure encryption methods and protocols, such as WireGuard and OpenVPN, and an encryption method that supports perfect forward secrecy. Perfect forward secrecy ensures that encrypted data cannot be accessed even if the actual key is compromised.
-- **No-Logs Policy:** A private VPN provider should not keep logs of user activities, connections, timestamps, or IP addresses. For example, VPN providers like Mullvad, ProtonVPN, and Windscribe do not collect much about your traffic.
-- **DNS Leak Protection:** A secure and private VPN should ensure that DNS queries are routed through the VPN tunnel, not through the user's ISP. This prevents the leaking of visited websites to the ISP.
-- **Kill Switch:** A private VPN should provide a feature that disconnects the user from the internet if the VPN connection drops, ensuring that no data is transmitted over an unencrypted connection.
-- **IP Address Masking:** The VPN should hide the user's real IP with one provided by the VPN servers.
-- **Multi-Hop:** A useful feature for a VPN to have is multi-hopping, which routes user traffic through multiple servers in different locations, adding an extra layer of security and privacy.
-- **Secure Authentication:** An ideal VPN provider would have multi-factor authentication systems (like TOTP or even SMS/email authentication codes) to protect user accounts.
-- **Private Servers:** It should use private or dedicated servers rather than shared ones to reduce the risk of data interception.
-- **Obfuscation:** It should provide obfuscation features to bypass censorship systems like Deep Packet Inspection (DPI), making the VPN traffic appear like regular traffic, usually using an obfuscation protocol like obfs4 or ScrambleSuit.
-- **Jurisdiction:** It is better to be based in a country with strong privacy laws and outside the influence of surveillance alliances like the Five Eyes, Nine Eyes, or Fourteen Eyes.
-- **Regular Audits:** It should have regular security audits by independent third parties to verify the no-logs policy and the overall security of the service.
+- **رمزگذاری قوی:** باید از روش‌ها و پروتکل‌های رمزگذاری امن، مانند WireGuard و OpenVPN، استفاده کند و روشی برای رمزگذاری داشته باشد که از **Perfect Forward Secrecy** پشتیبانی کند. Perfect Forward Secrecy تضمین می‌کند که حتی اگر کلید اصلی به خطر بیفتد، داده‌های رمزگذاری‌شده قابل دسترسی نباشند.
+- **سیاست عدم نگهداری لاگ‌ها:** یک ارائه‌دهنده VPN خصوصی نباید لاگ‌های فعالیت‌های کاربر، اتصالات، زمان‌سنجی‌ها یا آدرس‌های IP را نگهداری کند. به‌عنوان مثال، ارائه‌دهندگانی مانند Mullvad، ProtonVPN و Windscribe اطلاعات زیادی درباره ترافیک شما جمع‌آوری نمی‌کنند.
+- **محافظت در برابر نشت DNS:** یک VPN امن و خصوصی باید اطمینان حاصل کند که درخواست‌های DNS از طریق تونل VPN ارسال می‌شوند، نه از طریق ISP کاربر. این کار از نشت اطلاعات مربوط به وبسایت‌های بازدیدشده به ISP جلوگیری می‌کند.
+- **قطع‌کن (Kill Switch):** یک VPN خصوصی باید ویژگی‌ای داشته باشد که در صورت قطع اتصال VPN، کاربر را از اینترنت جدا کند تا اطمینان حاصل شود که هیچ داده‌ای از طریق یک اتصال رمزگذاری‌نشده ارسال نمی‌شود.
+- **پنهان‌سازی آدرس IP:** VPN باید آدرس IP واقعی کاربر را با یکی از آدرس‌های IP سرورهای VPN جایگزین کند.
+- **مسیر چندگانه (Multi-Hop):** یک ویژگی مفید برای VPN این است که ترافیک کاربر از طریق چندین سرور در مکان‌های مختلف عبور کند و یک لایه اضافی از امنیت و حریم خصوصی ایجاد کند.
+- **احراز هویت امن:** یک ارائه‌دهنده VPN ایده‌آل باید سیستم‌های احراز هویت چندعاملی (مانند TOTP یا حتی کدهای احراز هویت از طریق پیامک/ایمیل) داشته باشد تا از حساب‌های کاربری محافظت کند.
+- **سرورهای خصوصی:** باید از سرورهای خصوصی یا اختصاصی به‌جای سرورهای مشترک استفاده کند تا خطر رهگیری داده‌ها کاهش یابد.
+- **پنهان‌سازی (Obfuscation):** باید ویژگی‌های پنهان‌سازی برای دور زدن سیستم‌های سانسور مانند **Deep Packet Inspection** (DPI) داشته باشد که ترافیک VPN را به شکل ترافیک عادی درآورد، معمولاً با استفاده از پروتکل پنهان‌سازی مانند obfs4 یا ScrambleSuit.
+- **حوزه قضایی:** بهتر است که در کشوری با قوانین قوی حفظ حریم خصوصی مستقر باشد و خارج از نفوذ ائتلاف‌های نظارتی مانند Five Eyes، Nine Eyes یا Fourteen Eyes باشد.
+- **بررسی‌های منظم:** باید بررسی‌های امنیتی منظم توسط اشخاص ثالث مستقل داشته باشد تا سیاست عدم نگهداری لاگ‌ها و امنیت کلی سرویس تأیید شود.
 
-These characteristics can vary based on the user's threat model. Not everyone cares about multi-hops and no-logs policies. You should always act based on your threat model.
+این ویژگی‌ها بسته به مدل تهدید کاربر متفاوت است. همه افراد به ویژگی‌هایی مانند مسیر چندگانه یا سیاست‌های عدم نگهداری لاگ‌ها اهمیت نمی‌دهند. همیشه باید بر اساس مدل تهدید خود عمل کنید.
 
-## Operating Systems Security/Privacy
+## امنیت/حریم خصوصی سیستم‌عامل‌ها
 
-Operating systems are software that communicate with the hardware and manage hardware resources, such as memory allocation, task scheduling, I/O processes, and more. While these are core functionalities of an operating system (or its kernel), layers of software stack up on the kernel to create a usable operating system, which can greatly impact the privacy and security of its users.
+سیستم‌عامل‌ها نرم‌افزاری هستند که با سخت‌افزار ارتباط برقرار می‌کنند و منابع سخت‌افزاری مانند تخصیص حافظه، زمان‌بندی وظایف، فرآیندهای I/O و موارد دیگر را مدیریت می‌کنند. در حالی که این‌ها از عملکردهای اصلی یک سیستم‌عامل (یا هسته آن) هستند، لایه‌های نرم‌افزار روی هسته انباشته می‌شوند تا یک سیستم‌عامل قابل استفاده ایجاد کنند، که می‌تواند تأثیر زیادی بر حریم خصوصی و امنیت کاربران داشته باشد.
 
-The main operating systems I will discuss are iOS, Android, Linux, Windows, and macOS:
+### اندروید
 
-### Android
+**پروژه متن‌باز اندروید (AOSP)** یک سیستم‌عامل مناسب و امن است که بوت‌های تأییدشده، محافظت از اپلیکیشن‌ها (یک ویژگی امنیتی مهم) و سیستم مدیریت مجوز قوی دارد.
 
-The **Android Open Source Project (AOSP)** is a decent and secure operating system, featuring verified boots, app sandboxing (a crucial security feature), and a robust permission management system.
+با این حال، زمانی که یک گوشی اندرویدی می‌خرید، سیستم‌عامل آن معمولاً نسخه اصلی اندروید نیست. اغلب با بسیاری از اپلیکیشن‌ها و ویژگی‌های اضافی که عمدتاً برای جمع‌آوری داده‌ها از فعالیت‌های کاربران طراحی شده‌اند، تغییر داده می‌شود.
 
-However, when you buy an Android phone, the operating system on it is usually not vanilla Android. It is often modified with many additional apps and features primarily used for gathering data from user activities.
+برای رفع این مشکل، ROMهای سفارشی طراحی شده‌اند. حتی بدون ROMهای سفارشی، بسیاری از ویژگی‌های غیرضروری را می‌توان غیرفعال کرد تا جمع‌آوری داده‌ها به حداقل برسد.
 
-There are custom ROMs designed to address this issue. Even without custom ROMs, many unnecessary features can be disabled to minimize data collection.
+نکته مهم‌تر از جمع‌آوری داده‌ها این است که اطمینان حاصل کنید گوشی با آخرین پچ‌های امنیتی به‌روزرسانی شده و از روت کردن خودداری کنید (زیرا می‌تواند محافظت اپلیکیشن را از بین ببرد و امنیت گوشی را به خطر بیندازد).
 
-More important than data collection is ensuring the phone is updated with the latest security patches if available, and avoiding rooting (as it can break app sandboxing and compromise the phone's security).
-
-On some phones, like Google Pixels, you can install GrapheneOS, a very secure and privacy-respecting Android custom ROM.
+روی برخی از گوشی‌ها، مانند Google Pixel، می‌توانید **GrapheneOS** نصب کنید، که یک ROM سفارشی اندرویدی بسیار امن و محترم به حریم خصوصی است.
 
 ### iOS
 
-Unlike Android, iOS is not open source, so we cannot be sure how it operates internally, and there is not much you can do to change it if you have an iPhone. However, you can tweak the settings and disable unnecessary features to harden it for your needs.
+برخلاف اندروید، iOS متن‌باز نیست، بنابراین نمی‌توانیم مطمئن باشیم که به‌صورت داخلی چگونه کار می‌کند، و اگر یک آیفون دارید، کار زیادی نمی‌توانید برای تغییر آن انجام دهید. با این حال، می‌توانید تنظیمات را تغییر داده و ویژگی‌های غیرضروری را برای رفع نیازهای خود غیرفعال کنید.
 
-### Windows
+### ویندوز
 
-Microsoft Windows is one of the most common PC operating systems, but its security and privacy are not admirable. It sends a lot of telemetry data to Microsoft, it is closed source, making it harder to find and fix security bugs, so many zero-day vulnerabilities exist for Windows.
+مایکروسافت ویندوز یکی از رایج‌ترین سیستم‌عامل‌های رایانه‌های شخصی است، اما امنیت و حریم خصوصی آن قابل تحسین نیست. مقدار زیادی داده‌های telemetry به مایکروسافت ارسال می‌کند و متن‌باز نیست، که رفع باگ‌های امنیتی را سخت‌تر می‌کند و تعداد زیادی آسیب‌پذیری روز صفر برای ویندوز وجود دارد.
 
-There might be settings to tweak and adjust, but the safer option would be to install a Linux distribution and use Windows in an isolated virtual machine if you absolutely need to have a Windows machine.
+شاید تنظیماتی برای تغییر و تنظیم وجود داشته باشد، اما گزینه امن‌تر این است که یک توزیع لینوکس نصب کنید و در صورت نیاز مطلق به داشتن یک دستگاه ویندوزی، از ویندوز در یک ماشین مجازی ایزوله استفاده کنید.
 
-### Linux
+### لینوکس
 
-Linux is a free and open-source operating system with excellent privacy features. Because it is open source and has been around for a long time, very few zero-day vulnerabilities exist for it.
+لینوکس یک سیستم‌عامل رایگان و متن‌باز با ویژگی‌های عالی حفظ حریم خصوصی است. از آنجا که متن‌باز است و مدت‌هاست که وجود دارد، تعداد کمی از آسیب‌پذیری‌های روز صفر برای آن وجود دارد.
 
-Linux has thousands of distributions to choose from, making it suitable for any needs you might have. There are also many variations of the Linux kernel itself, such as linux-hardened, which is designed to have more security features enabled by default.
+لینوکس هزاران توزیع برای انتخاب دارد، که آن را برای هر نیازی که ممکن است داشته باشید، مناسب می‌کند. همچنین انواع مختلفی از هسته لینوکس، مانند **linux-hardened**، وجود دارند که برای داشتن ویژگی‌های امنیتی بیشتر به‌طور پیش‌فرض طراحی شده‌اند.
 
 ---
 
-These were the bare minimums of privacy and security. As the book progresses, the chapters will become more technically advanced and more focused on anonymity. The next chapter will be all about encryption, as it is the building block of security in the online world.
+این‌ها حداقل‌های حریم خصوصی و امنیت بودند. با پیشرفت کتاب، فصل‌ها بیشتر فنی خواهند شد و تمرکز بیشتری بر ناشناس بودن خواهند داشت. فصل بعدی درباره رمزگذاری خواهد بود، زیرا این اساس امنیت در دنیای آنلاین است.
