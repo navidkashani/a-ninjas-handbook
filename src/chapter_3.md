@@ -1,150 +1,150 @@
-# Chapter 3
+# فصل ۳
 
-In 2012, the FBI caught a hacker with the nickname w0rmer after he hacked several U.S. law enforcement websites and released their data online. You might think there was a big and complicated operation to catch this hacker, but no, w0rmer just had bad opsec. He handed the FBI his exact geo-location simply because he replaced the FBI's database with a picture of his girlfriend from the neck down in a bikini, holding a sign saying "PwNd by w0rmer & CabinCr3w, <3 u BiTch's!" It wasn’t that they figured out who the girl was from that picture; w0rmer forgot to (or didn’t care to) erase the EXIF metadata of the picture. The FBI looked at the picture, and in its metadata, they found that it was taken with an iPhone 4, with GPS coordinates of an outer-Melbourne suburb. w0rmer had overshared his location through a picture.
+در سال ۲۰۱۲، FBI یک هکر با نام مستعار w0rmer را دستگیر کرد، بعد از اینکه او چندین وبسایت نیروی انتظامی ایالات متحده را هک کرد و داده‌های آن‌ها را به صورت آنلاین منتشر کرد. شاید فکر کنید عملیات بزرگی برای دستگیری این هکر انجام شد، اما نه، w0rmer فقط امنیت عملیاتی (opsec) ضعیفی داشت. او به‌سادگی مکان دقیق خود را به FBI داد، چرا که پایگاه داده FBI را با تصویری از دوست‌دخترش که از گردن به پایین در بیکینی بود و تابلوئی در دست داشت که روی آن نوشته شده بود "PwNd by w0rmer & CabinCr3w, <3 u BiTch's!" جایگزین کرده بود. FBI از روی تصویر متوجه نشد که دختر چه کسی است؛ w0rmer فراموش کرد (یا اهمیتی نداد) که متاداده EXIF تصویر را پاک کند. FBI تصویر را بررسی کرد و در متاداده آن متوجه شد که عکس با یک iPhone 4 گرفته شده است و مختصات GPS مربوط به حومه‌ای در ملبورن را نشان می‌دهد. w0rmer مکان خود را از طریق یک تصویر فاش کرد.
 
-The electrical tape on your webcam and your Tor browser inside Whonix OS can't help you if you share too much about yourself, if you over time tend to expose your real identity piece by piece. Having good opsec often means having control and awareness of what you're sharing when talking to people or when posting online.
+چسب الکتریکی روی وب‌کم‌تان و مرورگر تور داخل Whonix OS نمی‌تواند به شما کمک کند اگر بیش از حد درباره خودتان افشاگری کنید، اگر به مرور زمان هویت واقعی‌تان را تکه‌تکه فاش کنید. داشتن امنیت عملیاتی خوب به معنای داشتن کنترل و آگاهی از چیزهایی است که در هنگام صحبت با دیگران یا ارسال مطالب آنلاین به اشتراک می‌گذارید.
 
-## Identify the sensitive data and information
+## شناسایی داده‌ها و اطلاعات حساس
 
-The first step in improving your OPSEC is identifying the data that is sensitive to you. To do this, you need to refer to your threat model. Assess what threats are common and which data would have the most severe consequences if it falls into the wrong hands. Then, prioritize the information based on the severity of the consequences.
+اولین گام در بهبود OPSEC شناسایی داده‌هایی است که برای شما حساس هستند. برای این کار، باید به مدل تهدید خود مراجعه کنید. ارزیابی کنید که چه تهدیدهایی رایج هستند و کدام داده‌ها در صورت افتادن به دست افراد نادرست، پیامدهای جدی‌تری خواهند داشت. سپس، اطلاعات را بر اساس شدت پیامدها اولویت‌بندی کنید.
 
-Having this plan in place would reduce the unnecessary caution you need to take. Being overly cautious about everything you say or share can consume a lot of mental energy and increase the chance of slipping up. By focusing on what is sensitive based on your unique situation and threat model, you can minimize the mental effort required to maintain OPSEC.
+داشتن این برنامه باعث می‌شود که نیازی به احتیاط بیش از حد نداشته باشید. بیش از حد محتاط بودن درباره هر چیزی که می‌گویید یا به اشتراک می‌گذارید، می‌تواند انرژی ذهنی زیادی را مصرف کند و احتمال خطا را افزایش دهد. با تمرکز بر روی آنچه که بر اساس وضعیت منحصربه‌فرد و مدل تهدیدتان حساس است، می‌توانید تلاش ذهنی لازم برای حفظ امنیت عملیاتی را به حداقل برسانید.
 
-### Common Sensitive Information
+### اطلاعات حساس رایج
 
-These are some of the most common types of sensitive information that an individual might want to protect, but it all depends on your unique situation and whether these match your threat model.
+این‌ها برخی از رایج‌ترین انواع اطلاعات حساس هستند که ممکن است فرد بخواهد از آن‌ها محافظت کند، اما همه چیز بستگی به وضعیت منحصربه‌فرد شما دارد و اینکه آیا این موارد با مدل تهدید شما همخوانی دارد یا خیر.
 
-- **Personally Identifiable Information (PII):** Information that can uniquely identify an individual.
-  - **Full legal name:** Your complete legal name as recorded on your identification documents.
-  - **Addresses:** Your physical location where you live or work.
-  - **Phone numbers:** Numbers assigned to your phone lines, including mobile and landline numbers.
-  - **Email addresses:** Email accounts that are tied to your personal identity.
-  - **Date of birth:** The date you were born, typically used for verification purposes, and can be used to narrow down your identity.
-  - **National identification numbers:** Unique numbers issued by governments to identify citizens of a country, but even something like a library card number can be sensitive if tied to your personal identity.
+- **اطلاعات شناسایی شخصی (PII):** اطلاعاتی که می‌تواند فردی را به‌طور منحصربه‌فرد شناسایی کند.
+  - **نام کامل قانونی:** نام کامل شما که در مدارک شناسایی‌تان ثبت شده است.
+  - **آدرس‌ها:** موقعیت فیزیکی که در آن زندگی یا کار می‌کنید.
+  - **شماره‌های تلفن:** شماره‌هایی که به خطوط تلفن شما اختصاص داده شده است، از جمله شماره‌های موبایل و خط ثابت.
+  - **آدرس‌های ایمیل:** حساب‌های ایمیلی که با هویت شخصی شما مرتبط هستند.
+  - **تاریخ تولد:** تاریخی که متولد شده‌اید، که معمولاً برای اهداف تأیید هویت استفاده می‌شود و می‌تواند برای محدود کردن هویت شما مورد استفاده قرار گیرد.
+  - **شماره‌های شناسایی ملی:** شماره‌های منحصربه‌فردی که توسط دولت‌ها برای شناسایی شهروندان یک کشور صادر می‌شوند، اما حتی چیزی مانند شماره کارت کتابخانه نیز اگر با هویت شخصی شما مرتبط باشد، می‌تواند حساس باشد.
 
-- **Financial Information:** Data related to your financial transactions and accounts. Some of this information can be PII as well.
-  - **Bank account numbers:** Unique numbers assigned to your bank accounts for transactions.
-  - **Credit/debit card numbers:** Numbers found on your payment cards used for purchasing goods and services.
-  - **Payment information (PayPal, Venmo, etc.):** Details used to process financial transactions through payment services, like your PayPal email or Venmo username.
-  - **Financial statements:** Documents detailing your financial transactions and balances.
-  - **Tax information:** Details related to your tax filings and records.
+- **اطلاعات مالی:** داده‌های مرتبط با تراکنش‌ها و حساب‌های مالی شما. برخی از این اطلاعات می‌توانند PII نیز باشند.
+  - **شماره حساب‌های بانکی:** شماره‌های منحصربه‌فردی که به حساب‌های بانکی شما برای تراکنش‌ها اختصاص داده شده است.
+  - **شماره‌های کارت‌های اعتباری/دبیت:** شماره‌های موجود بر روی کارت‌های پرداخت شما که برای خرید کالاها و خدمات استفاده می‌شوند.
+  - **اطلاعات پرداخت (PayPal، Venmo و غیره):** جزئیاتی که برای پردازش تراکنش‌های مالی از طریق خدمات پرداخت مانند ایمیل PayPal یا نام کاربری Venmo شما استفاده می‌شود.
+  - **صورت‌حساب‌های مالی:** اسناد جزئیات تراکنش‌های مالی و مانده حساب‌های شما.
+  - **اطلاعات مالیاتی:** جزئیات مربوط به اظهارنامه‌های مالیاتی و سوابق شما.
 
-- **Account Credentials:** Information used to access online accounts.
-  - **Usernames**
-  - **Passwords**
-  - **Security questions and answers:** Predefined questions with answers used for account recovery.
-  - **Two-factor authentication (2FA) codes:** Temporary codes used in conjunction with passwords for additional security.
+- **اطلاعات دسترسی به حساب‌ها:** اطلاعاتی که برای دسترسی به حساب‌های آنلاین شما استفاده می‌شود.
+  - **نام‌های کاربری**
+  - **رمزهای عبور**
+  - **سؤالات و پاسخ‌های امنیتی:** سؤالات از پیش تعیین‌شده با پاسخ‌هایی که برای بازیابی حساب استفاده می‌شوند.
+  - **کدهای احراز هویت دو مرحله‌ای (2FA):** کدهای موقتی که همراه با رمز عبور برای امنیت بیشتر استفاده می‌شوند.
 
-- **Digital Footprint and Metadata:** Information that can be used to trace your online activities.
-  - **IP addresses:** Unique numerical labels assigned to your devices on a network.
-  - **MAC addresses:** Hardware identifiers assigned to network interfaces.
-  - **Browser fingerprints:** Unique configurations and settings of your browser that can be used to track you.
-  - **Device information (model, OS, etc.):** Details about the devices you use to access the internet.
-  - **Geolocation data:** Information about your physical location derived from your devices.
-  - **Cookies and tracking scripts:** Small files and code snippets used to track your activity online.
+- **ردپای دیجیتالی و متاداده:** اطلاعاتی که می‌تواند برای ردیابی فعالیت‌های آنلاین شما استفاده شود.
+  - **آدرس‌های IP:** برچسب‌های عددی منحصربه‌فردی که به دستگاه‌های شما در یک شبکه اختصاص داده شده است.
+  - **آدرس‌های MAC:** شناسه‌های سخت‌افزاری که به رابط‌های شبکه اختصاص داده شده‌اند.
+  - **اثر انگشت مرورگر:** پیکربندی‌ها و تنظیمات منحصربه‌فرد مرورگر شما که می‌توانند برای ردیابی شما استفاده شوند.
+  - **اطلاعات دستگاه (مدل، سیستم‌عامل و غیره):** جزئیاتی درباره دستگاه‌هایی که برای دسترسی به اینترنت استفاده می‌کنید.
+  - **داده‌های مکان‌یابی:** اطلاعاتی درباره مکان فیزیکی شما که از دستگاه‌های شما استخراج شده است.
+  - **کوکی‌ها و اسکریپت‌های ردیابی:** فایل‌ها و کدهای کوچکی که برای ردیابی فعالیت شما در اینترنت استفاده می‌شوند.
 
-- **Communication Content:** The actual content of your communications.
-  - **Emails:** Digital messages sent through email services.
-  - **Text messages:** Short messages sent via SMS or messaging apps.
-  - **Social media posts:** Content shared on social networking platforms.
-  - **Chat logs:** Recorded conversations from instant messaging services.
-  - **Voice and video call recordings:** Audio and video data from calls made over VoIP services.
+- **محتوای ارتباطات:** محتوای واقعی ارتباطات شما.
+  - **ایمیل‌ها:** پیام‌های دیجیتالی ارسال‌شده از طریق خدمات ایمیل.
+  - **پیام‌های متنی:** پیام‌های کوتاه ارسال‌شده از طریق SMS یا برنامه‌های پیام‌رسانی.
+  - **پست‌های رسانه‌های اجتماعی:** محتوایی که در پلتفرم‌های شبکه‌های اجتماعی به اشتراک گذاشته‌اید.
+  - **گزارش‌های چت:** مکالمات ضبط‌شده از سرویس‌های پیام‌رسان فوری.
+  - **ضبط‌های تماس‌های صوتی و تصویری:** داده‌های صوتی و تصویری از تماس‌هایی که از طریق خدمات VoIP انجام شده است.
 
-- **Behavioral Information:** Data about your online behavior and habits.
-  - **Browsing history:** Record of websites you have visited.
-  - **Search queries:** Terms and phrases you have searched for on search engines.
-  - **Online shopping habits:** Patterns and preferences in your online purchasing behavior.
-  - **Social media activity:** Your interactions and engagement on social media platforms.
-  - **Writing style:** The way you write or speak.
-  - **App usage patterns:** Information about how you use mobile and web applications.
+- **اطلاعات رفتاری:** داده‌هایی درباره رفتار و عادات آنلاین شما.
+  - **تاریخچه مرور:** سابقه وبسایت‌هایی که بازدید کرده‌اید.
+  - **عبارات جستجو:** کلمات و عباراتی که در موتورهای جستجو جستجو کرده‌اید.
+  - **عادات خرید آنلاین:** الگوها و ترجیحات در خریدهای آنلاین شما.
+  - **فعالیت در شبکه‌های اجتماعی:** تعاملات و مشارکت شما در پلتفرم‌های شبکه‌های اجتماعی.
+  - **سبک نوشتاری:** طرز نوشتن یا صحبت کردن شما.
+  - **الگوهای استفاده از اپلیکیشن‌ها:** اطلاعاتی درباره نحوه استفاده شما از اپلیکیشن‌های موبایل و وب.
 
-- **Professional Information:** Work-related information.
-  - **Employment details:** Information about your job and employer.
-  - **Work-related documents:** Files and records related to your professional activities.
-  - **Business contacts:** Information about your professional network.
-  - **Project information:** Details about the projects you are working on.
-  - **Client data:** Information about the clients you interact with in a professional capacity.
+- **اطلاعات حرفه‌ای:** اطلاعات مربوط به کار شما.
+  - **جزئیات شغلی:** اطلاعاتی درباره شغل و کارفرمای شما.
+  - **اسناد کاری:** فایل‌ها و سوابق مربوط به فعالیت‌های حرفه‌ای شما.
+  - **اطلاعات مخاطبین کاری:** اطلاعاتی درباره شبکه حرفه‌ای شما.
+  - **اطلاعات پروژه‌ها:** جزئیاتی درباره پروژه‌هایی که روی آن‌ها کار می‌کنید.
+  - **داده‌های مشتریان:** اطلاعاتی درباره مشتریانی که به‌صورت حرفه‌ای با آن‌ها تعامل دارید.
 
-- **Biometric Information:** Unique biological traits used for identification.
-  - **Fingerprints:** Unique patterns of ridges and valleys on your fingertips.
-  - **Facial recognition data:** Digital mapping of your facial features.
-  - **Voiceprints:** Unique characteristics of your voice used for identification.
-  - **Iris scans:** Detailed images of the colored part of your eye.
+- **اطلاعات بیومتریک:** ویژگی‌های زیستی منحصربه‌فرد که برای شناسایی استفاده می‌شوند.
+  - **اثر انگشت:** الگوهای منحصربه‌فرد بر روی نوک انگشتان شما.
+  - **داده‌های تشخیص چهره:** نقشه‌برداری دیجیتالی از ویژگی‌های چهره شما.
+  - **اثر صدا:** ویژگی‌های منحصربه‌فرد صدای شما که برای شناسایی استفاده می‌شود.
+  - **اسکن‌های عنبیه:** تصاویر دقیق از بخش رنگی چشم شما.
 
-- **Personal Preferences and Opinions:** Information about your beliefs, preferences, and opinions. This can be critical if you live under a dictatorship or in a highly repressive environment.
-  - **Political views:** Your beliefs and stances on political issues.
-  - **Religious beliefs:** Your faith and religious practices.
-  - **Sexual orientation:** Your sexual preferences and identity.
-  - **Health information:** Data about your medical history and current health status.
-  - **Memberships in various organizations:** Affiliations with clubs, societies, and other groups.
+- **ترجیحات و عقاید شخصی:** اطلاعاتی درباره باورها، ترجیحات و عقاید شما. این اطلاعات می‌تواند در صورتی که تحت دیکتاتوری یا در محیط‌های سرکوبگر زندگی می‌کنید، بسیار حیاتی باشد.
+  - **دیدگاه‌های سیاسی:** باورها و مواضع شما در مسائل سیاسی.
+  - **اعتقادات مذهبی:** دین و اعمال مذهبی شما.
+  - **گرایش جنسی:** ترجیحات و هویت جنسی شما.
+  - **اطلاعات سلامتی:** داده‌هایی درباره سابقه پزشکی و وضعیت سلامتی فعلی شما.
+  - **عضویت در سازمان‌های مختلف:** عضویت‌های شما در باشگاه‌ها، انجمن‌ها و گروه‌های دیگر.
 
-## Protect the Sensitive Information
+## حفاظت از اطلاعات حساس
 
-Now that we know some of the common sensitive information in OPSEC, we can move on to approaches to protect this information. These protections also vary greatly based on your personal situation and your unique threat model. Always take a look at your threat model.
+اکنون که با برخی از اطلاعات حساس رایج در OPSEC آشنا شدیم، می‌توانیم به روش‌هایی برای محافظت از این اطلاعات بپردازیم. این حفاظت‌ها نیز بسته به وضعیت شخصی شما و مدل تهدید منحصربه‌فردتان بسیار متفاوت است. همیشه به مدل تهدید خود نگاهی بیندازید.
 
-### **Personal Identifiable Information (PII)**
+### **اطلاعات شناسایی شخصی (PII)**
 
-- Encrypt files and documents containing PII using strong encryption algorithms such as AES. Never create your own encryption; use an algorithm that has been proven to be secure and an implementation that has been audited.
-- Minimize the collection and retention of unnecessary PII. Provide your PII only if you have to, and there is no other way around it. If you have the chance to avoid providing your PII and use a pseudonym or a fake identity, do it.
-- Store physical documents containing your PII, like your passport, in a safe place with surveillance systems like CCTVs.
+- فایل‌ها و اسنادی که حاوی PII هستند را با استفاده از الگوریتم‌های رمزنگاری قوی مانند AES رمزگذاری کنید. هرگز الگوریتم رمزنگاری خودتان را ایجاد نکنید؛ از الگوریتمی استفاده کنید که ثابت شده امن است و پیاده‌سازی آن بررسی شده است.
+- جمع‌آوری و نگهداری اطلاعات شناسایی شخصی غیرضروری را به حداقل برسانید. فقط در صورتی PII خود را ارائه دهید که مجبور باشید و راه دیگری وجود نداشته باشد. اگر می‌توانید از ارائه PII خودداری کنید و از یک نام مستعار یا هویت جعلی استفاده کنید، این کار را انجام دهید.
+- اسناد فیزیکی حاوی PII مانند پاسپورت خود را در مکانی امن و با سیستم‌های نظارتی مانند دوربین‌های مدار بسته (CCTV) نگهداری کنید.
 
-### Financial Information
+### **اطلاعات مالی**
 
-- Use secure connections (HTTPS, for example) when accessing your bank website or any other financial website.
-- Regularly monitor your financial accounts for unauthorized access and enable warning features if your bank provides them.
-- Enable transaction notifications for all transactions so you are alerted to any suspicious activity on your accounts.
-- In the case of cryptocurrencies, use cryptocurrencies that are decentralized and provide anonymity, like ZCash and Monero. Most cryptocurrencies aren't anonymous; they're pseudonymous. Nobody would know the owner of the address, but as soon as you spend the money in the real world, it will be traced back to your real identity. This is not true for privacy coins like Monero.
+- هنگام دسترسی به وبسایت بانک یا هر وبسایت مالی دیگر، از اتصالات امن (مانند HTTPS) استفاده کنید.
+- به‌طور مرتب حساب‌های مالی خود را برای دسترسی‌های غیرمجاز بررسی کنید و اگر بانک شما این ویژگی‌ها را ارائه می‌دهد، هشدارها را فعال کنید.
+- هشدارهای تراکنش را برای تمامی تراکنش‌ها فعال کنید تا از هرگونه فعالیت مشکوک در حساب‌هایتان آگاه شوید.
+- در مورد ارزهای دیجیتال، از ارزهایی که غیرمتمرکز هستند و ناشناس بودن را فراهم می‌کنند مانند ZCash و Monero استفاده کنید. بیشتر ارزهای دیجیتال ناشناس نیستند؛ بلکه با نام مستعار عمل می‌کنند. کسی صاحب آدرس را نمی‌داند، اما به محض اینکه پول در دنیای واقعی خرج شود، به هویت واقعی شما ردیابی می‌شود. این در مورد ارزهای خصوصی مانند Monero صدق نمی‌کند.
 
-### Account Credentials
+### **اطلاعات حساب کاربری**
 
-- Use an audited and reputable password manager to store your passwords and account credentials. Never try to remember your passwords or, worse, use the same password everywhere. Each website should have its unique password to prevent unauthorized access to other accounts if one account's password gets leaked.
-- Enable 2FA whenever possible to add an additional layer of security to protect your accounts. You can use physical devices for 2FA or audited open-source apps for TOTP codes. Also, make sure you protect your 2FA credentials as well as your passwords.
-- Never share your account credentials via email or unencrypted messaging platforms. If you must share them, use encryption or a secure messaging app like Signal and enable auto-delete for the message.
-- Periodically review and update account passwords. You can also sign up for services that check the dark web or database breaches for your account and notify you if your account is found in these breaches.
+- از یک مدیر رمز عبور معتبر و بررسی‌شده برای ذخیره رمزهای عبور و اطلاعات حساب کاربری خود استفاده کنید. هرگز سعی نکنید رمزهای عبور خود را به خاطر بسپارید یا بدتر از آن، از یک رمز عبور برای همه‌جا استفاده نکنید. هر وبسایت باید رمز عبور منحصربه‌فردی داشته باشد تا در صورت فاش شدن رمز عبور یک حساب، دسترسی به حساب‌های دیگر امکان پذیر نشود.
+- هر زمان ممکن بود، احراز هویت دو مرحله‌ای (2FA) را برای افزودن لایه‌ای اضافی از امنیت فعال کنید. می‌توانید از دستگاه‌های فیزیکی برای 2FA یا اپلیکیشن‌های متن‌باز و بررسی‌شده برای کدهای TOTP استفاده کنید. همچنین، اطمینان حاصل کنید که اعتبارنامه‌های 2FA خود را نیز مانند رمزهای عبور محافظت می‌کنید.
+- هرگز اعتبارنامه‌های حساب کاربری خود را از طریق ایمیل یا پلتفرم‌های پیام‌رسانی بدون رمزگذاری به اشتراک نگذارید. اگر مجبور به اشتراک‌گذاری آن‌ها هستید، از رمزگذاری یا یک اپلیکیشن پیام‌رسان امن مانند Signal استفاده کنید و ویژگی حذف خودکار پیام را فعال کنید.
+- به‌طور دوره‌ای رمزهای عبور حساب‌ها را بازبینی و به‌روزرسانی کنید. همچنین، می‌توانید در سرویس‌هایی ثبت‌نام کنید که پایگاه‌های داده نقض‌شده یا وب تاریک را بررسی می‌کنند و اگر حساب شما در این نقض‌ها یافت شد، به شما اطلاع می‌دهند.
 
-### Digital Footprint and Metadata
+### **ردپای دیجیتالی و متاداده**
 
-- Use a pseudonymous VPN or Tor (highly depending on your threat model) to mask your IP address by encrypting and rerouting your internet traffic.
-- Harden your browsers or use Tor Browser to limit the collection of browser history, cookies, and other metadata. You can also configure your browser to minimize its fingerprintability, but using Tor Browser is generally better if you want to avoid fingerprinting.
-- Use privacy-friendly search engines like DuckDuckGo and StartPage or host your own search engine like Searx.
-- Disable location services on your device when you don't need them. The location, when enabled, can be stored in the pictures you take as well.
-- Remove the EXIF metadata from pictures before sharing, or use a camera app that does this by default.
+- از یک VPN یا تور با نام مستعار (بسته به مدل تهدیدتان) استفاده کنید تا آدرس IP خود را با رمزگذاری و تغییر مسیر ترافیک اینترنتی مخفی کنید.
+- مرورگرهای خود را تقویت کنید یا از مرورگر تور استفاده کنید تا جمع‌آوری تاریخچه مرورگر، کوکی‌ها و سایر متاداده‌ها را محدود کنید. همچنین می‌توانید مرورگر خود را به‌گونه‌ای پیکربندی کنید که اثر انگشت آن به حداقل برسد، اما به‌طور کلی استفاده از مرورگر تور برای جلوگیری از اثر انگشت بهتر است.
+- از موتورهای جستجوی دوستانه با حریم خصوصی مانند DuckDuckGo و StartPage استفاده کنید یا موتور جستجوی خود را مانند Searx میزبانی کنید.
+- سرویس‌های مکان‌یابی را بر روی دستگاه خود زمانی که به آن‌ها نیازی ندارید، غیرفعال کنید. موقعیت مکانی، زمانی که فعال باشد، می‌تواند در تصاویری که می‌گیرید ذخیره شود.
+- متاداده EXIF تصاویر را قبل از به اشتراک‌گذاری حذف کنید، یا از یک اپلیکیشن دوربین استفاده کنید که این کار را به‌طور پیش‌فرض انجام می‌دهد.
 
-### Communication Content
+### **محتوای ارتباطات**
 
-- Always use end-to-end encryption when communicating. Use messaging apps like Session and Signal, which have strong encryption and store little metadata.
-- Use encrypted emails like Tutanota and ProtonMail or use PGP to encrypt your emails before sending. However, emails will always have a lot of unencrypted metadata.
-- Avoid sharing sensitive information over unencrypted channels, such as public Wi-Fi. Ensure your communication channels are encrypted.
+- همیشه از رمزگذاری انتها به انتها برای ارتباطات خود استفاده کنید. از اپلیکیشن‌های پیام‌رسانی مانند Session و Signal استفاده کنید که رمزنگاری قوی دارند و متاداده کمی ذخیره می‌کنند.
+- از ایمیل‌های رمزگذاری‌شده مانند Tutanota و ProtonMail استفاده کنید یا ایمیل‌های خود را قبل از ارسال با PGP رمزگذاری کنید. با این حال، ایمیل‌ها همیشه مقدار زیادی متاداده غیررمزگذاری‌شده خواهند داشت.
+- از به اشتراک گذاشتن اطلاعات حساس از طریق کانال‌های بدون رمزگذاری، مانند Wi-Fi عمومی، خودداری کنید. اطمینان حاصل کنید که کانال‌های ارتباطی شما رمزگذاری شده‌اند.
 
-### Behavioral Information
+### **اطلاعات رفتاری**
 
-- Use privacy-friendly search engines to minimize tracking of online activities. Also, disable search suggestions in your browser to prevent leaking your searches to third-party services.
-- Regularly clear browser history, cookies, caches, etc., to ensure you don't leave any traces of your activities on your browser. Alternatively, use Tor Browser if it aligns with your threat model.
-- Review and adjust privacy settings on social media platforms and websites you sign up for to minimize the collection of personal data.
+- از موتورهای جستجوی دوستانه با حریم خصوصی برای به حداقل رساندن ردیابی فعالیت‌های آنلاین خود استفاده کنید. همچنین، پیشنهادات جستجو را در مرورگر خود غیرفعال کنید تا از فاش شدن جستجوهای خود به سرویس‌های شخص ثالث جلوگیری کنید.
+- به‌طور مرتب تاریخچه مرورگر، کوکی‌ها، کش‌ها و غیره را پاک کنید تا مطمئن شوید که هیچ اثری از فعالیت‌های شما بر روی مرورگر باقی نمانده است. یا در عوض از مرورگر تور استفاده کنید اگر با مدل تهدید شما همخوانی دارد.
+- تنظیمات حریم خصوصی خود را در شبکه‌های اجتماعی و وبسایت‌هایی که در آن‌ها ثبت‌نام کرده‌اید بازبینی و تنظیم کنید تا جمع‌آوری داده‌های شخصی به حداقل برسد.
 
-### Professional Information
+### **اطلاعات کاری**
 
-- Encryption overlaps here as well, so encrypt work-related documents and files using strong encryption, just as you would for other data.
-- Use secure, encrypted collaboration tools for sharing sensitive work-related information.
-- Implement access controls and permissions to restrict access to confidential work data.
+- در اینجا نیز رمزگذاری اهمیت دارد، بنابراین اسناد و فایل‌های کاری را با استفاده از رمزنگاری قوی رمزگذاری کنید، همان‌طور که برای داده‌های دیگر انجام می‌دهید.
+- از ابزارهای همکاری امن و رمزگذاری‌شده برای به اشتراک‌گذاری اطلاعات حساس مربوط به کار استفاده کنید.
+- دسترسی‌ها و مجوزها را پیاده‌سازی کنید تا دسترسی به داده‌های محرمانه کاری محدود شود.
 
-### Biometric Information
+### **اطلاعات بیومتریک**
 
-- Again, store biometric information encrypted using a strong and known encryption algorithm and implementation.
-- Limit the collection and storage of biometric data to what is necessary for authentication purposes. If possible, avoid using biometric data for authentication.
+- اطلاعات بیومتریک را با استفاده از یک الگوریتم رمزنگاری قوی و شناخته‌شده رمزگذاری کنید.
+- جمع‌آوری و ذخیره اطلاعات بیومتریک را به آنچه که برای اهداف احراز هویت لازم است، محدود کنید. اگر ممکن است، از استفاده از داده‌های بیومتریک برای احراز هویت خودداری کنید.
 
-### Personal Preferences and Opinions
+### **ترجیحات و عقاید شخصی**
 
-- Be cautious about sharing personal preferences and opinions on public platforms, or at least avoid using your real name.
-- Adjust privacy settings on social media to limit the visibility of personal preferences and opinions.
-- Use pseudonyms or anonymous accounts for discussions on sensitive topics. This can sometimes be crucial depending on where you live.
+- در به اشتراک گذاشتن ترجیحات و عقاید شخصی در پلتفرم‌های عمومی محتاط باشید، یا حداقل از نام واقعی خود استفاده نکنید.
+- تنظیمات حریم خصوصی خود را در شبکه‌های اجتماعی تنظیم کنید تا قابلیت مشاهده ترجیحات و عقاید شخصی محدود شود.
+- از نام مستعار یا حساب‌های ناشناس برای بحث در مورد موضوعات حساس استفاده کنید. این موضوع بسته به جایی که زندگی می‌کنید، گاهی اوقات می‌تواند حیاتی باشد.
 
 ---
 
-Effective OPSEC goes way beyond implementing some techniques; it's about shifting your mindset. It demands a heightened awareness of the information we share and a commitment to continuous learning and adaptation. The threats are always evolving, and these techniques may become deprecated, but if you set your mindset to the fact that what you put online may stay there forever and will be read someday, you will find the techniques.
+OPSEC مؤثر فراتر از اجرای تکنیک‌ها است؛ این یک تغییر در ذهنیت است. این موضوع به آگاهی بیشتر از اطلاعاتی که به اشتراک می‌گذاریم و تعهد به یادگیری و سازگاری مستمر نیاز دارد. تهدیدها همیشه در حال تکامل هستند و ممکن است این تکنیک‌ها منسوخ شوند، اما اگر طرز فکر خود را بر این اساس تنظیم کنید که هر چیزی که آنلاین قرار می‌دهید ممکن است برای همیشه آنجا بماند و روزی خوانده شود، می‌توانید تکنیک‌های لازم را پیدا کنید.
 
-> "If you know the why, you can live any how."
+> "اگر چرایی را بدانید، می‌توانید هر چطور را زندگی کنید."
 >
-> ― Friedrich Nietzsche  
+> ― فریدریش نیچه
 
-The next chapter will be about privacy and security's essentials. Now that the myths are busted, the roadmap is ready, and the mindset is set, we can move on to the essentials of the privacy world: the tools and techniques that can be used to enhance your privacy.
+فصل بعدی درباره اصول حریم خصوصی و امنیت خواهد بود. اکنون که افسانه‌ها شکسته شده‌اند، نقشه راه آماده است و ذهنیت شما تنظیم شده است، می‌توانیم به اصول دنیای حریم خصوصی برویم: ابزارها و تکنیک‌هایی که می‌توانند برای بهبود حریم خصوصی شما استفاده شوند.
