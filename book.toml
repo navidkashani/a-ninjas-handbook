@@ -3,7 +3,7 @@ authors = ["Zola Gonano", "Navid Kashani"]
 language = "fa"
 multilingual = false
 src = "src"
-title = "A Ninja's Handbook"
+title = "کتابچه راهنمای یک نینجا"
 
 [preprocessor]
 
