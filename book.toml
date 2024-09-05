@@ -1,6 +1,6 @@
 [book]
-authors = ["Zola Gonano"]
-language = "en"
+authors = ["Zola Gonano", "Navid Kashani"]
+language = "fa"
 multilingual = false
 src = "src"
 title = "A Ninja's Handbook"
@@ -13,6 +13,6 @@ command = "mdbook-mermaid"
 [output]
 
 [output.html]
-git-repository-url = "https://github.com/zolagonano/a-ninjas-handbook"
+git-repository-url = "https://github.com/navidkashani/a-ninjas-handbook"
 mathjax-support = true
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
