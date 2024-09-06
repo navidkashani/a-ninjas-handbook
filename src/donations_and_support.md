@@ -1,8 +1,8 @@
-# Donations and Support
+# کمک‌های مالی و حمایت
 
-This book is free and open source and will stay free and open source because what's important to me is that it is read and comes in useful. I’m not looking for profit, but I can't deny that every donation, no matter the amount, or even an appreciation email, allows me to put more time into projects like this.
+این کتاب رایگان و متن‌باز است و رایگان و متن‌باز باقی خواهد ماند زیرا آنچه برای من مهم است این است که خوانده شود و برای دیگران مفید باشد. به دنبال کسب سود نیستم، اما نمی‌توانم انکار کنم که هر کمک مالی، هرچند کوچک، یا حتی یک ایمیل قدردانی، به من انگیزه می‌دهد تا زمان بیشتری را به پروژه‌هایی مانند این اختصاص دهم.
 
-So here are every cryptocurrency I could think of. If you would like to donate, here are the ways to do so:
+در اینجا هر ارز دیجیتالی که به ذهنم رسیده، آمده است. اگر دوست دارید کمک مالی کنید، این روش‌ها برای انجام این کار موجود هستند:
 
 - **Monero (XMR):**
   ```
@@ -81,4 +81,4 @@ So here are every cryptocurrency I could think of. If you would like to donate, 
   RLN8CqRzgDajY77Sd3xYREVLheTYEb7rWc
   ```
 
-Or if you want to send it another way, or you want to let me know of your donation or just have something to say, please feel free to email me at [zolagonano@protonmail.com](mailto:zolagonano@protonmail.com). I appreciate every donation and message, and they really help me put more time into the things I like.
+یا اگر می‌خواهید از روش دیگری کمک کنید، یا می‌خواهید به من اطلاع دهید که کمک کرده‌اید، یا فقط چیزی برای گفتن دارید، لطفاً با من از طریق ایمیل [zolagonano@protonmail.com](mailto:zolagonano@protonmail.com) در ارتباط باشید. از هر کمک مالی و پیامی قدردانی می‌کنم، و واقعاً به من کمک می‌کند تا زمان بیشتری را به کارهایی که دوست دارم، اختصاص دهم.
