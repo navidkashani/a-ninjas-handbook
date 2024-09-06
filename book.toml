@@ -16,3 +16,4 @@ command = "mdbook-mermaid"
 git-repository-url = "https://github.com/navidkashani/a-ninjas-handbook"
 mathjax-support = true
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
+additional-css = ["custom.css"]
