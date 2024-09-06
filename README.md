@@ -1,7 +1,13 @@
-# A Ninja's Handbook
+# کتابچه راهنمای یک نینجا
 
-A Book on privacy, security, and anonymity online.
+کتابی درباره حریم خصوصی، امنیت و ناشناس ماندن آنلاین.
 
-## License
+## لایسنس
 
-A Ninja's Handbook © 2024 by Zola Gonano is licensed under CC BY-NC 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/
+کتابچه نینجا © 2024 نوشته Zola Gonano تحت لایسنس CC BY-NC 4.0 منتشر شده است. برای مشاهده نسخه اصلی این لایسنس به لینک زیر مراجعه کنید:  
+https://creativecommons.org/licenses/by-nc/4.0/
+
+---
+
+این کتاب فقط به فارسی ترجمه شده است و منبع اصلی آن در لینک زیر قابل دسترسی است:  
+https://github.com/zolagonano/a-ninjas-handbook
