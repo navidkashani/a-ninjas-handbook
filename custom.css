@@ -1,3 +1,7 @@
 body {
     font-family: Vazirmatn, sans-serif;
 }
+
+.content p {
+    line-height: 1.65em;
+}
