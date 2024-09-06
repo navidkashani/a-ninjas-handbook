@@ -1,90 +1,92 @@
-# Appendix A
+# پیوست A
 
-## VPNs and Anonymity
+## VPNها و ناشناسی
 
 ### **1. VPN**
 
-**Traffic Encryption:**
+**رمزگذاری ترافیک:**
 
-- **Protocols:** VPNs use encryption protocols such as **OpenVPN**, **IKEv2/IPsec**, and **WireGuard**. Encryption algorithms include:
-  - **AES-256-CBC** or **AES-256-GCM** for symmetric encryption.
-  - **RSA-2048** for asymmetric key exchange.
+- **پروتکل‌ها:** VPN‌ها از پروتکل‌های رمزگذاری مانند **OpenVPN**، **IKEv2/IPsec** و **WireGuard** استفاده می‌کنند. این پروتکل‌ها شامل:
+  - **AES-256-CBC** یا **AES-256-GCM** برای رمزگذاری متقارن.
+  - **RSA-2048** برای تبادل کلیدهای نامتقارن.
 
-**IP Masking:** VPNs mask the client’s IP address with the VPN server’s IP. This does not anonymize the user but shifts the visible IP from the ISP to the VPN provider.
+**ماسک کردن IP:** VPNها آدرس IP کاربر را با آدرس IP سرور VPN جایگزین می‌کنند. این فرایند باعث ناشناسی کاربر نمی‌شود بلکه صرفاً IP از دید ارائه‌دهنده خدمات اینترنت (ISP) به VPN منتقل می‌شود.
 
-**Logging Policies:**
+**سیاست‌های ثبت لاگ:**
 
-- **No-Logs Claims:** Providers like **Mullvad** and **ProtonVPN** claim not to log user activities. Verification relies on independent audits and court cases.
-- **Data Exposure:** VPN providers can be compelled to disclose logs if they exist, which can include connection timestamps, IP addresses, and usage data.
+- **ادعای عدم ثبت لاگ:** ارائه‌دهندگانی مانند **Mullvad** و **ProtonVPN** ادعا می‌کنند که اطلاعات کاربران را ثبت نمی‌کنند. اعتبار این ادعاها بستگی به بررسی‌های مستقل و پرونده‌های دادگاهی دارد.
+- **افشای داده‌ها:** اگر اطلاعاتی مانند زمان‌های اتصال، آدرس‌های IP و داده‌های استفاده ثبت شود، ارائه‌دهندگان VPN ممکن است مجبور به ارائه این داده‌ها به مقامات شوند.
 
-**Traffic Analysis:**
+**تحلیل ترافیک:**
 
-- **Correlation Attacks:** Analyzing traffic patterns, timing, and volume can potentially link VPN traffic to specific users, despite encryption.
+- **حملات همبستگی:** با تحلیل الگوهای ترافیک، زمان و حجم آن، امکان مرتبط کردن ترافیک VPN با کاربران خاص وجود دارد، حتی در صورت استفاده از رمزگذاری.
 
-**Fingerprinting:**
+**اثر انگشت دیجیتالی:**
 
-- **Browser/OS Fingerprinting:** VPNs do not protect you against fingerprinting. Unique device and browser characteristics (e.g., user agent, screen resolution) can still be used for fingerprinting.
+- **اثر انگشت مرورگر/سیستم‌عامل:** VPN‌ها از کاربران در برابر اثر انگشت دیجیتالی محافظت نمی‌کنند. اطلاعاتی مانند عامل کاربر، وضوح صفحه‌نمایش، و ویژگی‌های دستگاه می‌تواند برای شناسایی کاربران استفاده شود.
 
-### **2. Tor Network**
+### **2. شبکه تور (Tor Network)**
 
-**Onion Routing:**
+**مسیریابی پیازی:**
 
-- **Encryption Layers:** Data is encrypted in three layers, with each Tor relay removing one layer of encryption. This process ensures end-to-end encryption with the following layers:
-  - **Layer 1:** Encrypted between the client and the first relay.
-  - **Layer 2:** Encrypted between successive relays.
-  - **Layer 3:** Encrypted until reaching the exit node.
+- **لایه‌های رمزگذاری:** داده‌ها در شبکه تور با سه لایه رمزگذاری محافظت می‌شود. هر رله تور یک لایه رمزگذاری را حذف می‌کند که باعث می‌شود داده‌ها فقط در نقطه خروج نهایی رمزگشایی شوند:
+  - **لایه ۱:** داده بین کاربر و اولین رله رمزگذاری شده است.
+  - **لایه ۲:** داده بین رله‌های میانی رمزگذاری می‌شود.
+  - **لایه ۳:** داده تا رسیدن به نود خروجی رمزگذاری شده باقی می‌ماند.
 
-**Exit Node:**
-- **Data Visibility:** Exit nodes decrypt the final layer and see the unencrypted data but cannot see the originating IP. Control of all relays is required to trace originating IP, which is theoretically and practically really costly to do.
+**نود خروجی:**
+- **مشاهده داده‌ها:** نود خروجی لایه آخر رمزگذاری را برداشته و داده‌های بدون رمز را می‌بیند، اما نمی‌تواند آدرس IP اصلی را مشاهده کند. برای ردیابی آدرس IP اصلی باید کنترل تمامی رله‌ها به دست آید که از لحاظ عملی و تئوری بسیار پرهزینه و سخت است.
 
-**End-to-End Encryption:**
-- **.onion Sites:** Use **Elliptic Curve Cryptography** (ECC) with a public/private key pair for end-to-end encryption.
+**رمزگذاری انتها به انتها:**
+- **سایت‌های .onion:** از **رمزنگاری منحنی بیضوی** (ECC) با جفت کلید عمومی و خصوصی برای رمزگذاری انتها به انتها استفاده می‌کنند.
 
-### **3. Alternatives**
+### **3. جایگزین‌ها**
 
 **I2P:**
-- **Routing:** Uses **Garlic Routing**, similar to onion routing but with packet encapsulation.
-- **Node Count:** Limited nodes compared to Tor, making it less resilient to attacks.
+- **مسیریابی:** از **مسیریابی سیرپیاز** مشابه مسیریابی پیازی استفاده می‌کند، اما بسته‌ها را به صورت محصور شده ارسال می‌کند.
+- **تعداد نودها:** تعداد نودهای کمتری نسبت به تور دارد که آن را کمتر مقاوم در برابر حملات می‌کند.
 
 **Lokinet:**
-- **Network Topology:** Uses **DHT (Distributed Hash Table)** for node discovery and routing.
-- **Node Limitations:** Smaller node network than Tor, affecting it's anonymity.
+- **توپولوژی شبکه:** از **جدول هش توزیع شده (DHT)** برای کشف نودها و مسیریابی استفاده می‌کند.
+- **محدودیت‌های نود:** شبکه نودهای کوچکتری نسبت به تور دارد که بر ناشناسی آن تأثیر می‌گذارد.
 
+## امنیت رمزعبور و ابزار مدیریت رمزعبور
 
+### امنیت رمزعبور
 
-## Password Security and Password Managers
+**محاسبه آنتروپی:**
+آنتروپی به معنای میزان تصادفی بودن یا پیش‌بینی‌ناپذیری یک رمزعبور است که مستقیماً بر قدرت آن در برابر حملات تأثیر می‌گذارد. آنتروپی بر حسب بیت اندازه‌گیری می‌شود و به‌صورت زیر محاسبه می‌شود:
 
-### Password Security
-
-**Entropy Calculation:**
-Entropy is the randomness or unpredictability of a password, which directly affects its strength against attacks. It is measured in bits and calculated as:
 $$
 \text{Entropy} = \log_2(N^L)
 $$
-where:
 
-- \( N \) = Number of possible symbols (e.g., 95 for a character set including uppercase, lowercase, digits, and symbols).
-- \( L \) = Length of the password.
+که در آن:
 
-For example, a password of length 12 using 95 characters has:
+- \( N \) = تعداد نمادهای ممکن (برای مثال، ۹۵ برای مجموعه‌ای از کاراکترها شامل حروف بزرگ، حروف کوچک، اعداد و نمادها).
+- \( L \) = طول رمزعبور.
+
+برای مثال، یک رمزعبور به طول ۱۲ کاراکتر با استفاده از ۹۵ کاراکتر دارای آنتروپی زیر است:
 
 $$
-\text{Entropy} = \log_2(95^{12}) \approx 78.7 \text{ bits}
+\text{Entropy} = \log_2(95^{12}) \approx 78.7 \text{ بیت}
 $$
-### Passphrase Security:
 
-- **Design and Strength:** Passphrases are longer and easier to remember compared to traditional passwords. For example, “Name-Seat-Look-Chair-Plane7-Stree7” has high entropy because it combines multiple words and symbols.
+### امنیت عبارت عبور (Passphrase):
 
-  The entropy of a passphrase with six words and special characters can be calculated by:
+- **طراحی و قدرت:** عبارات عبور معمولاً طولانی‌تر و راحت‌تر برای به خاطر سپردن نسبت به گذرواژه‌های سنتی هستند. برای مثال، عبارت "Name-Seat-Look-Chair-Plane7-Stree7" دارای آنتروپی بالایی است زیرا چندین کلمه و نماد را ترکیب می‌کند.
 
-  $$
-  \text{Entropy} \approx \log_2(W^L)
-  $$
-  where \( W \) is the number of possible words (e.g., a large dictionary of words) and \( L \) is the number of words. For a passphrase with a dictionary of 10,000 words and 6 words in length:
-  
-  $$
-  \text{Entropy} = \log_2(10,000^6) \approx 79.6 \text{ bits}
-  $$
+آنتروپی یک عبارت عبور با شش کلمه و نمادهای خاص به‌صورت زیر محاسبه می‌شود:
+
+$$
+\text{Entropy} \approx \log_2(W^L)
+$$
+
+که در آن \( W \) تعداد کلمات ممکن (برای مثال، یک دیکشنری بزرگ از کلمات) و \( L \) تعداد کلمات است. برای یک عبارت عبور با یک دیکشنری شامل 10,000 کلمه و ۶ کلمه در طول:
+
+$$
+\text{Entropy} = \log_2(10,000^6) \approx 79.6 \text{ بیت}
+$$
   
 
 
