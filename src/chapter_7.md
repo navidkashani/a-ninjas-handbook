@@ -1,321 +1,321 @@
-# Chapter 7
+# فصل ۷
 
-In the early 2000s, a whistleblower known only as "Deep Throat" played a crucial role in exposing the Watergate scandal, which eventually led to the resignation of U.S. President Richard Nixon. Deep Throat was later revealed to be Mark Felt, a top official at the FBI.
+در اوایل دهه ۲۰۰۰، یک افشاگر که فقط با نام "Deep Throat" شناخته می‌شد، نقش مهمی در افشای رسوایی واترگیت داشت که در نهایت منجر به استعفای رئیس‌جمهور آمریکا، ریچارد نیکسون شد. بعدها مشخص شد که Deep Throat همان مارک فلت، یکی از مقامات عالی‌رتبه اف‌بی‌آی است.
 
-Felt chose to remain anonymous because he feared retribution from powerful political figures and potential harm to his career and personal life. By meeting secretly with journalists Bob Woodward and Carl Bernstein, Felt provided critical information that helped uncover illegal activities and abuses of power within the Nixon administration.
+فلت تصمیم گرفت ناشناس باقی بماند زیرا از انتقام‌گیری افراد قدرتمند سیاسی و همچنین آسیب به زندگی حرفه‌ای و شخصی خود می‌ترسید. با ملاقات‌های مخفیانه با روزنامه‌نگاران باب وودوارد و کارل برنستین، فلت اطلاعات حیاتی‌ای ارائه داد که به افشای فعالیت‌های غیرقانونی و سوءاستفاده از قدرت در دولت نیکسون کمک کرد.
 
-His anonymity allowed him to share the truth without facing immediate consequences, ultimately leading to significant political changes and reinforcing the importance of accountability in government. Mark Felt's story shows how anonymity can allow people to bring positive change to the world, rather than doing destruction to society. It's a double-edged sword as well as a slippery slope.
+ناشناس بودن به او این امکان را داد که حقیقت را بدون مواجهه با عواقب فوری به اشتراک بگذارد و در نهایت منجر به تغییرات سیاسی مهمی شد و اهمیت پاسخگویی در دولت را تقویت کرد. داستان مارک فلت نشان می‌دهد که ناشناس بودن می‌تواند به مردم این امکان را بدهد که به‌جای تخریب جامعه، تغییرات مثبت ایجاد کنند. این موضوع هم یک شمشیر دو لبه و هم یک مسیر لغزنده است.
 
-Taking away people's anonymity means silencing dissenting voices and creating an environment of fear in which society halts. When individuals can't speak out without risking their safety, privacy, or lives, we lose dissenting opinions, and the creativity of a society dies out. It will start moving backwards, and fear will slowly become the norm of society, passing from one generation to the next, slowly taking away what makes us different from other animals.
+از بین بردن ناشناس بودن افراد به معنای خاموش‌کردن صدای مخالفان و ایجاد محیطی از ترس است که در آن جامعه متوقف می‌شود. وقتی افراد نتوانند بدون به‌خطر انداختن امنیت، حریم خصوصی یا جان خود حرف بزنند، ما دیدگاه‌های مخالف را از دست می‌دهیم و خلاقیت جامعه از بین می‌رود. جامعه به عقب حرکت می‌کند و ترس به‌تدریج به هنجار تبدیل می‌شود، از نسلی به نسل دیگر منتقل می‌شود و به‌تدریج چیزی را که ما را از سایر حیوانات متمایز می‌کند از بین می‌برد.
 
-## Creating Another Identity
+## ایجاد یک هویت دیگر
 
-As I mentioned in previous chapters, creating a full identity can really help in managing identities and keeping them as separate as possible. Based on your threat model and what you're going to do, you might need to create a pseudonym for yourself and tie it to your anonymous activities.
+همان‌طور که در فصل‌های قبل اشاره کردم، ایجاد یک هویت کامل می‌تواند به‌شدت در مدیریت هویت‌ها و حفظ جدایی آن‌ها کمک کند. بر اساس مدل تهدید شما و کاری که قصد دارید انجام دهید، ممکن است نیاز به ایجاد یک نام مستعار برای خود داشته باشید و آن را به فعالیت‌های ناشناس خود مرتبط کنید.
 
-There's a difference between pseudonymity and anonymity. Pseudonymity means giving your anonymous identity a name, so people can recognize you and your work, for example, a writer using a pen name. Anonymity means hiding one's identity entirely so that there is no way to trace or identify the individual behind the actions or information.
+بین **نام مستعار (Pseudonymity)** و **ناشناس بودن (Anonymity)** تفاوت وجود دارد. نام مستعار به معنای دادن یک نام به هویت ناشناس شما است تا افراد بتوانند شما و کار شما را شناسایی کنند، مثلاً یک نویسنده که از یک نام قلمی استفاده می‌کند. ناشناس بودن به معنای پنهان‌کردن کامل هویت فرد است تا هیچ راهی برای ردیابی یا شناسایی شخص پشت اقدامات یا اطلاعات وجود نداشته باشد.
 
-You can still be anonymous and have a pseudonym. Rather than being nameless, especially if you're an activist, writer, or whistleblower, you might need a pseudonym or a fake identity that people would recognize your work with. People can connect better with someone who has a name and identity, even if it's not real, rather than a nameless user on the internet.
+شما همچنان می‌توانید ناشناس بمانید و یک نام مستعار داشته باشید. به‌جای اینکه بی‌نام و نشان باشید، به‌ویژه اگر یک فعال، نویسنده یا افشاگر هستید، ممکن است به یک نام مستعار یا هویت جعلی نیاز داشته باشید که مردم بتوانند کار شما را با آن شناسایی کنند. مردم بهتر می‌توانند با کسی که یک نام و هویت دارد، حتی اگر واقعی نباشد، ارتباط برقرار کنند تا با یک کاربر بی‌نام در اینترنت.
 
-Pseudonymous users can build a reputation and credibility over time, while anonymous users cannot build a reputation tied to a specific identity.
+کاربران دارای نام مستعار می‌توانند در طول زمان اعتبار و شهرتی ایجاد کنند، در حالی که کاربران ناشناس نمی‌توانند اعتباری ایجاد کنند که به یک هویت خاص مرتبط باشد.
 
-To create your pseudonymous identity, you can choose one of these paths:
+برای ایجاد هویت دارای نام مستعار خود، می‌توانید یکی از این مسیرها را انتخاب کنید:
 
-- Create a username/nickname only
-- Create a full identity
-- Create a combination of both
+- ایجاد تنها یک نام کاربری/لقب
+- ایجاد یک هویت کامل
+- ایجاد ترکیبی از هر دو
 
-### Creating a Username/Nickname Only
+### ایجاد فقط یک نام کاربری/لقب
 
-This path is easier; you only have to think of a unique and untraceable nickname or username and tie your activities to that. The drawback is that it can make it harder to gain reputation and credibility, and if you work with other people, you might want to have an actual name and origin as well.
+این مسیر آسان‌تر است؛ شما فقط باید یک نام مستعار یا نام کاربری منحصربه‌فرد و غیرقابل‌ردیابی پیدا کنید و فعالیت‌های خود را به آن متصل کنید. اشکال این مسیر این است که ممکن است کسب اعتبار و شهرت دشوارتر شود و اگر با افراد دیگر کار می‌کنید، ممکن است نیاز به داشتن یک نام واقعی و منشأ هم داشته باشید.
 
-A real-life example of a nickname would be the famous "Dread Pirate Roberts," aka "DPR," which was the nickname of Ross Ulbricht, the creator of the "Amazon of Drugs," aka the Silk Road. Ross Ulbricht had no other name than this, just one name, "Dread Pirate Roberts."
+یک مثال واقعی از یک لقب معروف، "Dread Pirate Roberts" یا "DPR" است که لقب راس اولبریخت، خالق "آمازون مواد مخدر" یا همان Silk Road بود. راس اولبریخت هیچ نام دیگری نداشت جز "Dread Pirate Roberts."
 
-What matters when creating a nickname is that you don't choose something that can be linked to your real identity. That is the only and most important thing when it comes to creating nicknames. Make sure it doesn't reflect too much of your real identity's interests, and make sure you have never used it before.
+نکته‌ای که هنگام ایجاد یک لقب اهمیت دارد این است که نباید چیزی را انتخاب کنید که بتواند به هویت واقعی شما مرتبط شود. این تنها و مهم‌ترین مسئله در ایجاد لقب‌ها است. مطمئن شوید که بازتاب زیادی از علایق هویت واقعی شما ندارد و مطمئن شوید که قبلاً هرگز از آن استفاده نکرده‌اید.
 
-To prevent links between your real identity and your nickname, it's better to use a nickname generator website. Search for one and choose one that sounds the best to you, and check its uniqueness as well. Google it and see if anyone else has it or not.
+برای جلوگیری از ارتباط بین هویت واقعی شما و نام مستعار، بهتر است از یک سایت تولیدکننده لقب استفاده کنید. به دنبال یکی بگردید و یکی را انتخاب کنید که به‌نظرتان بهترین است و همچنین منحصربه‌فردی آن را بررسی کنید. آن را گوگل کنید و ببینید که آیا قبلاً توسط شخص دیگری استفاده شده است یا خیر.
 
-### Creating a Full Identity
+### ایجاد یک هویت کامل
 
-This path involves choosing a country, an origin story, birthday, full name, gender, address, email with that name, etc. Basically, you are creating yourself a full character with its own interests, style of writing, name, birthplace, birthday—everything.
+این مسیر شامل انتخاب یک کشور، یک داستان زندگی، تاریخ تولد، نام کامل، جنسیت، آدرس، ایمیل با آن نام و غیره است. به‌طور خلاصه، شما یک شخصیت کامل برای خود ایجاد می‌کنید که دارای علایق، سبک نوشتن، نام، محل تولد، تاریخ تولد—همه چیز است.
 
-The advantage of this path is that it is really easy to keep it separate from your real identity. If you have to sign up somewhere that requires information, you can enter the fake personal information you created before.
+مزیت این مسیر این است که واقعاً آسان است که آن را از هویت واقعی خود جدا نگه دارید. اگر مجبورید جایی ثبت‌نام کنید که نیاز به اطلاعات دارد، می‌توانید اطلاعات جعلی‌ای را که قبلاً ایجاد کرده‌اید وارد کنید.
 
-Make sure the name doesn't lead back to you and write it down in a safe place to keep it consistent, so you don't have to change anything if you forget it.
+مطمئن شوید که نام به شما منتهی نمی‌شود و آن را در جایی امن یادداشت کنید تا ثابت بماند و مجبور نشوید در صورت فراموشی چیزی را تغییر دهید.
 
-Also, there are a lot of websites that can generate random and fake identities and addresses. Just search for one and you'll find a ton of them.
+همچنین، وبسایت‌های زیادی وجود دارند که می‌توانند هویت‌های جعلی و آدرس‌های تصادفی ایجاد کنند. فقط جستجو کنید و تعداد زیادی از آن‌ها را خواهید یافت.
 
-### Create a Combination of Both
+### ایجاد ترکیبی از هر دو
 
-This path, in my opinion, is the most convenient. You can have both a nickname and a full identity and use them as needed. For example, for your GitHub, you can use your nickname as the username and the fake name as your name.
+به‌نظر من این مسیر راحت‌ترین گزینه است. می‌توانید هم یک لقب و هم یک هویت کامل داشته باشید و هرکدام را براساس نیاز استفاده کنید. به‌عنوان مثال، برای GitHub می‌توانید از لقب خود به‌عنوان نام کاربری استفاده کنید و نام جعلی را به‌عنوان نام خود قرار دهید.
 
-This can bring you both reputation and credibility and ease of identity management, while allowing you to use either name based on the situation.
+این ترکیب می‌تواند هم شهرت و اعتبار به شما بدهد و هم مدیریت هویت را آسان کند و به شما امکان دهد که براساس موقعیت، از هرکدام از آن‌ها استفاده کنید.
 
-Just make sure the nickname and identity don't lead back to your real identity. You can also create some nicknames by combining the name and information of your fake identity as well.
+فقط مطمئن شوید که لقب و هویت به هویت واقعی شما منتهی نمی‌شوند. همچنین می‌توانید با ترکیب نام و اطلاعات هویت جعلی خود، برخی از لقب‌ها را ایجاد کنید.
 
-## OPSec and Online Behaviours
+## OPSEC و رفتارهای آنلاین
 
-When it comes to anonymity, your OPSec and online behaviors are the most important factors. I have covered OPSec in Chapter 3. Your operational security is crucial when it comes to privacy and especially anonymity. Having poor OPSEC and not being cautious about what information you share online is like snitching on yourself.
+وقتی صحبت از ناشناس بودن می‌شود، OPSEC و رفتارهای آنلاین شما مهم‌ترین عوامل هستند. من در فصل ۳ به OPSEC پرداختم. امنیت عملیاتی شما هنگام حفظ حریم خصوصی و به‌ویژه ناشناس بودن حیاتی است. داشتن OPSEC ضعیف و بی‌احتیاطی در اشتراک‌گذاری اطلاعات آنلاین مانند لو دادن خودتان است.
 
-Other than your OPSEC, your online behaviors play a huge role in maintaining anonymity. These behaviors can be hard to keep consistent. Inconsistent behaviors can create identifiable patterns that can be used to de-anonymize you. Here are some key points to consider:
+علاوه بر OPSEC، رفتارهای آنلاین شما نقش بزرگی در حفظ ناشناس بودن ایفا می‌کند. این رفتارها ممکن است حفظ آن‌ها به‌طور مداوم دشوار باشد. رفتارهای ناسازگار می‌تواند الگوهای قابل‌شناسایی‌ای ایجاد کند که برای رفع ناشناس بودن شما استفاده شود. در اینجا نکات کلیدی‌ای را که باید در نظر بگیرید آورده شده است:
 
-### Typing Patterns (Keystroke Dynamics)
+### الگوهای تایپ (Keystroke Dynamics)
 
-Your typing speed, rhythm, and the way you switch between keys can create a unique fingerprint. Using typing randomizers or maintaining a consistent typing speed can help avoid recognizable patterns.
+سرعت تایپ، ریتم و نحوه جابجایی شما بین کلیدها می‌تواند یک **اثر انگشت دیجیتالی** منحصربه‌فرد ایجاد کند. استفاده از ابزارهای تصادفی‌ساز تایپ یا حفظ سرعت تایپ یکنواخت می‌تواند به جلوگیری از ایجاد الگوهای قابل شناسایی کمک کند.
 
-### Mouse Movement and Click Patterns
+### الگوهای حرکت ماوس و کلیک
 
-The way you move your mouse and the speed at which you click can be tracked. Use tools to anonymize mouse movements or standardize your movement patterns to reduce the risk of identification.
+نحوه حرکت ماوس و سرعت کلیک شما می‌تواند ردیابی شود. از ابزارهایی استفاده کنید که حرکات ماوس را ناشناس می‌کنند یا الگوهای حرکت خود را استاندارد کنید تا خطر شناسایی کاهش یابد.
 
-### Touchscreen Gestures
+### حرکات صفحه‌نمایش لمسی
 
-On mobile devices, swipe and tap patterns can be unique to you. Similar to mouse movements, try to use standardized gestures and avoid developing identifiable patterns.
+در دستگاه‌های موبایل، الگوهای لمس و سوایپ می‌توانند به شما منحصر‌به‌فرد باشند. مشابه حرکات ماوس، سعی کنید از حرکات استاندارد استفاده کنید و از ایجاد الگوهای قابل‌شناسایی جلوگیری کنید.
 
-### Browser Fingerprinting
+### اثر انگشت دیجیتالی مرورگر
 
-Details like installed fonts, plugins, screen resolution, and color depth can create a unique browser fingerprint. Use browsers or extensions that randomize or block these details, such as the Tor Browser or CanvasBlocker.
+جزئیاتی مانند فونت‌های نصب‌شده، پلاگین‌ها، وضوح صفحه‌نمایش و عمق رنگ می‌تواند یک **اثر انگشت دیجیتالی مرورگر** ایجاد کند. از مرورگرها یا افزونه‌هایی استفاده کنید که این جزئیات را تصادفی‌سازی یا مسدود می‌کنند، مانند مرورگر Tor یا افزونه CanvasBlocker.
 
-### IP Address and Network
+### آدرس IP و شبکه
 
-A static IP address is more easily trackable. Regularly change your VPN or proxy server location to avoid creating patterns. Use public or shared networks along with an anonymizing network like the TOR network for activities requiring high anonymity.
+یک آدرس IP ثابت به‌راحتی قابل‌ردیابی است. مکان سرور VPN یا پروکسی خود را مرتب تغییر دهید تا از ایجاد الگوها جلوگیری کنید. از شبکه‌های عمومی یا اشتراکی همراه با شبکه‌های ناشناس مانند شبکه TOR برای فعالیت‌هایی که نیاز به ناشناس‌بودن بالایی دارند، استفاده کنید.
 
-### Device Fingerprinting
+### اثر انگشت دیجیتالی دستگاه
 
-Information about your device’s hardware, such as the GPU and CPU, can be collected. Use virtualization or disposable devices for highly sensitive activities to avoid leaving identifiable traces.
+اطلاعاتی درباره سخت‌افزار دستگاه شما مانند GPU و CPU می‌تواند جمع‌آوری شود. برای فعالیت‌های حساس، از مجازی‌سازی یا دستگاه‌های یک‌بارمصرف استفاده کنید تا از ایجاد ردپای قابل‌تشخیص جلوگیری کنید.
 
-### Behavioral Biometrics
+### بیومتریک رفتاری
 
-Keystroke dynamics and other behavioral biometrics can uniquely identify you. Consider using virtual keyboards or scripts to automate some typing tasks.
+**Keystroke dynamics** و دیگر بیومتریک‌های رفتاری می‌توانند شما را به‌طور منحصربه‌فرد شناسایی کنند. استفاده از کیبوردهای مجازی یا اسکریپت‌هایی برای خودکارسازی برخی از وظایف تایپی را در نظر بگیرید.
 
-### Account and Profile Creation
+### ایجاد حساب و پروفایل
 
-Using the same pseudonym across platforms can create linkable patterns. Use different pseudonyms and email addresses for different accounts to avoid connections if possible.
+استفاده از همان نام مستعار در پلتفرم‌های مختلف می‌تواند الگوهایی قابل‌پیوند ایجاد کند. از نام‌های مستعار و آدرس‌های ایمیل متفاوت برای حساب‌های مختلف استفاده کنید تا از ارتباطات بین آن‌ها جلوگیری شود.
 
-### Usage Patterns
+### الگوهای استفاده
 
-The times at which you are active online and the frequency of your logins or visits can create patterns. Vary your online activity times and frequency to avoid detection.
+زمان‌هایی که به‌صورت آنلاین فعال هستید و فرکانس ورود یا بازدیدهای شما می‌تواند الگوهایی ایجاد کند. زمان و فرکانس فعالیت‌های آنلاین خود را متنوع کنید تا از شناسایی جلوگیری کنید.
 
-### Language and Writing Style
+### سبک نوشتن و زبان
 
-Your vocabulary, syntax, and repeated use of specific phrases can be distinctive. Use different writing styles or tools like paraphrasers to vary your text and reduce traceability.
+واژگان، نحو و استفاده مکرر از عبارات خاص می‌تواند متمایز باشد. از سبک‌های نوشتاری متفاوت یا ابزارهایی مانند بازنویسی‌کننده‌ها برای تغییر متن خود استفاده کنید تا قابلیت ردیابی آن کاهش یابد.
 
-### Geolocation
+### موقعیت جغرافیایی
 
-GPS data, Wi-Fi, and Bluetooth signals can reveal your location. Disable GPS, Wi-Fi, and Bluetooth when not needed, or use location spoofing tools to mask your whereabouts.
+داده‌های GPS، سیگنال‌های Wi-Fi و بلوتوث می‌توانند مکان شما را فاش کنند. GPS، Wi-Fi و بلوتوث را زمانی که نیاز ندارید غیرفعال کنید یا از ابزارهای جعلی‌سازی مکان برای پنهان کردن موقعیت خود استفاده کنید.
 
-### Software and Version Information
+### اطلاعات نرم‌افزار و نسخه‌ها
 
-The combination of your operating system and browser version can be unique. Use commonly used software versions and keep them updated to blend in with the crowd.
+ترکیب سیستم‌عامل و نسخه مرورگر شما می‌تواند منحصربه‌فرد باشد. از نسخه‌های رایج نرم‌افزار استفاده کنید و آن‌ها را به‌روز نگه دارید تا در میان جمعیت بمانید.
 
-### Social Media and Online Presence
+### رسانه‌های اجتماعی و حضور آنلاین
 
-The type of content you post, your engagement patterns, and your network connections can all be used to trace your identity. Limit social media use, employ pseudonyms, and avoid linking accounts to maintain anonymity.
+نوع محتوایی که ارسال می‌کنید، الگوهای تعامل شما و ارتباطات شبکه‌ای شما همگی می‌توانند برای ردیابی هویت شما استفاده شوند. استفاده از رسانه‌های اجتماعی را محدود کنید، از نام‌های مستعار استفاده کنید و از اتصال حساب‌ها برای حفظ ناشناس‌بودن خودداری کنید.
 
-Consistency in these practices is key to avoiding de-anonymization and maintaining the highest level of security.
+حفظ یکنواختی در این اقدامات کلید اجتناب از رفع ناشناس‌بودن و حفظ بالاترین سطح امنیت است.
 
-You might not need to worry about all of these behaviors; see which ones seem more important to your activity. For example, if you're a writer or whistleblower, your writing style can matter a lot more than other things.
+ممکن است نیازی به نگرانی درباره همه این رفتارها نداشته باشید؛ ببینید کدام یک برای فعالیت شما اهمیت بیشتری دارد. به‌عنوان مثال، اگر نویسنده یا افشاگر هستید، سبک نوشتاری شما ممکن است بسیار مهم‌تر از سایر موارد باشد.
 
-## Creating an Environment for Your Activities
+## ایجاد محیطی برای فعالیت‌های خود
 
-Every identity needs an environment for their work and activities, and the setup of that environment is heavily dependent on your threat model. Not every identity and activity requires maximum caution and privacy, but some might, based on what you want to do.
+هر هویت به یک محیط برای کارها و فعالیت‌های خود نیاز دارد و تنظیم آن محیط به‌شدت به مدل تهدید شما بستگی دارد. هر هویت و فعالیتی نیاز به حداکثر احتیاط و حریم خصوصی ندارد، اما برخی از آن‌ها ممکن است بر اساس کاری که می‌خواهید انجام دهید، به آن نیاز داشته باشند.
 
-You need to tailor this setup to your own situation, but I will show some examples of different environments based on the sensitivity of activities. These may not necessarily suit your specific situation.
+شما باید این تنظیمات را براساس شرایط خود تنظیم کنید، اما من مثال‌هایی از محیط‌های مختلف براساس حساسیت فعالیت‌ها ارائه خواهم داد. این‌ها ممکن است لزوماً برای وضعیت خاص شما مناسب نباشند.
 
-### Low-Sensitivity Activities
+### فعالیت‌های با حساسیت پایین
 
-For activities that do not require high levels of anonymity, such as casual browsing or social media use under a pseudonym, a basic setup may be enough:
+برای فعالیت‌هایی که نیازی به سطوح بالای ناشناس بودن ندارند، مانند مرور عادی یا استفاده از رسانه‌های اجتماعی تحت یک نام مستعار، یک تنظیمات ابتدایی ممکن است کافی باشد:
 
-- **Browser**: Use a privacy-focused browser like Firefox with privacy extensions such as uBlock Origin, and apply some hardening using Arkenfox, to make it both usable and private. Also, use different hardened profiles for different pseudonyms and activities.
-- **VPN**: A reputable VPN service to mask your IP address and encrypt your traffic.
-- **Email**: Use a privacy-respecting email service like ProtonMail or Tutanota.
-- **Search Engine**: Use DuckDuckGo or Startpage to avoid tracking by mainstream search engines.
-- **Privacy-Friendly Front-Ends**: There are privacy-friendly front-ends for YouTube, Twitter, Instagram, etc., that allow you to browse these websites without having an account on them or sharing too much data.
+- **مرورگر**: از یک مرورگر متمرکز بر حریم خصوصی مانند فایرفاکس با افزونه‌های حریم خصوصی مانند uBlock Origin استفاده کنید و با استفاده از Arkenfox مرورگر خود را تقویت کنید تا هم قابل‌استفاده و هم خصوصی باشد. همچنین از پروفایل‌های تقویت‌شده مختلف برای نام‌های مستعار و فعالیت‌های مختلف استفاده کنید.
+- **VPN**: از یک سرویس VPN معتبر برای مخفی‌کردن آدرس IP خود و رمزگذاری ترافیک‌تان استفاده کنید.
+- **ایمیل**: از خدمات ایمیل محترم به حریم خصوصی مانند ProtonMail یا Tutanota استفاده کنید.
+- **موتور جستجو**: از DuckDuckGo یا Startpage استفاده کنید تا از ردیابی توسط موتورهای جستجوی عمومی جلوگیری کنید.
+- **فرانت‌اندهای دوستدار حریم خصوصی**: از فرانت‌اندهای حریم خصوصی برای وبسایت‌هایی مانند YouTube، Twitter، Instagram و غیره استفاده کنید که به شما امکان مرور این وبسایت‌ها را بدون داشتن حساب کاربری یا به‌اشتراک‌گذاری داده‌های بیش از حد می‌دهند.
 
-### Medium-Sensitivity Activities
+### فعالیت‌های با حساسیت متوسط
 
-For activities that require moderate anonymity, such as maintaining a blog or participating in forums on sensitive topics, a more cautious setup is necessary:
+برای فعالیت‌هایی که نیاز به ناشناس بودن متوسط دارند، مانند نگهداری از یک وبلاگ یا مشارکت در انجمن‌ها در موضوعات حساس، یک تنظیمات محتاطانه‌تر لازم است:
 
-- **Browser**: Use the Tor Browser for anonymity and protection against tracking.
-- **VPN**: Combine a VPN with the Tor network for added security. This can impact your network bandwidth, so if bandwidth is a concern, Tor with obfuscation might be sufficient.
-- **Email**: Use secure email services and consider disposable email addresses for one-time communications.
-- **Device**: Consider using a dedicated device or a virtual machine for these activities to avoid cross-contamination with your primary activities.
-- **Communication**: Use encrypted messaging apps like Signal or Matrix (although not as secure as Signal, it allows sign-up with email and you can host your own home server, so it might be better for privacy and anonymity) for secure communication.
+- **مرورگر**: از مرورگر Tor برای ناشناس‌ماندن و محافظت در برابر ردیابی استفاده کنید.
+- **VPN**: VPN را با شبکه Tor ترکیب کنید برای امنیت بیشتر. این کار ممکن است پهنای باند شما را کاهش دهد، پس اگر پهنای باند مهم است، Tor با قابلیت مبهم‌سازی ممکن است کافی باشد.
+- **ایمیل**: از خدمات ایمیل امن استفاده کنید و به آدرس‌های ایمیل یک‌بارمصرف برای ارتباطات موقتی فکر کنید.
+- **دستگاه**: از یک دستگاه اختصاصی یا یک ماشین مجازی برای این فعالیت‌ها استفاده کنید تا از تداخل با فعالیت‌های اصلی خود جلوگیری کنید.
+- **ارتباطات**: از اپلیکیشن‌های پیام‌رسان رمزگذاری‌شده مانند Signal یا Matrix (اگرچه امنیت Matrix به اندازه Signal نیست، ولی امکان ثبت‌نام با ایمیل و میزبانی سرور خانگی را فراهم می‌کند که ممکن است برای حریم خصوصی و ناشناس‌بودن بهتر باشد) برای ارتباطات امن استفاده کنید.
 
-### High-Sensitivity Activities
+### فعالیت‌های با حساسیت بالا
 
-For activities that require the highest level of anonymity, such as whistleblowing, investigative journalism, or activism in a dictatorship regime, a maximum security environment is needed:
+برای فعالیت‌هایی که به سطح بالایی از ناشناس‌بودن نیاز دارند، مانند افشاگر‌ی، روزنامه‌نگاری تحقیقی، یا فعالیت در رژیم‌های دیکتاتوری، نیاز به یک محیط با حداکثر امنیت دارید:
 
-- **Operating System**: Use a live operating system like Tails, which can be run from a USB stick and leaves no trace after use, or set up an encrypted virtual machine with Whonix OS.
-- **Browser**: Strictly use the Tor Browser and follow Tor usage best practices.
-- **VPN**: Use a multi-hop VPN service and route your traffic through the Tor network for layered security.
-- **Email and Communication**: Use encrypted email services, PGP encryption for emails, and secure messaging apps like Signal or Wire. Consider using anonymous email services for additional protection.
-- **Device**: Use a dedicated, secure device that is only used for these high-sensitivity activities. Regularly wipe and reformat the device to remove any potential traces.
-- **File Sharing**: Use encrypted file-sharing services and tools like OnionShare to share files anonymously.
-- **Metadata Removal**: Always strip metadata from files and photos before sharing them.
-- **Geolocation**: Disable GPS, Wi-Fi, and Bluetooth on your device. Use location spoofing tools to mask your actual location.
-- **Operational Security**: Maintain strict OpSec practices, such as never using your real identity, avoiding linking different online identities, and being cautious about the information you share.
+- **سیستم‌عامل**: از سیستم‌عاملی مانند Tails استفاده کنید که می‌تواند از یک USB اجرا شود و پس از استفاده هیچ اثری باقی نمی‌گذارد، یا یک ماشین مجازی رمزگذاری‌شده با سیستم‌عامل Whonix راه‌اندازی کنید.
+- **مرورگر**: به‌طور سختگیرانه فقط از مرورگر Tor استفاده کنید و بهترین شیوه‌های استفاده از Tor را دنبال کنید.
+- **VPN**: از یک سرویس VPN چندمرحله‌ای استفاده کنید و ترافیک خود را از طریق شبکه Tor هدایت کنید برای امنیت لایه‌لایه.
+- **ایمیل و ارتباطات**: از خدمات ایمیل رمزگذاری‌شده، رمزگذاری PGP برای ایمیل‌ها و اپلیکیشن‌های پیام‌رسان امن مانند Signal یا Wire استفاده کنید. همچنین از خدمات ایمیل ناشناس برای محافظت بیشتر بهره ببرید.
+- **دستگاه**: از یک دستگاه اختصاصی و امن که فقط برای این فعالیت‌های حساس استفاده می‌شود، بهره ببرید. دستگاه را به‌طور منظم پاک و فرمت کنید تا هرگونه اثر احتمالی را از بین ببرید.
+- **اشتراک فایل**: از خدمات و ابزارهای اشتراک فایل رمزگذاری‌شده مانند OnionShare برای اشتراک فایل به‌صورت ناشناس استفاده کنید.
+- **حذف متاداده**: همیشه متاداده‌ها را از فایل‌ها و عکس‌ها قبل از به‌اشتراک‌گذاشتن حذف کنید.
+- **موقعیت جغرافیایی**: GPS، Wi-Fi و بلوتوث را در دستگاه خود غیرفعال کنید. از ابزارهای جعلی‌سازی مکان استفاده کنید تا مکان واقعی خود را پنهان کنید.
+- **امنیت عملیاتی (OPSEC)**: از شیوه‌های سختگیرانه OPSEC استفاده کنید، مانند اینکه هرگز از هویت واقعی خود استفاده نکنید، از پیوند دادن هویت‌های آنلاین مختلف خودداری کنید و درباره اطلاعاتی که به اشتراک می‌گذارید محتاط باشید.
 
-## Anonymizing Tools
+## ابزارهای ناشناس‌سازی
 
-To stay anonymous online, you will need to use different tools based on your needs and situations. Not every tool will necessarily improve your anonymity if used without need. Here are some key anonymizing tools categorized by their function and use case:
+برای ناشناس ماندن آنلاین، شما نیاز به استفاده از ابزارهای مختلف بر اساس نیازها و شرایط خود دارید. هر ابزاری لزوماً ناشناس بودن شما را افزایش نمی‌دهد اگر بدون نیاز از آن استفاده شود. در اینجا برخی از ابزارهای مهم ناشناس‌سازی بر اساس عملکرد و مورد استفاده‌شان آورده شده است:
 
-### 1. Browsers
+### ۱. مرورگرها
 
-- **Tor Browser**
-  - **Use Case**: High-level anonymity needs, such as accessing the dark web or conducting sensitive research.
-  - **Features**: Routes your internet traffic through the Tor network, masking your IP address and encrypting your traffic multiple times.
+- **مرورگر Tor**
+  - **مورد استفاده**: نیازهای ناشناس‌سازی در سطح بالا، مانند دسترسی به وب تاریک یا تحقیقات حساس.
+  - **ویژگی‌ها**: ترافیک اینترنت شما را از طریق شبکه Tor هدایت می‌کند، آدرس IP شما را مخفی می‌کند و ترافیک‌تان را چندین بار رمزگذاری می‌کند.
 
-- **Brave Browser**
-  - **Use Case**: General privacy-focused browsing for everyday use.
-  - **Features**: Built-in ad blocker, tracker blocker, and the ability to use Tor for private tabs.
+- **مرورگر Brave**
+  - **مورد استفاده**: مرور روزمره با تمرکز بر حریم خصوصی.
+  - **ویژگی‌ها**: مسدودکننده تبلیغات و ردیاب‌ها به صورت داخلی، امکان استفاده از Tor برای تب‌های خصوصی.
 
-- **Hardened Firefox Browser**
-  - **Use Case**: Highly customizable and can be great if fingerprinting is not your main concern.
-  - **Features**: Can be set up based on your needs and can provide great anti-tracking features if hardened correctly.
+- **مرورگر فایرفاکس تقویت‌شده**
+  - **مورد استفاده**: سفارشی‌سازی بسیار و مناسب اگر اثر انگشت دیجیتالی برای شما اهمیت کمتری دارد.
+  - **ویژگی‌ها**: قابلیت تنظیم بر اساس نیازهای شما و ارائه ویژگی‌های ضد ردیابی عالی در صورت تنظیم صحیح.
 
-### 2. VPN (Virtual Private Network)
+### ۲. VPN (شبکه خصوصی مجازی)
 
-- **Reputable VPN Providers**
-  - **Use Case**: Masking your IP address and encrypting your internet traffic.
-  - **Features**: No-logs policies, multiple server locations, and additional security features like double VPN and kill switches.
+- **ارائه‌دهندگان VPN معتبر**
+  - **مورد استفاده**: مخفی کردن آدرس IP و رمزگذاری ترافیک اینترنت شما.
+  - **ویژگی‌ها**: سیاست‌های عدم ثبت اطلاعات، مکان‌های سرور متعدد و ویژگی‌های امنیتی اضافی مانند VPN دوگانه و سوئیچ قطع.
 
-- **Self-Hosted VPNs**
-  - **Use Case**: Great for bypassing censorship as you can run protocols that have greater obfuscation and are less likely to be blocked by firewalls.
-  - **Features**: Can help bypass censorship; no one else can control and access the data passing through the VPN other than you.
+- **VPNهای خودمیزبان**
+  - **مورد استفاده**: عالی برای عبور از سانسور، زیرا می‌توانید پروتکل‌هایی را اجرا کنید که ابهام بیشتری دارند و کمتر توسط فایروال‌ها مسدود می‌شوند.
+  - **ویژگی‌ها**: کمک به عبور از سانسور؛ هیچ کسی جز شما نمی‌تواند داده‌هایی که از VPN عبور می‌کنند را کنترل و دسترسی داشته باشد.
 
-### 3. Email Services
+### ۳. خدمات ایمیل
 
 - **ProtonMail**
-  - **Use Case**: Secure, encrypted email communication.
-  - **Features**: End-to-end encryption, based in Switzerland, supports PGP encryption.
+  - **مورد استفاده**: ارتباطات ایمیل امن و رمزگذاری‌شده.
+  - **ویژگی‌ها**: رمزگذاری انتها به انتها، مستقر در سوئیس، پشتیبانی از رمزگذاری PGP.
 
 - **Tutanota**
-  - **Use Case**: Privacy-focused email service.
-  - **Features**: End-to-end encryption, no tracking, built-in encryption for calendars and contacts.
+  - **مورد استفاده**: سرویس ایمیل با تمرکز بر حریم خصوصی.
+  - **ویژگی‌ها**: رمزگذاری انتها به انتها، بدون ردیابی، رمزگذاری داخلی برای تقویم‌ها و مخاطبان.
 
-- **Disposable Email Services (Guerrilla Mail, 10 Minute Mail)**
-  - **Use Case**: Temporary email addresses for short-term use.
-  - **Features**: Provides anonymous, temporary email addresses that self-destruct after a set period.
+- **خدمات ایمیل یک‌بارمصرف (Guerrilla Mail, 10 Minute Mail)**
+  - **مورد استفاده**: آدرس‌های ایمیل موقت برای استفاده کوتاه‌مدت.
+  - **ویژگی‌ها**: ارائه آدرس‌های ایمیل موقت و ناشناس که پس از یک دوره زمانی خودبه‌خود نابود می‌شوند.
 
-### 4. Messaging Apps
+### ۴. اپلیکیشن‌های پیام‌رسان
 
 - **Signal**
-  - **Use Case**: Secure messaging for personal or professional use.
-  - **Features**: End-to-end encryption, open source, self-destructing messages.
+  - **مورد استفاده**: پیام‌رسانی امن برای استفاده شخصی یا حرفه‌ای.
+  - **ویژگی‌ها**: رمزگذاری انتها به انتها، منبع باز، پیام‌های خودتخریب‌شونده.
 
 - **Briar**
-  - **Use Case**: Censorship-resistant encrypted messaging via Bluetooth, Wi-Fi, Tor, with privacy built-in.
-  - **Features**: Great for communicating securely in places with no internet or high censorship.
+  - **مورد استفاده**: پیام‌رسانی رمزگذاری‌شده و مقاوم در برابر سانسور از طریق بلوتوث، Wi-Fi، Tor، با حریم خصوصی داخلی.
+  - **ویژگی‌ها**: مناسب برای ارتباطات امن در مکان‌هایی که اینترنت وجود ندارد یا سانسور شدید وجود دارد.
 
-### 5. Operating Systems
+### ۵. سیستم‌عامل‌ها
 
 - **Tails**
-  - **Use Case**: High-security needs, such as whistleblowing or sensitive journalism.
-  - **Features**: Live operating system that runs from a USB stick, leaves no trace, routes all traffic through Tor.
+  - **مورد استفاده**: نیازهای امنیتی بالا، مانند افشاگر‌ی یا روزنامه‌نگاری حساس.
+  - **ویژگی‌ها**: سیستم‌عامل زنده که از روی USB اجرا می‌شود، هیچ اثری باقی نمی‌گذارد، همه ترافیک را از طریق Tor هدایت می‌کند.
 
 - **Qubes OS**
-  - **Use Case**: Secure, compartmentalized computing.
-  - **Features**: Uses virtualization to create isolated environments for different tasks, reducing the risk of compromise.
+  - **مورد استفاده**: محاسبات امن و بخش‌بندی‌شده.
+  - **ویژگی‌ها**: از مجازی‌سازی برای ایجاد محیط‌های جداگانه برای وظایف مختلف استفاده می‌کند و خطر نفوذ را کاهش می‌دهد.
 
 - **Whonix OS**
-  - **Use Case**: A security-focused operating system designed to ensure maximum anonymity and privacy. It can also be used along with Qubes OS for additional security and isolation.
-  - **Features**: Uses virtualization to create isolated environments for different tasks, reducing the risk of compromise.
+  - **مورد استفاده**: سیستم‌عاملی با تمرکز بر امنیت که برای اطمینان از ناشناس‌سازی و حریم خصوصی حداکثری طراحی شده است. می‌توان آن را همراه با Qubes OS برای امنیت بیشتر و جداسازی استفاده کرد.
+  - **ویژگی‌ها**: از مجازی‌سازی برای ایجاد محیط‌های جداگانه برای وظایف مختلف استفاده می‌کند و خطر نفوذ را کاهش می‌دهد.
 
-### 6. File Sharing and Storage
+### ۶. اشتراک‌گذاری و ذخیره‌سازی فایل
 
 - **OnionShare**
-  - **Use Case**: Securely sharing files anonymously.
-  - **Features**: Uses Tor to create a temporary, anonymous file-sharing server.
+  - **مورد استفاده**: اشتراک‌گذاری امن فایل‌ها به صورت ناشناس.
+  - **ویژگی‌ها**: از Tor برای ایجاد یک سرور فایل موقت و ناشناس استفاده می‌کند.
 
 - **ProtonDrive**
-  - **Use Case**: Encrypted cloud storage.
-  - **Features**: End-to-end encryption, integrated with ProtonMail for secure file sharing.
+  - **مورد استفاده**: ذخیره‌سازی ابری رمزگذاری‌شده.
+  - **ویژگی‌ها**: رمزگذاری انتها به انتها، ادغام با ProtonMail برای اشتراک‌گذاری فایل امن.
 
-### 7. Metadata Removal Tools
+### ۷. ابزارهای حذف متاداده
 
 - **ExifTool**
-  - **Use Case**: Removing metadata from files before sharing.
-  - **Features**: Command-line tool for viewing, editing, and removing metadata from various file types.
+  - **مورد استفاده**: حذف متاداده از فایل‌ها قبل از اشتراک‌گذاری.
+  - **ویژگی‌ها**: ابزار خط فرمان برای مشاهده، ویرایش و حذف متاداده از انواع فایل‌ها.
 
-### 8. Search Engines
+### ۸. موتورهای جستجو
 
 - **DuckDuckGo**
-  - **Use Case**: Privacy-focused web searches.
-  - **Features**: Does not track search history, anonymizes user information.
+  - **مورد استفاده**: جستجوهای وب با تمرکز بر حریم خصوصی.
+  - **ویژگی‌ها**: سابقه جستجو را ردیابی نمی‌کند، اطلاعات کاربر را ناشناس می‌کند.
 
 - **Startpage**
-  - **Use Case**: Anonymous web searches using Google results.
-  - **Features**: No tracking, IP anonymization, private search queries.
+  - **مورد استفاده**: جستجوهای وب ناشناس با استفاده از نتایج گوگل.
+  - **ویژگی‌ها**: بدون ردیابی، ناشناس‌سازی IP، جستجوهای خصوصی.
 
-### 9. Device and Network Security
+### ۹. امنیت دستگاه و شبکه
 
-- **MAC Address Randomization**
-  - **Use Case**: Preventing tracking of your physical device.
-  - **Features**: Changes your device’s MAC address to avoid identification on networks.
+- **تصادفی‌سازی آدرس MAC**
+  - **مورد استفاده**: جلوگیری از ردیابی دستگاه فیزیکی شما.
+  - **ویژگی‌ها**: آدرس MAC دستگاه شما را تغییر می‌دهد تا از شناسایی در شبکه‌ها جلوگیری کند.
 
-- **Public Wi-Fi Caution**
-  - **Use Case**: Reducing risk when using public Wi-Fi.
-  - **Features**: Always use a VPN, avoid accessing sensitive accounts, and consider using a travel router for added security.
+- **احتیاط در Wi-Fi عمومی**
+  - **مورد استفاده**: کاهش خطر هنگام استفاده از Wi-Fi عمومی.
+  - **ویژگی‌ها**: همیشه از VPN استفاده کنید، از دسترسی به حساب‌های حساس خودداری کنید و به استفاده از روتر مسافرتی برای امنیت بیشتر فکر کنید.
 
-### 10. Behavioral Anonymizing Tools
+### ۱۰. ابزارهای ناشناس‌سازی رفتاری
 
-- **Typing Randomizers and Virtual Keyboards**
-  - **Use Case**: Preventing identification through keystroke dynamics.
-  - **Features**: Randomizes typing patterns or uses on-screen keyboards to avoid tracking.
+- **تصادفی‌سازهای تایپ و کیبوردهای مجازی**
+  - **مورد استفاده**: جلوگیری از شناسایی از طریق الگوهای تایپ.
+  - **ویژگی‌ها**: الگوهای تایپ را تصادفی‌سازی می‌کند یا از کیبوردهای روی‌صفحه برای جلوگیری از ردیابی استفاده می‌کند.
 
-- **Mouse Movement Anonymizers**
-  - **Use Case**: Obfuscating mouse movement patterns.
-  - **Features**: Tools that standardize or randomize mouse movements.
+- **ناشناس‌کننده‌های حرکت ماوس**
+  - **مورد استفاده**: مخفی‌کردن الگوهای حرکت ماوس.
+  - **ویژگی‌ها**: ابزارهایی که حرکات ماوس را استاندارد یا تصادفی می‌کنند.
 
-Not all of these tools are needed, nor are they guaranteed to remain effective over time. The world is constantly changing, so always research and keep yourself updated about privacy and security news and new tools. These companies may also change their policies or effectiveness over time. If you read this book years later, do some research, but the concepts should remain the same, even if the names of the tools have changed.
+همه این ابزارها لازم نیستند و یا تضمین نمی‌کنند که همیشه مؤثر بمانند. دنیای آنلاین همیشه در حال تغییر است، بنابراین همیشه تحقیق کنید و خود را درباره اخبار حریم خصوصی و امنیت و ابزارهای جدید به‌روز نگه دارید. این شرکت‌ها ممکن است در طول زمان سیاست‌ها یا اثربخشی خود را تغییر دهند. اگر این کتاب را سال‌ها بعد می‌خوانید، تحقیقاتی انجام دهید، اما مفاهیم باید همچنان پابرجا باشند، حتی اگر نام ابزارها تغییر کرده باشد.
 
-## Purchasing Anonymously
+## خرید ناشناس
 
-Sometimes, for your activities, you might need to buy things anonymously online, such as a VPS (Virtual Private Server) to host your own VPN or cloud storage, or you might want to buy a VOIP number anonymously to sign up for Signal or Twitter, or pay for your VPN service. In these cases, you cannot pay with PayPal or credit cards or debit cards, as they are easily trackable. Also, you cannot pay with most cryptocurrencies, as they are worse than fiat and PayPal. For PayPal and credit cards, there should be a court order or permit to see who has paid, but for Bitcoin, well, it is a public ledger; everyone can see where the money comes from and where it goes. Everything is transparent. Most popular cryptocurrencies are like that. Your Bitcoin address is not tied to your name directly, that is correct, but you have to buy it from an exchange first or someone sends you some, and the moment you spend your cryptos, it's obvious whose they were. There are some methods like coin mixing, which is not legal in most countries because you're mixing your coins with others' coins.
+گاهی اوقات برای فعالیت‌هایتان نیاز به خریدهای ناشناس آنلاین دارید؛ مانند خرید یک VPS (سرور مجازی خصوصی) برای میزبانی VPN خود یا ذخیره‌سازی ابری، یا شاید بخواهید یک شماره VOIP به‌صورت ناشناس برای ثبت‌نام در Signal یا توییتر بخرید، یا هزینه سرویس VPN خود را پرداخت کنید. در این موارد، نمی‌توانید با PayPal یا کارت‌های اعتباری یا نقدی پرداخت کنید، زیرا به راحتی قابل ردیابی هستند. همچنین نمی‌توانید با اکثر ارزهای دیجیتال پرداخت کنید، زیرا حتی بدتر از فیات و PayPal هستند. برای PayPal و کارت‌های اعتباری نیاز به حکم دادگاه یا مجوز برای دیدن اطلاعات پرداخت است، اما برای بیت‌کوین، همه چیز شفاف است؛ هر کسی می‌تواند ببیند پول از کجا آمده و به کجا رفته است. اکثر ارزهای دیجیتال محبوب به همین صورت هستند. آدرس بیت‌کوین شما مستقیماً به نام شما مرتبط نیست، اما شما باید آن را از یک صرافی خریداری کنید یا کسی به شما مقداری بیت‌کوین ارسال کند و در لحظه‌ای که ارز دیجیتال خود را خرج می‌کنید، مشخص می‌شود که متعلق به چه کسی بوده است. روش‌هایی مانند coin mixing وجود دارد، که در بیشتر کشورها قانونی نیست زیرا شما سکه‌های خود را با سکه‌های دیگران مخلوط می‌کنید.
 
-But there are cryptocurrencies that are meant to be anonymous, like Monero or Zcash (as these two are the most popular privacy coins on the market). Here's how they work:
+اما ارزهای دیجیتالی وجود دارند که برای ناشناس‌سازی طراحی شده‌اند، مانند Monero یا Zcash (به عنوان دو مورد از محبوب‌ترین کوین‌های حریم خصوصی در بازار). در ادامه نحوه کار آنها آورده شده است:
 
 ### Monero (XMR):
 
-**How it Works:**
+**نحوه کار:**
 
-1. **Stealth Addresses**: Monero uses stealth addresses to ensure that transactions cannot be linked back to the recipient. A unique one-time address is created for each transaction, which hides the recipient's actual address.
+1. **آدرس‌های مخفی**: Monero از آدرس‌های مخفی برای اطمینان از اینکه تراکنش‌ها به گیرنده قابل ردیابی نیستند استفاده می‌کند. برای هر تراکنش یک آدرس یک‌بار مصرف ایجاد می‌شود که آدرس واقعی گیرنده را پنهان می‌کند.
 
-2. **Ring Signatures**: This cryptographic technique allows a group of users to sign a transaction without revealing which member of the group actually signed it. In a Monero transaction, multiple possible sources of funds are included in the transaction, making it unclear which source is the actual sender.
+2. **امضاهای حلقه‌ای**: این تکنیک رمزنگاری اجازه می‌دهد گروهی از کاربران یک تراکنش را امضا کنند بدون اینکه مشخص شود کدام عضو گروه امضای واقعی را انجام داده است. در یک تراکنش Monero، چندین منبع احتمالی وجه در تراکنش گنجانده می‌شود، که باعث می‌شود منبع واقعی ارسال وجه نامشخص باشد.
 
-3. **Ring Confidential Transactions (RingCT)**: This feature hides the amount being transacted. RingCT ensures that the values in a transaction are hidden from everyone except the parties involved, preventing third parties from knowing the amount of money being sent.
+3. **تراکنش‌های محرمانه حلقه‌ای (RingCT)**: این ویژگی مقدار تراکنش را پنهان می‌کند. RingCT تضمین می‌کند که مقادیر در یک تراکنش از دید هر کسی غیر از طرف‌های درگیر پنهان است، و از افشای میزان پول ارسال‌شده جلوگیری می‌کند.
 
-4. **Kovri Project**: Monero plans to integrate the Kovri project, which will route and encrypt transactions through I2P (Invisible Internet Project) nodes, further obscuring the transaction metadata such as IP addresses.
+4. **پروژه Kovri**: Monero برنامه دارد تا پروژه Kovri را ادغام کند، که تراکنش‌ها را از طریق گره‌های I2P (پروژه اینترنت نامرئی) مسیریابی و رمزگذاری می‌کند و متاداده تراکنش، مانند آدرس‌های IP، را بیشتر پنهان می‌کند.
 
-**Why It’s Anonymous:**
+**چرا ناشناس است:**
 
-- **Obscured Addresses**: Stealth addresses ensure that only the sender and recipient know where the funds are going.
-- **Hidden Transaction Amounts**: RingCT hides the amount of every transaction.
-- **Unlinkable Transactions**: Ring signatures make it impossible to determine the actual source of funds.
-- **Additional Layer of Privacy**: The Kovri project adds an extra layer of anonymity by masking transaction origins through I2P.
+- **آدرس‌های مخفی**: آدرس‌های مخفی تضمین می‌کنند که تنها فرستنده و گیرنده از محل ارسال وجه آگاه هستند.
+- **مخفی بودن مقادیر تراکنش‌ها**: RingCT مقدار هر تراکنش را پنهان می‌کند.
+- **تراکنش‌های غیرقابل ردیابی**: امضاهای حلقه‌ای امکان ردیابی منبع واقعی وجه را غیرممکن می‌سازد.
+- **لایه اضافی حریم خصوصی**: پروژه Kovri لایه‌ای اضافی از ناشناس‌سازی را با پنهان کردن مبدأ تراکنش‌ها از طریق I2P اضافه می‌کند.
 
 ### Zcash (ZEC):
 
-**How It Works:**
+**نحوه کار:**
 
-1. **Zero-Knowledge Proofs (zk-SNARKs)**: Zcash uses a form of zero-knowledge proofs called zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge) to enable fully anonymous transactions. These proofs allow one party to prove to another that a statement is true without revealing any information beyond the veracity of the statement itself.
+1. **اثبات‌های بدون دانش (zk-SNARKs)**: Zcash از شکلی از اثبات‌های بدون دانش به نام zk-SNARKs (اثبات‌های بدون دانش فشرده و غیرتعامل) برای امکان تراکنش‌های کاملاً ناشناس استفاده می‌کند. این اثبات‌ها به یک طرف اجازه می‌دهند به طرف دیگر ثابت کنند که یک گزاره صحیح است بدون اینکه هیچ اطلاعاتی فراتر از صحت گزاره فاش شود.
 
-2. **Shielded Addresses**: Zcash offers two types of addresses: transparent addresses (t-addresses) and shielded addresses (z-addresses). Transactions between shielded addresses are completely private and do not reveal the sender, recipient, or amount being transacted.
+2. **آدرس‌های محافظت‌شده**: Zcash دو نوع آدرس ارائه می‌دهد: آدرس‌های شفاف (t-addresses) و آدرس‌های محافظت‌شده (z-addresses). تراکنش‌ها بین آدرس‌های محافظت‌شده کاملاً خصوصی هستند و فرستنده، گیرنده و مقدار تراکنش را فاش نمی‌کنند.
 
-3. **Selective Disclosure**: Users can choose to disclose transaction details to third parties (e.g., for auditing purposes) while keeping the rest of the network unaware.
+3. **افشای انتخابی**: کاربران می‌توانند جزئیات تراکنش را به اشخاص ثالث (مثلاً برای اهداف حسابرسی) افشا کنند در حالی که بقیه شبکه از آن بی‌اطلاع است.
 
-**Why It’s Anonymous:**
+**چرا ناشناس است:**
 
-- **Private Transactions**: zk-SNARKs allow transactions to be verified without revealing any transaction details.
-- **Shielded Transactions**: Transactions between shielded addresses hide the sender, recipient, and transaction amount.
-- **Flexibility**: Users can opt for transparent transactions when privacy is not needed or use shielded transactions for full anonymity.
-- **Selective Transparency**: Users can disclose transaction details when necessary without compromising overall privacy.
+- **تراکنش‌های خصوصی**: zk-SNARKs امکان تأیید تراکنش‌ها را بدون افشای جزئیات تراکنش فراهم می‌کنند.
+- **تراکنش‌های محافظت‌شده**: تراکنش‌ها بین آدرس‌های محافظت‌شده فرستنده، گیرنده و مقدار تراکنش را مخفی می‌کنند.
+- **انعطاف‌پذیری**: کاربران می‌توانند هنگام نیاز به ناشناس بودن از تراکنش‌های محافظت‌شده استفاده کنند.
+- **شفافیت انتخابی**: کاربران می‌توانند در صورت لزوم جزئیات تراکنش را افشا کنند بدون اینکه حریم خصوصی کلی را به خطر بیندازند.
 
-But there are many more privacy coins as well, but if a coin is not well known in the market, most websites probably won't accept it as payments. The acceptance of privacy coins can be limited, and their use for online purchases might be restricted compared to more well-known cryptocurrencies, especially when governments try to regulate these coins or, if they can't, they will try to eliminate them.
+با وجود اینکه ارزهای حریم خصوصی بیشتری وجود دارند، پذیرش آنها به‌عنوان روش‌های پرداخت ممکن است محدود باشد. استفاده از ارزهای حریم خصوصی برای خریدهای آنلاین می‌تواند نسبت به ارزهای دیجیتال معروف‌تر محدودتر باشد.
 
-Another payment method is cash. Cash money is as private as Monero; I would say Monero is the cash equivalent of cryptocurrencies. Cash transactions do not require personal information, and there is no way to trace them back to you. Also, more importantly, cash is accepted almost everywhere. Some websites like MallwadVPN allow you to send them cash for the VPNs.
+روش پرداخت دیگر پول نقد است. پول نقد به اندازه Monero خصوصی است؛ می‌توان گفت Monero معادل نقدی ارزهای دیجیتال است. تراکنش‌های نقدی به اطلاعات شخصی نیاز ندارند و هیچ راهی برای ردیابی آنها به شما وجود ندارد. همچنین، نقد تقریباً در همه جا پذیرفته می‌شود. برخی وب‌سایت‌ها مانند MallwadVPN به شما اجازه می‌دهند که پول نقد برای VPN ارسال کنید.
 
-Also, you can get prepaid cards with cash for online purchases as well. This won’t link them to your identity if they are bought without providing personal information and they’re paid with cash.
+همچنین می‌توانید کارت‌های پیش‌پرداخت را با پول نقد برای خریدهای آنلاین دریافت کنید. این کار باعث نمی‌شود که کارت‌ها به هویت شما مرتبط شوند، اگر بدون ارائه اطلاعات شخصی خریداری شوند.
 
 ---
 
-These were some starting points for beginning an anonymous life; it obviously goes way deeper than this. It changes your lifestyle, your communications, everything. The next chapter will be about the skills you need to learn to maintain this anonymity and privacy and to move forward.
+اینها برخی از نقاط شروع برای شروع یک زندگی ناشناس بودند؛ طبیعتاً این موضوع بسیار عمیق‌تر از اینها است. این وضعیت شیوه زندگی، ارتباطات، و همه چیز شما را تغییر می‌دهد. فصل بعدی در مورد مهارت‌هایی خواهد بود که باید برای حفظ این ناشناس‌سازی و حریم خصوصی یاد بگیرید و پیشرفت کنید.

@@ -1,151 +1,139 @@
-# Chapter 8
+# فصل ۸
 
-Maintaining privacy, security, and anonymity requires skills, patience, dedication, and a lot of time. This book is supposed to be a starting point for the privacy journey of those people who need it, rather than being a complete guide, as such a thing never existed and never will. Most of the time, you need to do your own research, program stuff the way you need them, configure systems to make them private for you, and there aren't always resources to learn from. You need to learn by trial and error and playing around with different things. The more you expand your knowledge in different areas, the more you can combine them and find new solutions for a problem, and it can be for anything, not just privacy or security.
+حفظ حریم خصوصی، امنیت و ناشناس بودن نیازمند مهارت‌ها، صبر، تعهد و زمان زیادی است. این کتاب قرار است نقطه شروعی برای افرادی باشد که به این سفر حریم خصوصی نیاز دارند، نه اینکه یک راهنمای کامل باشد، زیرا چنین چیزی هرگز وجود نداشته و نخواهد داشت. بیشتر اوقات، شما باید تحقیقات خودتان را انجام دهید، برنامه‌هایی را به‌طور اختصاصی تنظیم کنید، سیستم‌ها را پیکربندی کنید تا آن‌ها را برای خودتان شخصی سازی کنید، و همیشه منابع آموزشی موجود نیستند. شما باید از طریق آزمایش و خطا و بازی با چیزهای مختلف یاد بگیرید. هرچه دانش خود را در حوزه‌های مختلف گسترش دهید، بیشتر می‌توانید آن‌ها را ترکیب کرده و راه‌حل‌های جدیدی برای مشکلات پیدا کنید، و این موضوع فقط به حریم خصوصی یا امنیت محدود نمی‌شود.
 
-Your journey will be different than someone else's. What works for you won't work for others; you might need different skills than someone else. What is effective today might not be tomorrow; what is good today might become evil tomorrow. One thing that remains consistent in the privacy journey is the need to adapt because the world never stops changing, and privacy and security are part of it as well. Someday, most of the things in this book might become obsolete, and that is fine if you adapt to the new situation and try to find new strategies and solutions.
+سفر شما متفاوت از سفر دیگران خواهد بود. چیزی که برای شما کار می‌کند، ممکن است برای دیگران کار نکند؛ شما ممکن است به مهارت‌های متفاوتی نسبت به دیگران نیاز داشته باشید. چیزی که امروز مؤثر است، ممکن است فردا نباشد؛ چیزی که امروز خوب است، ممکن است فردا شرور شود. یک چیز که در سفر حریم خصوصی ثابت می‌ماند، نیاز به تطبیق است، زیرا دنیا هرگز تغییر را متوقف نمی‌کند و حریم خصوصی و امنیت نیز بخشی از آن است. ممکن است روزی بیشتر چیزهایی که در این کتاب آمده‌اند، قدیمی شوند، و این مشکلی ندارد اگر شما به وضعیت جدید تطبیق دهید و سعی کنید راهبردها و راه‌حل‌های جدیدی پیدا کنید.
 
-Privacy and security aren't destinations you can reach; they're the road and the journey itself. You might not even want to be 100% secure or private, even if it was possible (which it is not and will not be). The best you can do is to find a middle ground between ignorance and chronic fear and paranoia. The more you learn and expand your knowledge, the easier it might be to get there, as you are more aware of threats and know more about ways to protect yourself against them. The key is to remain cautious, persistent, and keep on learning and adapting to the changes.
+حریم خصوصی و امنیت مقصد نیستند که به آن‌ها برسید؛ آن‌ها جاده و خود سفر هستند. شاید شما حتی نخواهید ۱۰۰٪ ایمن یا مخفی باشید، حتی اگر ممکن بود (که نیست و نخواهد بود). بهترین کاری که می‌توانید انجام دهید، پیدا کردن یک تعادل بین بی‌تفاوتی و ترس و پارانویا مزمن است. هرچه بیشتر بیاموزید و دانش خود را گسترش دهید، شاید آسان‌تر باشد که به این تعادل برسید، زیرا آگاهی بیشتری از تهدیدات دارید و روش‌های بیشتری برای محافظت از خودتان می‌دانید. کلید اصلی، هوشیار ماندن، پایداری و ادامه دادن به یادگیری و تطبیق با تغییرات است.
 
-In this chapter, which is the final chapter, I will go through some of the skills that I find important, but they're not everything. There are a lot more skills, a lot more tools, a lot more techniques that you might find useful. I tried to keep things more general so that most people can use them, but every unique situation needs unique solutions.
+در این فصل که فصل آخر است، من به برخی از مهارت‌هایی می‌پردازم که آن‌ها را مهم می‌دانم، اما آن‌ها همه چیز نیستند. مهارت‌های بیشتری وجود دارد، ابزارهای بیشتری وجود دارد، تکنیک‌های بیشتری وجود دارد که ممکن است آن‌ها را مفید بدانید. من سعی کردم موارد را به‌گونه‌ای کلی بیان کنم تا بیشتر افراد بتوانند از آن‌ها استفاده کنند، اما هر وضعیت منحصر به فرد نیاز به راه‌حل‌های منحصر به فرد دارد.
 
-## Adapt the Hacker's Mindset
+## اتخاذ طرز فکر هکرها
 
-Hackers are driven by curiosity; they want to understand how things work, no matter what it is—even if it’s not computer-related. This curiosity involves continuous learning and staying updated with the changes in the world.
+هکرها به وسیله کنجکاوی هدایت می‌شوند؛ آن‌ها می‌خواهند بدانند که چیزها چگونه کار می‌کنند، مهم نیست که موضوع چه باشد—even if it’s not computer-related. این کنجکاوی شامل یادگیری مداوم و به‌روز ماندن با تغییرات جهان است.
 
-Hackers are also good at problem-solving and are creative. They enjoy finding unconventional solutions to problems, and their creativity allows them to see possibilities and connections that others might not notice.
+هکرها همچنین در حل مشکلات مهارت دارند و خلاق هستند. آن‌ها از یافتن راه‌حل‌های غیرمرسوم برای مشکلات لذت می‌برند و خلاقیت آن‌ها به آن‌ها اجازه می‌دهد تا امکانات و ارتباطاتی را ببینند که دیگران ممکن است متوجه آن‌ها نشوند.
 
-Hackers are persistent and patient, willing to spend hours, days, or even months working on a problem until they solve it.
+هکرها مداوم و صبور هستند و حاضرند ساعت‌ها، روزها یا حتی ماه‌ها روی یک مشکل کار کنند تا آن را حل کنند.
 
-They pay close attention to details, noticing small elements that others overlook, which allows them to identify vulnerabilities and exploit them effectively.
+آن‌ها به جزئیات کوچک توجه زیادی دارند و به عناصری که دیگران ممکن است نادیده بگیرند دقت می‌کنند، که این به آن‌ها اجازه می‌دهد تا آسیب‌پذیری‌ها را شناسایی کرده و به‌طور مؤثر از آن‌ها بهره‌برداری کنند.
 
-They constantly test the limits of systems, pushing these limits to discover what’s possible.
+آن‌ها همواره محدودیت‌های سیستم‌ها را آزمایش می‌کنند و این محدودیت‌ها را برای کشف اینکه چه چیزی ممکن است، فشار می‌دهند.
 
-Most importantly, hackers are collaborative, working in communities to share knowledge, tools, and techniques. Such communities allow them to build on each other’s work and ideas.
+مهم‌تر از همه، هکرها در جامعه‌های خود همکاری می‌کنند و دانش، ابزارها و تکنیک‌ها را به اشتراک می‌گذارند. چنین جوامعی به آن‌ها اجازه می‌دهد تا بر روی کارها و ایده‌های یکدیگر بنا کنند.
 
-Hackers are aware of the risks involved in their activities and try to manage these risks, balancing potential rewards against possible consequences.
+هکرها از خطرات فعالیت‌های خود آگاه هستند و سعی می‌کنند این خطرات را مدیریت کنند و بین پاداش‌های بالقوه و پیامدهای احتمالی تعادل برقرار کنند.
 
-They are flexible thinkers who can adjust their strategies in response to new information or situations.
+آن‌ها متفکرانی انعطاف‌پذیر هستند که می‌توانند در پاسخ به اطلاعات یا شرایط جدید، استراتژی‌های خود را تنظیم کنند.
 
-This hacker mindset helps you understand how systems work, identify potential privacy and security flaws, and explore and test systems to discover new vulnerabilities and ways to protect against them.
+این طرز فکر هکر به شما کمک می‌کند که بفهمید سیستم‌ها چگونه کار می‌کنند، نقص‌های بالقوه در امنیت و حریم خصوصی را شناسایی کنید و سیستم‌ها را بررسی و آزمایش کنید تا آسیب‌پذیری‌ها و راه‌های جدیدی برای محافظت پیدا کنید.
 
-Thinking outside the box allows for creative solutions to privacy and security challenges. The ability to adapt strategies and develop new techniques helps protect yourself against new threats.
+فکر کردن خارج از چارچوب به شما راه‌حل‌های خلاقانه برای چالش‌های حریم خصوصی و امنیت ارائه می‌دهد. توانایی تطبیق استراتژی‌ها و توسعه تکنیک‌های جدید به شما کمک می‌کند تا در برابر تهدیدات جدید از خود محافظت کنید.
 
-Paying close attention to detail ensures thorough security checks and correct implementation of privacy measures by noticing small, often overlooked vulnerabilities that could compromise privacy or security.
+توجه دقیق به جزئیات به شما اطمینان می‌دهد که بررسی‌های امنیتی دقیق انجام می‌شود و اقدامات حریم خصوصی به درستی اجرا می‌شوند. با شناسایی آسیب‌پذیری‌های کوچک و نادیده‌گرفته‌شده که می‌توانند حریم خصوصی یا امنیت را به خطر بیندازند.
 
-Persistently testing and evaluating systems helps you find hidden vulnerabilities you didn’t know existed. The continuous improvement that comes with persistent testing will enhance your security and privacy measures over time.
+آزمایش مداوم و ارزیابی سیستم‌ها به شما کمک می‌کند تا آسیب‌پذیری‌های پنهانی را که از آن‌ها آگاهی نداشتید، پیدا کنید. بهبود مداوم که با آزمایش پیوسته همراه است، به مرور زمان اقدامات امنیتی و حریم خصوصی شما را ارتقا خواهد داد.
 
-Risk assessment helps you understand potential consequences and implement more effective protections.
+ارزیابی ریسک به شما کمک می‌کند تا پیامدهای بالقوه را درک کنید و محافظت‌های مؤثرتری را پیاده‌سازی کنید.
 
-## Researching Skills
+## مهارت‌های تحقیق
 
-Researching is the biggest part of learning, in my opinion at least. You cannot gather information about a subject if you can't research properly for it. If you are able to research effectively from credible sources, extract relevant information, and synthesize that knowledge to form an understanding, that will not only help with your privacy and security journey but any other field as well.
+تحقیق به نظر من بخش بزرگی از یادگیری است. شما نمی‌توانید اطلاعات درستی درباره یک موضوع جمع‌آوری کنید اگر نتوانید به‌درستی در آن زمینه تحقیق کنید. اگر بتوانید به طور مؤثر از منابع معتبر تحقیق کنید، اطلاعات مرتبط را استخراج کرده و آن دانش را ترکیب کنید تا به درک برسید، این مهارت نه‌تنها در مسیر حریم خصوصی و امنیت به شما کمک می‌کند، بلکه در هر زمینه دیگری نیز مفید خواهد بود.
 
-### Using Search Engines Effectively
+### استفاده مؤثر از موتورهای جستجو
 
-Search engines like Google not only can help with your research about privacy and security but research about yourself. If you can use them effectively, you can see what information of yours is indexed on them. This can be done by learning advanced search operators, such as `site:`, `inurl:`, `intitle:`, and Boolean operators (AND, OR, NOT) to filter the search results.
+موتورهای جستجو مانند گوگل می‌توانند نه‌تنها در تحقیقات شما درباره حریم خصوصی و امنیت کمک کنند، بلکه می‌توانید از آن‌ها برای جستجو درباره خودتان نیز استفاده کنید. اگر بتوانید از آن‌ها به‌طور مؤثر استفاده کنید، می‌توانید ببینید چه اطلاعاتی از شما در آن‌ها ایندکس شده است. این کار با یادگیری اپراتورهای پیشرفته جستجو مانند `site:`، `inurl:`، `intitle:` و استفاده از عملگرهای بولین (AND، OR، NOT) برای فیلتر کردن نتایج جستجو ممکن است.
 
-And also nowadays most search engines are basically artificial intelligences, so learning prompt engineering can help you a lot as well.
+همچنین، امروزه بیشتر موتورهای جستجو نوعی هوش مصنوعی هستند، بنابراین یادگیری مهندسی درخواست (prompt engineering) نیز می‌تواند بسیار مفید باشد.
 
-### Checking Sources
+### بررسی منابع
 
-Checking for the credibility of websites and authors of an article or information and looking for reputable sources which have a good track of accuracy and reliability can save you from gathering wrong and inaccurate information about a subject.
+بررسی اعتبار وب‌سایت‌ها و نویسندگان یک مقاله یا اطلاعات و جستجوی منابع معتبر که سابقه خوبی در دقت و اعتبار دارند می‌تواند شما را از جمع‌آوری اطلاعات نادرست یا نادقیق درباره یک موضوع نجات دهد.
 
-To verify information, one thing you can do is to cross-reference it with multiple sources if possible, this will ensure its consistency and accuracy along multiple sources.
+برای تأیید اطلاعات، یکی از کارهایی که می‌توانید انجام دهید این است که اطلاعات را با چندین منبع مختلف مقایسه کنید تا از ثبات و دقت آن‌ها در منابع مختلف اطمینان حاصل کنید.
 
-### Scholarly Databases
+### پایگاه‌های اطلاعات علمی
 
-You can also use databases like Google Scholar, JSTOR, and IEEE Xplore to find peer-reviewed articles on privacy and security. And feel free to pirate them if you find it ethical (I find it ethical; knowledge and science shouldn't be behind paywalls, it is what drives societies forward).
+همچنین می‌توانید از پایگاه‌های اطلاعاتی مانند Google Scholar، JSTOR و IEEE Xplore برای یافتن مقالات بازبینی شده در زمینه حریم خصوصی و امنیت استفاده کنید. و اگر آن را اخلاقی می‌دانید، در صورت نیاز مقالات را به صورت غیرقانونی دریافت کنید (من این کار را اخلاقی می‌دانم؛ دانش و علم نباید پشت دیوارهای پرداخت باشد، زیرا این‌ها جامعه‌ها را به جلو می‌برد).
 
-### Follow Tech News Websites
+### دنبال کردن وب‌سایت‌های خبری فناوری
 
-Follow reputable tech news websites to see what is happening in the world. Also, following some security blogs with reputable authors can help a lot. You can follow the Hacker News (Y Combinator) feed with keywords related to privacy, security, anonymity, and tools like Tor, PGP, etc., to get new articles on them, usually from reputable authors with accurate and in-detail information. Also, you can follow forums and group chats dedicated to privacy and security, for example, Reddit’s r/privacy or the Matrix group chat of Privacy Guides and PrivSec, or Techlore and Surveillance Report on YouTube.
+برای اینکه ببینید چه اتفاقاتی در جهان می‌افتد، وب‌سایت‌های خبری معتبر فناوری را دنبال کنید. همچنین، دنبال کردن بلاگ‌های امنیتی با نویسندگان معتبر می‌تواند بسیار مفید باشد. شما می‌توانید فید Hacker News (Y Combinator) را با کلمات کلیدی مرتبط با حریم خصوصی، امنیت، ناشناسی، و ابزارهایی مانند Tor، PGP و غیره دنبال کنید تا مقالات جدید را از نویسندگان معتبر و با اطلاعات دقیق و جزئیات دریافت کنید. همچنین می‌توانید در فروم‌ها و گروه‌های چت اختصاصی حریم خصوصی و امنیت عضو شوید، برای مثال، رِدیت r/privacy یا گروه چت ماتریکس Privacy Guides و PrivSec یا Techlore و Surveillance Report در یوتیوب.
 
-### Gather and Organize Information
+### جمع‌آوری و سازماندهی اطلاعات
 
-When you research a subject, try gathering the information at first, then go through it, double-check it and organize it. It will be nice of you if you share it with others, making a positive change by sharing your newly earned knowledge.
+وقتی در مورد یک موضوع تحقیق می‌کنید، سعی کنید ابتدا اطلاعات را جمع‌آوری کنید، سپس آن را بررسی کنید، دوباره چک کنید و آن را سازماندهی کنید. اگر دانش جدیدی کسب کرده‌اید، اشتراک‌گذاری آن با دیگران می‌تواند تغییر مثبتی ایجاد کند.
 
-## Data Management Skills
+## مهارت‌های مدیریت داده
 
-Having the ability to manage the data and information you share or store is one of the biggest skills required to maintain privacy and anonymity and keep good OPSEC. It includes practices and strategies to protect personal information from getting into the wrong hands, misuse, or breaches. Effective data management is a must in order to maintain data privacy and security. Here are some key skills needed for data management:
+توانایی مدیریت داده‌ها و اطلاعاتی که به اشتراک می‌گذارید یا ذخیره می‌کنید یکی از بزرگترین مهارت‌های لازم برای حفظ حریم خصوصی، ناشناسی و اجرای OPSEC خوب است. این شامل روش‌ها و استراتژی‌هایی برای محافظت از اطلاعات شخصی در برابر دسترسی غیرمجاز، سوءاستفاده یا نقض امنیت است. مدیریت موثر داده برای حفظ حریم خصوصی و امنیت داده‌ها ضروری است. در اینجا تعدادی از مهارت‌های کلیدی برای مدیریت داده آورده شده است:
 
-1. **Data Minimization**: Only share, collect, process, and store the minimum data necessary for a specific purpose. Avoid giving unnecessary personal information and opt for services that require minimal data. Share only essential information and avoid oversharing.
+1. **حداقل‌سازی داده‌ها**: تنها داده‌های ضروری را به اشتراک بگذارید، جمع‌آوری کنید، پردازش کنید و ذخیره کنید. از ارائه اطلاعات شخصی غیرضروری اجتناب کنید و از خدماتی استفاده کنید که حداقل داده‌ها را نیاز دارند. فقط اطلاعات ضروری را به اشتراک بگذارید و از اشتراک‌گذاری بیش از حد خودداری کنید.
 
-2. **Encryption**: Encrypt data at rest to protect data stored on devices or servers. Encrypt data in transit to protect data as it moves across networks. Use end-to-end encryption to ensure only the communicating users can read the messages.
+2. **رمزگذاری**: داده‌های ذخیره‌شده در دستگاه‌ها یا سرورها را رمزگذاری کنید. داده‌های در حال انتقال را رمزگذاری کنید تا از اطلاعات حین جابجایی در شبکه‌ها محافظت کنید. از رمزگذاری انتها به انتها استفاده کنید تا فقط کاربران ارتباطات بتوانند پیام‌ها را بخوانند.
 
-3. **Access Control and Authentication**: Use multi-factor authentication systems to prevent unauthorized access to data and use **Role-Based Access Control (RBAC)** to limit access to data based on user roles (great for separating identities and users on a device).
+3. **کنترل دسترسی و احراز هویت**: از سیستم‌های احراز هویت چندمرحله‌ای استفاده کنید تا از دسترسی غیرمجاز به داده‌ها جلوگیری کنید و از کنترل دسترسی مبتنی بر نقش (RBAC) برای محدود کردن دسترسی به داده‌ها بر اساس نقش‌های کاربر استفاده کنید (مناسب برای جداسازی هویت‌ها و کاربران در یک دستگاه).
 
-4. **Data Retention Policies**: Define how long data should be kept and when it should be deleted. For example, you might want to delete all cookies on your browser every day and your server logs every week. It depends on your needs. Configure systems to delete data after a certain period and periodically review and delete unnecessary data.
+4. **سیاست‌های حفظ داده‌ها**: مشخص کنید که داده‌ها چه مدت باید نگهداری شوند و چه زمانی باید حذف شوند. برای مثال، ممکن است بخواهید کوکی‌های مرورگر خود را هر روز پاک کنید و گزارش‌های سرور خود را هر هفته. این بستگی به نیازهای شما دارد. سیستم‌ها را طوری پیکربندی کنید که داده‌ها را پس از یک دوره زمانی خاص حذف کنند و به صورت دوره‌ای داده‌های غیرضروری را بررسی و حذف کنید.
 
-5. **Metadata Management**: Metadata can reveal information about the data itself, like the creation date, author, or location. Always remove metadata from files before sharing them.
+5. **مدیریت متادیتا**: متادیتا می‌تواند اطلاعاتی درباره خود داده‌ها فاش کند، مانند تاریخ ایجاد، نویسنده، یا مکان. همیشه متادیتا را از فایل‌ها قبل از به اشتراک‌گذاری حذف کنید.
 
-6. **Backup and Recovery**: Ensure backups are encrypted to protect data from unauthorized access. Regularly back up and follow a good backup strategy (explained in Chapter 5).
+6. **پشتیبان‌گیری و بازیابی**: اطمینان حاصل کنید که پشتیبان‌ها رمزگذاری شده‌اند تا از دسترسی غیرمجاز به داده‌ها جلوگیری شود. به طور منظم پشتیبان‌گیری کنید و از یک استراتژی پشتیبان‌گیری خوب پیروی کنید (که در فصل 5 توضیح داده شده است).
 
-These are some of the skills and practices for data management. There are a lot more, and you can find more or create your own.
+این‌ها برخی از مهارت‌ها و روش‌های مدیریت داده هستند. موارد بسیار بیشتری وجود دارد و شما می‌توانید روش‌های جدیدی را پیدا کرده یا خودتان ایجاد کنید.
 
-## Technical Skills
+## مهارت‌های فنی
 
-To obtain and maintain privacy and security requires a lot of technical skills, from programming to understanding networks and operating systems, encryption, and more.
+حصول و حفظ حریم خصوصی و امنیت نیازمند مهارت‌های فنی زیادی است، از برنامه‌نویسی گرفته تا درک شبکه‌ها، سیستم‌عامل‌ها، رمزگذاری و غیره.
 
-So it should be obvious that you need to learn or level up your technical skills every day. I will point out some starting skills to jump-start your learning journey if you don't know where to start:
+بنابراین باید مشخص باشد که شما هر روز باید مهارت‌های فنی خود را یاد بگیرید یا بهبود دهید. من به برخی مهارت‌های پایه برای شروع اشاره خواهم کرد تا شما را در مسیر یادگیری همراهی کند:
 
-### Encryption
+### رمزگذاری
 
-Encryption is an inseparable part of privacy, security, and anonymity; it’s the chain that connects these three together. Without encryption, there can be no security on the internet. It is really important to know what you're doing when it comes to encryption, as it can go wrong easily due to the complexities of mathematical attacks on encryption algorithms. You don't have to become a cryptographer or cryptography analyst; just having some basic understanding is enough.
+رمزگذاری بخش جدایی‌ناپذیر از حریم خصوصی، امنیت و ناشناسی است؛ این زنجیری است که این سه مورد را به هم متصل می‌کند. بدون رمزگذاری نمی‌توان امنیت را در اینترنت حفظ کرد. درک دقیق رمزگذاری ضروری است، زیرا به راحتی می‌تواند به دلیل پیچیدگی‌های حملات ریاضی به الگوریتم‌های رمزگذاری اشتباه شود. شما نیازی به تبدیل شدن به یک رمزنگار یا تحلیل‌گر رمزنگاری ندارید؛ تنها داشتن یک درک پایه کافی است.
 
-You might want to learn about different algorithms, how they operate differently, what attacks can target encrypted information or the encryption process, what algorithms are not safe to use, which implementations of an algorithm are audited and good to use, and what schemes are best suited for your encryption needs. These are things you need to know.
+ممکن است بخواهید در مورد الگوریتم‌های مختلف، نحوه عملکرد آن‌ها، چه حملاتی می‌تواند اطلاعات رمزگذاری شده را هدف قرار دهد، کدام الگوریتم‌ها ایمن نیستند، چه پیاده‌سازی‌هایی از یک الگوریتم معتبر و بررسی شده هستند و کدام طرح‌ها برای نیازهای رمزگذاری شما مناسب هستند، اطلاعات بیشتری کسب کنید.
 
-A good starting course on encryption would be the "[Introduction to Cryptography by Christof Paar](https://www.youtube.com/@introductiontocryptography4223)," which can benefit you greatly in terms of a deep understanding of cryptographic algorithms. The course is freely available on YouTube. If it weren't, you could find it by searching elsewhere.
+یک دوره عالی برای شروع در مورد رمزگذاری، دوره "[Introduction to Cryptography by Christof Paar](https://www.youtube.com/@introductiontocryptography4223)" است که می‌تواند به شما در درک عمیق الگوریتم‌های رمزنگاری کمک زیادی کند. این دوره به صورت رایگان در یوتیوب موجود است. اگر رایگان نبود، می‌توانید با جستجو در جاهای دیگر آن را پیدا کنید.
 
-Having a deep understanding of encryption will also help with understanding other tools such as the Tor network, VPNs, multi-factor authentication devices, and more.
+داشتن درک عمیق از رمزگذاری به شما در درک سایر ابزارها مانند شبکه تور، VPN‌ها، دستگاه‌های احراز هویت چندعاملی و موارد دیگر نیز کمک خواهد کرد.
 
-### Networks
+### شبکه‌ها
 
-All of your data are passing through computer networks every second. Knowing how these networks work and operate is a must to prevent attacks, leaks, and more. You need to know what is happening when you tunnel your network through VPNs or Tor. You should be able to monitor them for potential leaks, set up firewalls, block unauthorized access to your data, and configure your network for better security and privacy by default.
+همه داده‌های شما هر ثانیه از طریق شبکه‌های کامپیوتری منتقل می‌شوند. دانستن نحوه کارکرد و عملکرد این شبکه‌ها برای جلوگیری از حملات، نشت اطلاعات و موارد دیگر ضروری است. باید بدانید هنگامی که شبکه خود را از طریق VPN یا تور تونل می‌زنید، چه اتفاقی می‌افتد. شما باید بتوانید آن‌ها را برای نشتی‌های احتمالی بررسی کنید، دیوار آتش (فایروال) تنظیم کنید، از دسترسی غیرمجاز به داده‌ها جلوگیری کنید و شبکه خود را برای امنیت و حریم خصوصی بهتر پیکربندی کنید.
 
-There are many courses from beginner to advanced on computer networks that you can take. As I said before, feel free to pirate them if you can’t afford them. There should also be plenty of good resources and courses for free on YouTube and other websites. What matters is learning and understanding the subjects. Much of it will come from real-life practice and experience as well.
+دوره‌های زیادی از سطح مبتدی تا پیشرفته در زمینه شبکه‌های کامپیوتری وجود دارد که می‌توانید از آن‌ها استفاده کنید. همان‌طور که قبلاً اشاره کردم، اگر نمی‌توانید آن‌ها را بخرید، به سراغ نسخه‌های رایگان یا کرک شده بروید. منابع رایگان زیادی وجود دارد. چیزی که اهمیت دارد یادگیری و درک این موضوعات است. بخش عمده‌ای از آن نیز از تجربه و تمرین در زندگی واقعی به دست خواهد آمد.
 
-### Programming
+### برنامه‌نویسی
 
-To automate tasks like backups, create tools for your specific needs, or read and check source codes of other programs, you need to know some programming. Learning one scripting language like Python or Bash scripting (especially for Linux users) and one system-level language like Rust (which has built-in safety features) would be more than enough.
+برای خودکار کردن وظایف مانند پشتیبان‌گیری، ایجاد ابزارهایی برای نیازهای خاص خود، یا بررسی کدهای منبع برنامه‌های دیگر، باید برخی از زبان‌های برنامه‌نویسی را یاد بگیرید. یادگیری یک زبان اسکریپت مانند پایتون یا اسکریپت‌نویسی Bash (به‌ویژه برای کاربران لینوکس) و یک زبان سیستم‌سطح مانند Rust (که ویژگی‌های ایمنی داخلی دارد) بیش از حد کافی خواهد بود.
 
-There are a ton of resources, many of them high-quality and free, for programming that you can use to learn. It will make your journey much easier if you can automate repetitive tasks or build the tools you need that don’t exist. Also, be sure to adopt secure coding practices as you learn.
+منابع آموزشی زیادی، بسیاری از آن‌ها با کیفیت بالا و رایگان، برای یادگیری برنامه‌نویسی وجود دارد که می‌توانید از آن‌ها استفاده کنید. یادگیری برنامه‌نویسی کار شما را بسیار ساده‌تر خواهد کرد زیرا می‌توانید وظایف تکراری را خودکار کرده یا ابزارهایی ایجاد کنید که هنوز وجود ندارند. همچنین حتماً اصول کدنویسی امن را در هنگام یادگیری به‌کار ببرید.
 
-### Operating Systems
+### سیستم‌عامل‌ها
 
-Having a deep understanding of your operating system is essential to obtain privacy and security. Especially learning and understanding Linux, as Linux is free and open-source, well-audited, and less likely to have zero-day vulnerabilities compared to Windows. It can be extremely customizable—you can make it operate exactly as you want, not more, not less. This is a great feature when it comes to operating systems. Also, most tools are available for Linux and other Unix-like operating systems.
+داشتن درک عمیق از سیستم‌عاملی که از آن استفاده می‌کنید برای دستیابی به حریم خصوصی و امنیت بسیار مهم است. به‌ویژه یادگیری و درک لینوکس، زیرا لینوکس رایگان و متن‌باز است، به خوبی بررسی شده و در مقایسه با ویندوز کمتر دارای حفره‌های امنیتی روز-صفر است. لینوکس می‌تواند به شدت قابل سفارشی‌سازی باشد، می‌توانید آن را دقیقاً مطابق با خواسته‌های خود تنظیم کنید.
 
-There are courses like Linux Essentials for Beginners and LPIC1, LPIC2, LPIC3, and Red Hat courses for more advanced users. Make sure to start one of these courses if you decide to install Linux for your operating system, and follow the order from beginner to advanced as it can get confusing.
+### مجازی‌سازی و کانتینر
 
-### Virtualization and Containerization
-
-Understanding how virtualization and containerization systems and tools work will help you a lot with isolating different identities, separating tasks, and preventing malicious code from running on your actual system.
-
-There are many resources on these two topics as well. I highly recommend learning about them as they are very useful tools for activity isolation, which is a key part of maintaining good security and privacy, in my opinion.
+یادگیری نحوه عملکرد سیستم‌های مجازی‌سازی و ابزارهای کانتینر به شما کمک زیادی در جدا کردن هویت‌های مختلف، جدا کردن وظایف و جلوگیری از اجرای کدهای مخرب در سیستم اصلی خواهد کرد.
 
 ---
 
-And the skills don't end here. Anything you learn comes in handy. As I said at the beginning of this chapter, the more skills and knowledge you have, the more you can combine them and create unique and better solutions to a problem.
+این‌ها تنها بخشی از مهارت‌های مورد نیاز هستند، هر چیزی که یاد بگیرید به کارتان خواهد آمد.
 
-## Communities
+## جوامع
 
-We, as humans, are meant to work in communities—together, helping one another and building on top of each other's work. So, it is important to have a community when starting a journey, to ask questions, get help, and give help if you can.
+ما انسان‌ها برای کار در جوامع ساخته شده‌ایم؛ با هم کار کردن، کمک کردن به یکدیگر و ساختن بر اساس کارهای دیگران. بنابراین، داشتن یک جامعه در شروع مسیر مهم است تا بتوانید سؤالات خود را بپرسید، کمک بگیرید و اگر توانایی‌اش را دارید، کمک کنید.
 
-There are a lot of privacy-focused communities, like PrivacyGuides, PrivSec, Techlore, and many more. Being present in these communities will teach you a lot just by reading what others are talking about. I personally learned a lot from the good folks at PrivacyGuides, and it really helped with my own privacy and security journey when I started.
+جوامع متمرکز بر حریم خصوصی زیادی وجود دارد، مانند PrivacyGuides، PrivSec، Techlore و بسیاری دیگر.
 
-If you're reading this book in English, then you have enough English skills to communicate with others or at least read their messages without problem.
+## اگر فکر می‌کنید باید خودتان را از اینترنت پاک کنید
 
-## If You Think You Need to Erase Yourself from the Internet
+گاهی اوقات، ممکن است پارانویا بر شما غلبه کند و فکر کنید باید خودتان را از وجود در اینترنت پاک کنید و این مسئله طبیعی و در بیشتر مواقع منطقی است.
 
-Sometimes paranoia may take over and make you think you need to wipe yourself out of existence, and that is okay and most of the time reasonable.
-
-The first step in this situation is to stay calm and not panic. Panicking leads to irrational thinking and poor judgment.
-
-Delete everything you can from the internet related to the identity you want to wipe out. Dispose of devices you might have dedicated to that identity. If you really want to erase everything, physically destroy hard drives, SSDs, and other storage devices.
-
-Erase and wipe the backups permanently. If you can, find a lawyer and discuss the situation with them.
-
-Live your life again with the hope that nothing goes wrong, because you did all you could.
+اولین قدم در این وضعیت این است که آرام باشید و وحشت نکنید. وحشت منجر به تفکر غیرمنطقی و قضاوت نادرست می‌شود.
 
 ---
 
-This is all I had for this book. As I said in the introduction, my hope has been that it can help those good people who are making positive changes in the world and need to start worrying about their privacy and protection. It’s not that nice and pretty a world where every good action is rewarded and appreciated. In some places, doing a nice thing can cost you your life. As disturbing as it is, it is true and should be accepted and fought against. I know this is not a complete book that covers everything, but I think I’ve done the best I could to cover most useful and necessary things. There might be updated revisions of this book in the future that cover more stuff and more important stuff.
+این تمام آن چیزی بود که برای این کتاب داشتم. همان‌طور که در مقدمه گفتم، امید من این است که این کتاب بتواند به افرادی کمک کند که به دنبال ایجاد تغییرات مثبت در جهان هستند و نیاز دارند درباره حفظ حریم خصوصی خود نگران شوند.
