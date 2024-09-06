@@ -1,125 +1,138 @@
-# Chapter 5
+# فصل ۵
 
-Encryption tools are a non-separable part of security, privacy, and anonymity online. You can't achieve anonymity if you don't have privacy, you can't have privacy if you are not secure, and you can't be secure if there's no encryption.
+ابزارهای رمزگذاری بخش جدایی‌ناپذیر از امنیت، حریم خصوصی و ناشناس بودن در دنیای آنلاین هستند. شما نمی‌توانید به ناشناس بودن برسید اگر حریم خصوصی نداشته باشید، نمی‌توانید حریم خصوصی داشته باشید اگر امن نباشید، و نمی‌توانید امن باشید اگر رمزگذاری وجود نداشته باشد.
 
-Encryption is like the house you build in Minecraft; it only allows you inside, not the zombies and the mobs, and keeps your stuff safe when you're not home. The encryption algorithm and scheme would be the material that your house is built with. A weak encryption scheme/algorithm is like a Minecraft house built with dirt or wood; it can be destroyed by a creeper blowing up near it or catch on fire if you accidentally light a flint on it. The more proven and tested the algorithm is, the more secure it becomes. So, the first rule of encryption is to never roll your own encryption, as that can be like building a Minecraft house out of thin air, with no structure and no good quality material, and it will fall apart with the most effortless attacks of a professional.
+رمزگذاری مانند خانه‌ای است که در Minecraft می‌سازید؛ فقط به شما اجازه می‌دهد وارد شوید، نه به زامبی‌ها و موجودات (mobs)، و چیزهای شما را زمانی که در خانه نیستید، امن نگه می‌دارد. الگوریتم و طرح رمزگذاری مانند موادی است که خانه شما از آن‌ها ساخته شده است. یک طرح یا الگوریتم رمزگذاری ضعیف مانند خانه‌ای در Minecraft است که با خاک یا چوب ساخته شده است؛ ممکن است با انفجار یک موجود Creeper در نزدیکی آن تخریب شود یا اگر تصادفاً آن را با یک چخماق روشن کنید، آتش بگیرد. هرچه الگوریتم بیشتر بررسی و آزمایش شود، امن‌تر می‌شود. بنابراین، اولین قانون رمزگذاری این است که هرگز رمزگذاری خودتان را ایجاد نکنید، زیرا این کار مانند ساختن خانه‌ای از هوا در Minecraft است، بدون ساختار و مواد با کیفیت، که با حملات ساده یک حرفه‌ای از هم می‌پاشد.
 
-## Don't Roll Your Own Cryptography
+## هرگز رمزنگاری خودتان را ایجاد نکنید
 
-If you're new to the cryptography world, you might think if a cryptographic algorithm is not known to others it will be more secure, but this is not true in any way. A cryptographic algorithm should be secure not because no one knows how the algorithm works but rather due to the security of the algorithm itself. It should go through all sorts of attacks, both the algorithm and the implementation of the algorithm. When it comes back untouched, then it is considered safe to use. For example, algorithms like AES, Twofish, Serpent, and ChaCha20 have all gone through the process of testing by actual mathematicians and cryptographers and have been around long enough for their security to be proven.
+اگر در دنیای رمزنگاری تازه‌کار هستید، ممکن است فکر کنید اگر یک الگوریتم رمزنگاری برای دیگران ناشناخته باشد، ایمن‌تر خواهد بود، اما این در هیچ‌وجه درست نیست. یک الگوریتم رمزنگاری باید نه به این دلیل که هیچ‌کس نمی‌داند چگونه کار می‌کند، بلکه به دلیل امنیت خود الگوریتم ایمن باشد. الگوریتم باید تحت انواع حملات، چه خود الگوریتم و چه پیاده‌سازی آن، قرار گیرد. وقتی بدون آسیب باقی بماند، آنگاه به‌عنوان امن برای استفاده در نظر گرفته می‌شود. به‌عنوان مثال، الگوریتم‌هایی مانند AES، Twofish، Serpent و ChaCha20 همگی از فرآیند آزمون توسط ریاضی‌دانان و رمزنگاران واقعی عبور کرده‌اند و به‌اندازه کافی قدیمی هستند که امنیت آن‌ها اثبات شده باشد.
 
-When you decide to create your own cryptographic scheme or algorithm, it's like witchcraft compared to a well-known cryptographic algorithm because you're not a mathematician, cryptographer, or cryptography analyst. You can't build your own algorithm nor test and attack your algorithm effectively. When your algorithm faces a real professional who has been working with this type of stuff for decades, your algorithm doesn't stand a chance.
+وقتی تصمیم می‌گیرید که طرح یا الگوریتم رمزنگاری خودتان را ایجاد کنید، این کار مانند جادوگری در مقابل یک الگوریتم رمزنگاری شناخته‌شده است، زیرا شما ریاضی‌دان، رمزنگار یا تحلیل‌گر رمزنگاری نیستید. نمی‌توانید الگوریتم خودتان را بسازید و همچنین نمی‌توانید آن را به‌طور مؤثر آزمایش و حمله کنید. وقتی الگوریتم شما با یک فرد حرفه‌ای که دهه‌ها با این نوع موارد کار کرده است، روبه‌رو شود، الگوریتم شما هیچ شانسی نخواهد داشت.
 
-Here is a quote from the book, *Introduction to Cryptography*, by the creator of PGP:
+اینجا یک نقل‌قول از کتاب *Introduction to Cryptography* نوشته خالق PGP آمده است:
 
-> When I was in college in the early 70s, I devised what I believed was a brilliant encryption scheme. A simple pseudorandom number stream was added to the plaintext stream to create ciphertext. This would seemingly thwart any frequency analysis of the ciphertext, and would be uncrackable even to the most resourceful government intelligence agencies. I felt so smug about my achievement.
+> وقتی من در اوایل دهه ۷۰ در دانشگاه بودم، یک طرح رمزگذاری که به نظر من بسیار درخشان بود، ابداع کردم. یک جریان عدد تصادفی ساده به جریان متن اصلی اضافه شد تا متن رمز تولید شود. این ظاهراً هرگونه تحلیل فرکانس متن رمز را خنثی می‌کرد و برای حتی پیچیده‌ترین آژانس‌های اطلاعاتی دولتی غیرقابل شکستن بود. من خیلی به دستاورد خودم افتخار می‌کردم.
 >
-> Years later, I discovered this same scheme in several introductory cryptography texts and tutorial papers. How nice. Other cryptographers had thought of the same scheme. Unfortunately, the scheme was presented as a simple homework assignment on how to use elementary cryptanalytic techniques to trivially crack it. So much for my brilliant scheme.
+> سال‌ها بعد، این همان طرح را در چندین کتاب درسی مقدماتی رمزنگاری و مقالات آموزشی پیدا کردم. چقدر خوب. دیگر رمزنگاران نیز به همان طرح فکر کرده بودند. متأسفانه، این طرح به‌عنوان یک تکلیف ساده در مورد چگونگی استفاده از تکنیک‌های ابتدایی رمزنگاری برای به‌سادگی شکستن آن ارائه شده بود. این بود از طرح درخشان من.
 >
-> From this humbling experience, I learned how easy it is to fall into a false sense of security when devising an encryption algorithm. Most people don’t realize how fiendishly difficult it is to devise an encryption algorithm that can withstand a prolonged and determined attack by a resourceful opponent.
+> از این تجربه فروتنانه یاد گرفتم که چقدر آسان است که به یک حس امنیت کاذب بیفتیم وقتی که یک الگوریتم رمزگذاری را طراحی می‌کنیم. اکثر مردم نمی‌دانند که چقدر سخت است که یک الگوریتم رمزگذاری طراحی کنیم که بتواند در مقابل حمله‌ای طولانی و مصمم از سوی یک حریف مجهز مقاومت کند.
 >
-> -- Creator of PGP, Phil Zimmermann
+> -- خالق PGP، فیل زیمرمن
 
-## Even the Most Secure Algorithms Can Be Vulnerable
+این تجربه نشان می‌دهد که حتی افراد باهوش هم می‌توانند دچار اشتباه شوند و امنیت را به‌طور نادرست تصور کنند. به همین دلیل است که همیشه باید به الگوریتم‌های رمزنگاری شناخته‌شده و آزموده شده اعتماد کرد.
 
-It is not only the cryptographic algorithm that has to be secure; the implementation of it needs to be secure, well-known, and audited as well, both for hardware and software level implementations. Several attacks can be done through the implementation of an algorithm, for example:
+## حتی امن‌ترین الگوریتم‌ها نیز می‌توانند آسیب‌پذیر باشند
 
-- **Timing Attacks**: An attacker measures the time it takes to perform cryptographic operations and uses this information to deduce secret keys.
-- **Simple Power Analysis (SPA)**: An attacker analyzes power consumption traces to extract keys or other sensitive information.
-- **Differential Power Analysis (DPA)**: An attacker collects power consumption data over many encryption operations and uses statistical methods to deduce the secret key.
-- **Electromagnetic (EM) Attacks**: An attacker uses EM emissions to gain information about the internal state of the device and extract secret keys.
-- **Fault Injection Attacks**: An attacker uses techniques like voltage glitching, clock glitching, or laser fault injection to induce faults and analyze the erroneous outputs to deduce the secret key.
-- **Cache Attacks**: An attacker uses cache timing information to infer which memory accesses are made during cryptographic operations and deduces secret keys.
-- **Cold Boot Attacks**: An attacker freezes the RAM to preserve its state and then reads the memory contents after rebooting the system to extract encryption keys.
-- **Differential Fault Analysis (DFA)**: An attacker compares faulty and correct outputs to deduce information about the internal state and secret keys.
-- **Glitching Attacks**: An attacker uses power or clock glitches to cause incorrect operations in cryptographic algorithms, then analyzes the faulty outputs to extract keys.
-- **Buffer Overflow**: An attacker crafts input data that causes buffer overflows and gains control over the execution flow to extract keys or sensitive data.
-- **Side-Channel via Shared Resources**: An attacker running code on the same machine as the cryptographic software can use shared resource behavior to infer secret keys.
-- **Physical Attacks**: An attacker uses techniques like microprobing to directly read out memory contents or manipulate hardware components.
+این تنها الگوریتم رمزنگاری نیست که باید امن باشد؛ پیاده‌سازی آن نیز باید امن، شناخته‌شده و بررسی‌شده باشد، هم در سطح نرم‌افزار و هم سخت‌افزار. چندین نوع حمله می‌تواند از طریق پیاده‌سازی یک الگوریتم انجام شود، مانند:
 
-These attacks can be done on algorithms that are considered unbreakable, only through the implementation side of things. All these attacks can be prevented as well. A well-known software or device that has been audited is probably secure against all or most of these attacks.
+- **حملات زمان‌بندی (Timing Attacks):** در این نوع حمله، مهاجم زمان لازم برای انجام عملیات‌های رمزنگاری را اندازه‌گیری می‌کند و از این اطلاعات برای استنتاج کلیدهای مخفی استفاده می‌کند. این اطلاعات به او کمک می‌کند تا تشخیص دهد که چه مقدار زمان برای هر عملیات خاص صرف می‌شود و از آن به عنوان یک سرنخ برای دستیابی به کلیدها بهره ببرد.
 
-Some best practices would be keeping the software updated, looking for independent audits, using proven libraries (if you are developing a tool that needs encryption), and using standard encryption algorithms, modes, and schemes.
+- **تحلیل ساده توان (Simple Power Analysis - SPA):** مهاجم از طریق ردیابی میزان مصرف انرژی در هنگام اجرای عملیات رمزنگاری، تلاش می‌کند تا کلیدها یا اطلاعات حساس دیگر را استخراج کند. مصرف انرژی می‌تواند سرنخ‌هایی درباره فرآیندهای داخلی سیستم به مهاجم بدهد.
 
-## Encrypt Your Data at Rest
+- **تحلیل تفاضلی توان (Differential Power Analysis - DPA):** این حمله مشابه تحلیل ساده توان است، اما پیچیده‌تر است. مهاجم داده‌های مصرف انرژی را در طول عملیات‌های مختلف رمزنگاری جمع‌آوری می‌کند و با استفاده از روش‌های آماری، کلید مخفی را استخراج می‌کند.
 
-Encryption doesn't always have to be for communication channels, messengers, VPNs, etc. Your offline data needs encryption too. Just like when you put your important stuff in a safe box and it is available to you only when the safe box is opened, your data on your phone, computer, NAS, USB sticks should be encrypted as well, so only when they are opened is their data available. At rest, encryption doesn't mean that if malware finds its way to your computer it cannot access your data; it means when you don't use it, when it's locked, it is not accessible.
+- **حملات الکترومغناطیسی (Electromagnetic Attacks - EM Attacks):** مهاجم از انتشار الکترومغناطیسی دستگاه برای به‌دست‌آوردن اطلاعات درباره وضعیت داخلی دستگاه استفاده می‌کند و کلیدهای مخفی را استخراج می‌کند. این حملات معمولاً با اندازه‌گیری و تحلیل امواج الکترومغناطیسی انجام می‌شود.
 
-Imagine someone robs your laptop. If it's not encrypted, they can simply take out the hard drive and steal all the data on it, but if it's encrypted and locked, there should be no way to access any of your data.
+- **حملات تزریق خطا (Fault Injection Attacks):** مهاجم با استفاده از تکنیک‌هایی مانند ایجاد خطاهای ولتاژی، یا استفاده از لیزر برای ایجاد خطاهای کوچک، تلاش می‌کند دستگاه را به اشتباه بیاندازد و از خروجی‌های نادرست برای استنتاج کلید مخفی استفاده کند.
 
-For the encryption of your hard drives, you can use software like VeraCrypt if cross-platform compatibility matters to you. On Windows, there's BitLocker, and on Linux, you can use cryptsetup or a file system that allows encryption.
+- **حملات کش (Cache Attacks):** در این نوع حمله، مهاجم از زمان‌بندی کش (Cache Timing) برای شناسایی اینکه کدام بخش از حافظه در هنگام عملیات رمزنگاری دسترسی شده، استفاده می‌کند و کلیدهای مخفی را از این طریق استنتاج می‌کند.
 
-But there are differences between container encryption tools like VeraCrypt and cryptsetup and file system-level encryption like fscrypt. Here are some of the key differences:
+- **حملات سردراه‌اندازی (Cold Boot Attacks):** مهاجم با فریز کردن رم (حافظه دسترسی تصادفی) تلاش می‌کند تا وضعیت حافظه را حفظ کند و پس از ری‌استارت سیستم، محتویات حافظه را خوانده و کلیدهای رمزنگاری را استخراج کند.
 
-| Feature              | File System Encryption                         | Container Encryption                         |
-| -------------------- | ---------------------------------------------- | -------------------------------------------- |
-| **Encryption Scope** | Individual files/directories                   | Entire volumes/containers                    |
-| **Integration**      | Built into file system (e.g., ext4, F2FS)      | Separate from file system                    |
-| **Performance**      | Lower overhead, selective encryption           | Higher overhead, encrypts all data           |
-| **Key Management**   | User-specific keys, multiple keys per file/dir | Single key or passphrase per container       |
-| **Ease of Use**      | Transparent after setup                        | Requires mounting/unmounting containers      |
-| **Cross-Platform**   | Limited to supporting file systems             | Broad support (Windows, Linux, macOS)        |
-| **Security**         | Encrypts data, but not always metadata         | Encrypts all data and metadata               |
-| **Use Cases**        | Selective encryption, performance-sensitive    | Full volume encryption, cross-platform needs |
+- **تحلیل تفاضلی خطا (Differential Fault Analysis - DFA):** در این نوع حمله، مهاجم خروجی‌های صحیح و نادرست یک عملیات رمزنگاری را مقایسه می‌کند تا اطلاعاتی درباره وضعیت داخلی سیستم و کلیدهای مخفی به‌دست آورد.
 
-When it comes to full disk encryption, having modern hardware really helps with the security and performance of encryption, as modern CPUs have built-in AES accelerating features allowing them to encrypt and decrypt AES without affecting the I/O performance as much. Also, most modern devices have TPMs (Trusted Platform Modules) which are hardware microcontrollers designed to enhance security at the hardware level by providing a secure environment for generating, storing, and managing cryptographic keys.
+- **حملات گلیچ (Glitching Attacks):** مهاجم با ایجاد گلیچ (اختلال) در برق یا کلاک سیستم، باعث می‌شود که عملیات‌های رمزنگاری به‌صورت نادرست انجام شود و سپس خروجی‌های نادرست را تحلیل می‌کند تا کلیدهای مخفی را استخراج کند.
 
-## Keep Your Backups Off-Site and Encrypted
+- **سرریز بافر (Buffer Overflow):** مهاجم داده‌های ورودی را طوری تنظیم می‌کند که باعث سرریز بافر شود و کنترل جریان اجرای برنامه را به‌دست گیرد تا کلیدها یا داده‌های حساس را استخراج کند.
 
-The most important thing about taking backups of your data is that they need to be stored off-site. Otherwise, you just made a copy of your data; it is not a backup. A good backup can be restored even if your whole house gets burnt down, and it should be restored only by you, not anyone else.
+- **حملات کانال جانبی از طریق منابع مشترک (Side-Channel via Shared Resources):** مهاجم با اجرای کدی بر روی همان سیستمی که نرم‌افزار رمزنگاری در حال اجرا است، از رفتار منابع مشترک (مانند کش، زمان‌بندی و پردازش) برای استنتاج کلیدهای مخفی استفاده می‌کند.
 
-You need to always store your backups securely encrypted, especially for things like crypto wallets, backups of GPG keys, and passwords. This should be done strategically and routinely. For data that is really important to restore, like crypto wallets and GPG keys, you might need to store them in several places, including outside your house (it can be a cloud service as well, just in case of physical disasters), and on different devices like DVDs, USB sticks, hard drives, and SD cards.
+- **حملات فیزیکی (Physical Attacks):** مهاجم از تکنیک‌های فیزیکی مانند میکروپراب‌گذاری (Microprobing) برای خواندن مستقیم محتویات حافظه یا دستکاری اجزای سخت‌افزاری استفاده می‌کند تا کلیدهای مخفی یا داده‌های حساس را استخراج کند.
 
-For that, you should first develop a backup strategy to know what data is most important, how you are going to perform backups, how you are going to encrypt the backups, and where you are going to store them. Do this on a regular basis if the data tends to change. Some data might not need to be backed up weekly, but some do, and some might change daily. It depends on your data and your backup strategy.
+این حملات می‌توانند بر الگوریتم‌هایی که به‌طور معمول غیرقابل شکستن تلقی می‌شوند، تنها از طریق پیاده‌سازی آن‌ها انجام شوند. البته، این حملات نیز قابل جلوگیری هستند. نرم‌افزار یا دستگاهی که به‌خوبی بررسی و آزموده شده است، احتمالاً در برابر اکثر این حملات یا همه آن‌ها مقاوم است.
 
-A good and well-known backup strategy is the 3-2-1 rule, which means:
+برخی از بهترین روش‌ها برای جلوگیری از این نوع حملات شامل به‌روزرسانی مداوم نرم‌افزار، جستجوی بررسی‌های مستقل، استفاده از کتابخانه‌های اثبات‌شده (اگر شما یک ابزار نیازمند رمزنگاری توسعه می‌دهید) و استفاده از الگوریتم‌ها، حالت‌ها و طرح‌های رمزنگاری استاندارد است.
 
-- **Three** copies of your data: one primary and two backups.
-- **Two** different media types: such as internal/external hard drives, SSDs, and cloud storage.
-- **One** copy off-site: store a backup in a remote location or in the cloud to protect against physical disasters.
+## داده‌های خود را در حالت استراحت رمزگذاری کنید
 
-For cloud storage, it is better to use a reputable cloud storage provider. Even something like Google Drive, though its privacy is not good, will be a more reliable option compared to other services. You can also host your own cloud storage, but it will never be as reliable as a huge company like Google.
+رمزگذاری تنها برای کانال‌های ارتباطی، پیام‌رسان‌ها، VPNها و غیره نیست. داده‌های آفلاین شما نیز نیاز به رمزگذاری دارند. درست مانند وقتی که وسایل مهم خود را در یک گاوصندوق قرار می‌دهید و تنها زمانی که گاوصندوق باز می‌شود، آن‌ها در دسترس شما هستند، داده‌های شما روی گوشی، رایانه، NAS (ذخیره‌ساز متصل به شبکه)، فلش USB و دیگر دستگاه‌ها نیز باید رمزگذاری شوند تا فقط زمانی که باز می‌شوند، داده‌ها در دسترس باشند. رمزگذاری داده‌ها در حالت استراحت به این معنا نیست که اگر بدافزاری به رایانه شما نفوذ کند نمی‌تواند به داده‌هایتان دسترسی پیدا کند، بلکه به این معناست که وقتی از آن‌ها استفاده نمی‌کنید و آن‌ها قفل هستند، داده‌ها غیرقابل دسترسی می‌شوند.
 
-You can also invest in a NAS for automatic and centralized backups, and you can configure it for RAID (Redundant Array of Independent Disks) for data redundancy and protection. Be sure to take snapshots and version your backups to be able to restore them easily.
+تصور کنید شخصی لپ‌تاپ شما را سرقت می‌کند. اگر رمزگذاری نشده باشد، او به سادگی می‌تواند هارد دیسک را خارج کرده و تمام داده‌های آن را سرقت کند، اما اگر داده‌ها رمزگذاری شده و قفل باشند، نباید هیچ راهی برای دسترسی به داده‌ها وجود داشته باشد.
 
-Always regularly test your backups to make sure they're valid and restorable. Otherwise, you might be backing up corrupted data for years, and when you need to restore your data, you can't; all your data is gone.
+برای رمزگذاری هارد دیسک‌های خود می‌توانید از نرم‌افزارهایی مانند VeraCrypt استفاده کنید اگر سازگاری میان سیستم‌های مختلف برایتان مهم است. در ویندوز، نرم‌افزار BitLocker وجود دارد، و در لینوکس می‌توانید از cryptsetup یا فایل‌سیستمی که امکان رمزگذاری دارد، استفاده کنید.
 
-Lastly, develop a disaster recovery plan and ensure you have clear procedures for data restoration in case of data loss incidents.
+اما تفاوت‌هایی بین ابزارهای رمزگذاری کانتینر مانند VeraCrypt و cryptsetup و رمزگذاری در سطح فایل‌سیستم مانند fscrypt وجود دارد. در اینجا برخی از تفاوت‌های کلیدی آورده شده است:
 
-## Five Dollar Wrench Attack
+| ویژگی                 | رمزگذاری فایل‌سیستم                             | رمزگذاری کانتینر                             |
+| ---------------------- | ---------------------------------------------- | -------------------------------------------- |
+| **دامنه رمزگذاری**     | فایل‌ها/دایرکتوری‌های جداگانه                  | حجم‌ها/کانتینرهای کامل                      |
+| **یکپارچگی**           | در فایل‌سیستم ساخته شده (مثلاً ext4, F2FS)    | جدا از فایل‌سیستم                           |
+| **عملکرد**             | سربار کمتر، رمزگذاری انتخابی                   | سربار بیشتر، همه داده‌ها را رمزگذاری می‌کند  |
+| **مدیریت کلید**        | کلیدهای کاربرمحور، چندین کلید برای فایل/دایرکتوری | یک کلید یا رمزعبور برای هر کانتینر          |
+| **سهولت استفاده**      | پس از تنظیم، شفاف و بی‌دردسر                   | نیاز به مونت/آنمونت کانتینرها               |
+| **سازگاری بین‌پلتفرم**  | محدود به فایل‌سیستم‌های پشتیبانی‌شده           | پشتیبانی گسترده (ویندوز، لینوکس، macOS)     |
+| **امنیت**              | داده‌ها را رمزگذاری می‌کند، اما همیشه متاداده‌ها را رمزگذاری نمی‌کند | همه داده‌ها و متاداده‌ها را رمزگذاری می‌کند |
+| **موارد استفاده**      | رمزگذاری انتخابی، حساس به عملکرد               | رمزگذاری کامل حجم، نیاز به پشتیبانی بین‌پلتفرم |
 
-No matter how securely a hard drive is encrypted, it is always vulnerable to the 5-dollar wrench attack, meaning someone can always beat you up with a 5-dollar wrench to make you give up your passwords. How can this be prevented? Well, it is complicated, but there are some things you can do.
+هنگامی که به رمزگذاری کامل دیسک می‌پردازید، داشتن سخت‌افزار مدرن واقعاً به امنیت و عملکرد رمزگذاری کمک می‌کند، زیرا پردازنده‌های مدرن ویژگی‌های شتاب‌دهنده AES دارند که به آن‌ها اجازه می‌دهد بدون تأثیر زیاد بر عملکرد ورودی/خروجی (I/O)، عملیات رمزگذاری و رمزگشایی AES را انجام دهند. همچنین، اکثر دستگاه‌های مدرن دارای TPM (ماژول پلتفرم امن) هستند که ریزکنترل‌گرهای سخت‌افزاری طراحی‌شده برای بهبود امنیت در سطح سخت‌افزار هستند و محیطی امن برای تولید، ذخیره‌سازی و مدیریت کلیدهای رمزنگاری فراهم می‌کنند.
+
+## پشتیبان‌های خود را در مکانی دور و رمزگذاری‌شده نگه دارید
+
+مهم‌ترین نکته در مورد گرفتن پشتیبان از داده‌ها این است که آن‌ها باید در مکانی دور از محل اصلی نگهداری شوند. در غیر این صورت، شما فقط یک کپی از داده‌های خود تهیه کرده‌اید، نه یک پشتیبان. یک پشتیبان خوب باید حتی در صورتی که خانه شما به‌طور کامل در آتش بسوزد، قابل بازیابی باشد و فقط توسط شما و نه هیچ‌کس دیگری قابل بازیابی باشد.
+
+همیشه باید پشتیبان‌های خود را به‌طور امن و رمزگذاری‌شده نگهداری کنید، به‌ویژه برای چیزهایی مانند کیف‌پول‌های رمزنگاری، پشتیبان کلیدهای GPG و رمزهای عبور. این کار باید به‌صورت استراتژیک و منظم انجام شود. برای داده‌هایی که بازیابی آن‌ها بسیار مهم است، مانند کیف‌پول‌های رمزنگاری و کلیدهای GPG، ممکن است نیاز داشته باشید آن‌ها را در چندین مکان مختلف ذخیره کنید، از جمله خارج از خانه (این مکان می‌تواند یک سرویس ابری نیز باشد، فقط برای مواقع وقوع بلایای طبیعی) و روی دستگاه‌های مختلف مانند DVDها، فلش USBها، هارد دیسک‌ها و کارت‌های SD.
+
+برای این کار، ابتدا باید یک استراتژی پشتیبان‌گیری توسعه دهید تا بدانید چه داده‌هایی مهم‌تر هستند، چگونه قرار است پشتیبان‌گیری را انجام دهید، چگونه قرار است پشتیبان‌ها را رمزگذاری کنید و در کجا آن‌ها را ذخیره کنید. این کار را به‌طور منظم انجام دهید اگر داده‌های شما تمایل به تغییر دارند. برخی داده‌ها ممکن است نیاز به پشتیبان‌گیری هفتگی نداشته باشند، اما برخی دیگر نیاز دارند و برخی ممکن است روزانه تغییر کنند. این موضوع بستگی به داده‌های شما و استراتژی پشتیبان‌گیری شما دارد.
+
+یک استراتژی پشتیبان‌گیری خوب و شناخته‌شده، قانون ۳-۲-۱ است که به این معناست:
+
+- **سه** نسخه از داده‌ها: یک نسخه اصلی و دو نسخه پشتیبان.
+- **دو** نوع رسانه مختلف: مانند هارد دیسک‌های داخلی/خارجی، SSDها و فضای ذخیره‌سازی ابری.
+- **یک** نسخه خارج از محل: یک نسخه پشتیبان را در مکانی دور از محل اصلی یا در فضای ابری نگهداری کنید تا در برابر بلایای فیزیکی محافظت شود.
+
+برای ذخیره‌سازی ابری، بهتر است از یک ارائه‌دهنده معتبر استفاده کنید. حتی سرویس‌هایی مانند Google Drive، اگرچه حریم خصوصی آن‌ها خوب نیست، گزینه‌ای مطمئن‌تر نسبت به سایر سرویس‌ها خواهند بود. همچنین می‌توانید فضای ذخیره‌سازی ابری خود را میزبانی کنید، اما هرگز به اندازه یک شرکت بزرگ مانند گوگل قابل اعتماد نخواهد بود.
+
+می‌توانید روی NAS (ذخیره‌ساز متصل به شبکه) سرمایه‌گذاری کنید تا پشتیبان‌گیری خودکار و متمرکز انجام دهید، و می‌توانید آن را برای RAID (آرایه افزونه‌ای از دیسک‌های مستقل) پیکربندی کنید تا از داده‌ها به‌طور افزونه محافظت شود. مطمئن شوید که از داده‌های خود اسنپ‌شات (snapshot) می‌گیرید و نسخه‌بندی می‌کنید تا بتوانید به‌راحتی آن‌ها را بازیابی کنید.
+
+همیشه پشتیبان‌های خود را به‌طور منظم تست کنید تا مطمئن شوید که معتبر و قابل بازیابی هستند. در غیر این صورت، ممکن است سال‌ها داده‌های خراب را پشتیبان‌گیری کنید و زمانی که نیاز به بازیابی داده‌ها دارید، نتوانید این کار را انجام دهید و تمام داده‌های شما از بین رفته باشد.
+
+در نهایت، یک طرح بازیابی از فاجعه (Disaster Recovery Plan) توسعه دهید و اطمینان حاصل کنید که دستورالعمل‌های واضحی برای بازیابی داده‌ها در صورت بروز حادثه‌های از دست دادن داده‌ها دارید.
+
+## حمله آچار پنج دلاری
+
+مهم نیست که یک هارد دیسک چقدر امن رمزگذاری شده باشد، همیشه در برابر حمله آچار پنج دلاری آسیب‌پذیر است. این به این معناست که همیشه کسی می‌تواند با یک آچار پنج دلاری شما را تهدید کند تا رمزهای عبور خود را فاش کنید. چگونه می‌توان از این موضوع جلوگیری کرد؟ خوب، این موضوع پیچیده است، اما چند کار وجود دارد که می‌توانید انجام دهید.
 
 ![XKCD Security Meme](./pictures/xkcd-security-meme.png)
 
-### 1. Have a Kill Switch
+### ۱. داشتن یک سیستم Kill Switch (کلید قطع‌کن)
 
-Creating a kill switch system in which, if a specific password is entered, the key file is permanently wiped could save your data by making it inaccessible forever for everyone, including yourself. Now even you can't restore your data.
+ایجاد یک سیستم کلید قطع‌کن که در صورت وارد کردن یک رمز عبور خاص، فایل کلیدی به‌طور دائمی پاک شود، می‌تواند داده‌های شما را با دسترسی‌ناپذیر کردن برای همه، از جمله خود شما، حفظ کند. در این حالت حتی خودتان هم قادر به بازیابی داده‌ها نخواهید بود.
 
-Or you can create a panic button instead. In case of something like kidnapping, it would alert the authorities. It all boils down to your own unique threat model. Based on the threats that might target your data, you might need to change this to suit the situation.
+یا می‌توانید به‌جای آن یک دکمه اضطراری ایجاد کنید. در صورتی که به یک موقعیت بحرانی مانند ربوده‌شدن دچار شدید، این دکمه می‌تواند مقامات را مطلع کند. همه چیز به مدل تهدید شما بستگی دارد. بسته به تهدیدهایی که ممکن است داده‌های شما را هدف قرار دهند، ممکن است نیاز داشته باشید این سیستم را برای تطبیق با شرایط تغییر دهید.
 
-### 2. Have a Decoy System
+### ۲. داشتن یک سیستم طعمه (Decoy System)
 
-You can create fake wallets and fake accounts and reveal those instead of the real ones. For example, some activists have created a version of Telegram called Partisan Telegram to help Belarus protesters. The way it works is you can set a lock on your Telegram and have multiple PIN codes on it and program each PIN code to do certain things. For example, if you enter the PIN "1234," it will wipe all data and send a message to everyone to alert them, but if you enter "1349," it will show a decoy account, and if you enter "6782," it will function normally.
+می‌توانید کیف‌پول‌ها و حساب‌های جعلی ایجاد کنید و به‌جای موارد واقعی، آن‌ها را نشان دهید. به‌عنوان مثال، برخی از فعالان نسخه‌ای از تلگرام به نام **تلگرام پارتیزانی** برای کمک به معترضان بلاروس ایجاد کرده‌اند. روش کار این است که می‌توانید برای تلگرام خود یک قفل تنظیم کنید و چندین کد PIN داشته باشید و هر کد PIN را برای انجام کارهای خاصی برنامه‌ریزی کنید. به‌عنوان مثال، اگر PIN "1234" را وارد کنید، تمام داده‌ها پاک شده و به همه پیام ارسال می‌شود تا آن‌ها را مطلع کند، اما اگر "1349" را وارد کنید، یک حساب طعمه نشان داده می‌شود و اگر "6782" را وارد کنید، به‌طور عادی کار می‌کند.
 
-These decoy systems can really help with situations like a protest where you might get arrested or have your devices searched. Combining them with kill switches can both fool the attacker and, at the same time, delete all the data.
+این سیستم‌های طعمه می‌توانند در موقعیت‌هایی مانند اعتراض که ممکن است دستگیر شوید یا دستگاه‌های شما بازرسی شوند، بسیار مفید باشند. ترکیب آن‌ها با کلیدهای قطع‌کن می‌تواند هم مهاجم را فریب دهد و هم داده‌ها را همزمان حذف کند.
 
-### 3. Reduce the Value of the Target
+### ۳. کاهش ارزش هدف
 
-Store minimal sensitive data on the devices that are most vulnerable to this kind of physical attack. For example, you don't need so much sensitive data on the phone you take out with you. Frequently back up sensitive data securely to a secure location. It can be a physical location or a remote cloud, so the data is not all in one place and not always with you.
+کمترین مقدار داده‌های حساس را روی دستگاه‌هایی که بیشترین آسیب‌پذیری را در برابر این نوع حملات فیزیکی دارند، ذخیره کنید. به‌عنوان مثال، نیازی نیست که داده‌های حساس زیادی روی گوشی داشته باشید که با خود به بیرون می‌برید. به‌طور مرتب داده‌های حساس را به‌صورت امن و در مکانی امن پشتیبان‌گیری کنید. این مکان می‌تواند یک مکان فیزیکی یا یک فضای ابری از راه دور باشد تا داده‌ها همه در یک مکان نباشند و همیشه همراه شما نباشند.
 
-### 4. Use Multi-Factor Authentication for Sensitive Data
+### ۴. استفاده از احراز هویت چندعاملی برای داده‌های حساس
 
-Use physical authentication devices like YubiKey that require both possession of the token and a PIN or password, and keep them in a safe place. This way, your data is not accessible without the authentication device. You can hand them the passwords, but they still won't be able to get inside.
+از دستگاه‌های احراز هویت فیزیکی مانند YubiKey استفاده کنید که هم نیاز به داشتن توکن فیزیکی و هم رمز عبور یا PIN دارند و آن‌ها را در مکانی امن نگه دارید. به این ترتیب، بدون دستگاه احراز هویت، داده‌های شما قابل دسترسی نخواهند بود. می‌توانید رمزهای عبور را به آن‌ها بدهید، اما هنوز نمی‌توانند به داده‌ها دسترسی پیدا کنند.
 
-Avoid biometric authentication; it is not resistant to physical force. Someone can forcefully use your fingerprint if they need to.
+از احراز هویت بیومتریک خودداری کنید؛ این نوع احراز هویت در برابر زور فیزیکی مقاوم نیست. کسی می‌تواند به‌زور از اثر انگشت شما استفاده کند.
 
-### 5. Be Aware of Social Engineering Tactics
+### ۵. آگاهی از تاکتیک‌های مهندسی اجتماعی
 
-Some might use social engineering tactics instead of force, especially if they are in a position of authority. Always be aware of the tactics and mind games someone might play to get you to hand them sensitive information, passwords, and credentials.
+برخی افراد ممکن است به‌جای زور، از تاکتیک‌های مهندسی اجتماعی استفاده کنند، به‌ویژه اگر در موقعیتی از قدرت باشند. همیشه از تاکتیک‌ها و بازی‌های روانی که ممکن است برای به‌دست آوردن اطلاعات حساس، رمزهای عبور و مدارک شما استفاده شود، آگاه باشید.
 
-Understand your legal rights regarding self-defense and data protection in your jurisdiction. Have a list of emergency contacts, including legal counsel, who can provide immediate assistance in case of coercion or threats.
+از حقوق قانونی خود در زمینه دفاع از خود و حفاظت از داده‌ها در حوزه قضایی خود آگاه باشید. فهرستی از مخاطبین اضطراری، از جمله مشاور حقوقی، داشته باشید که بتواند در صورت تهدید یا اجبار کمک فوری ارائه دهد.
 
 ---
 
-These were all I had on encrypting and securely storing sensitive information. The next chapter will be about footprints and fingerprints and what actions can be taken to minimize or even erase the trace you left behind when you didn't care much about privacy.
+این‌ها نکاتی بودند که درباره رمزگذاری و ذخیره امن اطلاعات حساس داشتم. فصل بعدی درباره ردپاها و اثر انگشت‌های دیجیتال خواهد بود و اقداماتی که می‌توان برای به حداقل رساندن یا حتی پاک کردن ردپایی که هنگام بی‌توجهی به حریم خصوصی به‌جا گذاشته‌اید، انجام داد.
