@@ -5,3 +5,8 @@ body {
 .content p {
     line-height: 1.65em;
 }
+
+span.highlight {
+    background-color: #ffff00;
+    color: #000;
+}
